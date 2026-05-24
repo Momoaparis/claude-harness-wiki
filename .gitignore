@@ -1,0 +1,33 @@
+# Personal Claude Code settings
+.claude/settings.json
+.claude/settings.local.json
+.claude/commands/
+
+# Personal wiki files — excluded from public repo
+CLAUDE.md
+wiki/log.md
+
+# Obsidian workspace state (personal)
+.obsidian/workspace.json
+
+# Obsidian canvas and base files (personal workspace)
+*.canvas
+*.base
+
+# Default Obsidian new-vault files
+Bienvenue.md
+créez un lien.md
+
+# Temporary / personal root-level files
+[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].md
+@*.md
+
+# Raw inbox (never committed — transient drop zone)
+raw/inbox/*
+!raw/inbox/.gitkeep
+!raw/inbox/README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
