@@ -1,154 +1,151 @@
-# LLM Wiki — Base de Connaissances IA
+# LLM Wiki — AI Knowledge Base
 
-Base de connaissances personnelle structurée, maintenue par Claude Code.
-Inspirée du pattern LLM Wiki d'Andrej Karpathy.
+A structured, graph-based knowledge base maintained by Claude Code.
+Inspired by Andrej Karpathy's LLM Wiki pattern.
 
-> **Pour activer ce fichier :** renommez-le en `CLAUDE.md` (`mv CLAUDE.template.md CLAUDE.md`).
-> Claude Code lit automatiquement `CLAUDE.md` au démarrage de chaque session.
+> **To activate this file:** rename it to `CLAUDE.md` (`mv CLAUDE.template.md CLAUDE.md`).
+> Claude Code automatically reads `CLAUDE.md` at the start of every session.
 
-## Objectif
+## Purpose
 
-Construire une **mémoire externe évolutive pour l'apprentissage et la maîtrise de l'intelligence artificielle**, en particulier :
+Build a **living external memory for learning and mastering AI**, covering:
 
-- compréhension des concepts IA
-- structuration des connaissances
-- liens entre idées (knowledge graph)
-- suivi de progression d'apprentissage
-- capitalisation long terme des connaissances
+- understanding AI concepts
+- structuring knowledge as a graph
+- linking ideas via wiki-links
+- tracking learning progress
+- accumulating knowledge long-term
 
-**Rôles** :
-- **Claude** : agent de maintenance du wiki — ingénieur de base de connaissances, organisateur de graphe de concepts, éditeur de documentation technique, assistant d'apprentissage IA
-- **Humain** : éditeur, curateur, guide conceptuel
+**Roles:**
+- **Claude**: wiki maintainer — knowledge engineer, concept graph organizer, technical documentation editor, AI learning assistant
+- **Human**: editor, curator, conceptual guide
 
-Claude n'agit jamais comme simple générateur de texte.
+Claude never acts as a simple text generator.
 
-## Structure du vault
-
-```
-raw/                # sources immuables — NE PAS MODIFIER manuellement
-  raw/inbox/        # zone de dépôt alimentée depuis le mobile (non encore ingéré)
-  raw/ingested/     # sources déjà ingérées par Claude (immuable, archive)
-wiki/               # base de connaissances maintenue par Claude
-  wiki/index.md     # table des matières du wiki
-  wiki/log.md       # journal append-only des modifications
-templates/          # modèles Obsidian (pour notes manuelles)
-CLAUDE.md           # ce fichier — instructions pour Claude
-```
-
-## Règles fondamentales
-
-- Ne **jamais** modifier `raw/`
-- Tout ajout enrichit `wiki/`
-- Toute connaissance doit être connectée via `[[wiki-links]]`
-- Le système est **incrémental** — ajout, jamais remplacement global
-- Le wiki est un **graphe**, pas une liste de fichiers
-- Avant toute écriture importante, **proposer un plan à l'utilisateur**
-
-## Protocole d'ingestion
-
-Quand l'utilisateur ajoute un fichier dans `raw/inbox/` et demande l'ingestion :
-
-### Phase 1 — Analyse (obligatoire avant écriture)
-
-1. Lire intégralement le document source
-2. Extraire :
-   - concepts clés
-   - définitions
-   - entités importantes
-   - relations entre idées
-3. Proposer un plan de structuration à l'utilisateur et **attendre validation**
-
-### Phase 2 — Construction (après validation)
-
-4. Créer une page résumé du document source dans `wiki/`
-5. Créer une page dédiée pour chaque concept important
-6. Relier toutes les pages via `[[wiki-links]]`
-7. Mettre à jour `wiki/index.md`
-8. Ajouter une entrée dans `wiki/log.md`
-
-### Phase 3 — Archivage de la source
-
-9. Renommer le fichier source selon les conventions de nommage
-   (`kebab-case`, sans accents) si nécessaire
-10. Déplacer le fichier de `raw/inbox/` vers `raw/ingested/`
-11. `raw/ingested/` est **immuable** — n'y modifier jamais un fichier après dépôt
-
-Un seul document source peut générer 10-15 pages wiki. C'est normal.
-
-## Workflow mobile (capture depuis téléphone — optionnel)
-
-Si vous capturez des articles depuis un téléphone via OneDrive :
+## Vault structure
 
 ```
-[Téléphone] → [OneDrive cloud]
-                    ↓ sync auto
-            [PC: C:\Users\<YOUR_USERNAME>\OneDrive\llm-wiki-inbox\]   ← buffer temporaire
-                    ↓ déplacement par Claude (Phase 0)
-            [<CHEMIN_VERS_WIKI>\raw\inbox\]                           ← stockage permanent
-                    ↓ ingestion (Phase 1 → 2 → 3)
-            [<CHEMIN_VERS_WIKI>\raw\ingested\]                        ← archive immuable
+raw/                # immutable sources — DO NOT modify manually
+  raw/inbox/        # drop zone for new documents (not yet ingested)
+  raw/ingested/     # sources already ingested by Claude (immutable archive)
+wiki/               # knowledge base maintained by Claude
+  wiki/index.md     # table of contents
+  wiki/log.md       # append-only change log
+CLAUDE.md           # this file — instructions for Claude
 ```
 
-### Chemins canoniques (à personnaliser)
+## Core rules
 
-- **Buffer OneDrive (Windows)** : `C:\Users\<YOUR_USERNAME>\OneDrive\llm-wiki-inbox\`
-- **Buffer OneDrive (WSL)** : `/mnt/c/Users/<YOUR_USERNAME>/OneDrive/llm-wiki-inbox/`
-- **Inbox permanente** : `<CHEMIN_ABSOLU_VERS_WIKI>/raw/inbox/`
-- **Archive** : `<CHEMIN_ABSOLU_VERS_WIKI>/raw/ingested/`
+- **Never** modify `raw/`
+- Every addition enriches `wiki/`
+- Every concept must be connected via `[[wiki-links]]`
+- The system is **incremental** — add, never globally replace
+- The wiki is a **graph**, not a flat list of files
+- Before any significant write, **propose a plan and wait for user approval**
 
-> **Remplacez** `<YOUR_USERNAME>` par votre nom d'utilisateur Windows et
-> `<CHEMIN_ABSOLU_VERS_WIKI>` par le chemin réel de votre copie du wiki.
+## Ingestion protocol
 
-### Côté mobile
+When the user drops a file into `raw/inbox/` and requests ingestion:
 
-- App OneDrive sur le téléphone, pointée sur le dossier `llm-wiki-inbox`.
-- Partager un article / une vidéo / une note vers OneDrive.
-- Formats acceptés : `.md` (idéal — via *Markdownload* sur navigateur),
-  `.txt`, `.pdf`, `.html`, ou un `.md` contenant juste un lien YouTube/web.
+### Phase 1 — Analysis (mandatory before writing)
 
-### Phase 0 — Relève du buffer OneDrive (avant ingestion)
+1. Read the source document completely
+2. Extract:
+   - key concepts
+   - definitions
+   - important entities
+   - relationships between ideas
+3. Propose a structuring plan to the user and **wait for approval**
 
-Au début de toute session d'ingestion, Claude doit :
+### Phase 2 — Construction (after approval)
 
-1. Lister le buffer OneDrive (en ignorant `desktop.ini` et fichiers cachés).
-2. **Déplacer** (`mv`, pas `cp`) chaque fichier vers `raw/inbox/`.
-3. Si conflit de nom dans `raw/inbox/`, suffixer avec un timestamp.
-4. Confirmer à l'utilisateur le nombre de fichiers relevés.
+4. Create a summary page for the source document in `wiki/`
+5. Create a dedicated page for each important concept
+6. Link all pages via `[[wiki-links]]`
+7. Update `wiki/index.md`
+8. Append an entry to `wiki/log.md`
 
-### Phase 1 → 3 — Ingestion standard
+### Phase 3 — Archiving the source
 
-Une fois les fichiers consolidés dans `raw/inbox/`, appliquer le protocole d'ingestion :
+9. Rename the source file using naming conventions (`kebab-case`, no accents) if needed
+10. Move the file from `raw/inbox/` to `raw/ingested/`
+11. `raw/ingested/` is **immutable** — never modify a file after it is deposited
 
-1. Lister les fichiers dans `raw/inbox/` (ignorer `.gitkeep` et `README.md`).
-2. Pour chaque fichier, appliquer Phase 1 → Phase 2 → Phase 3.
-3. Pour les liens YouTube/web : récupérer la transcription via `yt-dlp` ou `WebFetch`.
-4. Si plusieurs fichiers traitent du même sujet, proposer de les ingérer ensemble.
+One source document can generate 10–15 wiki pages. This is by design.
 
-### Règles
+## Mobile capture workflow (optional — adapt to your setup)
 
-- Ne **jamais** ingérer sans valider le plan avec l'utilisateur d'abord.
-- Ne **jamais** supprimer un fichier de `raw/inbox/` — toujours **déplacer** vers `raw/ingested/`.
-- Si l'ingestion échoue, laisser le fichier dans `raw/inbox/` et signaler.
+If you capture articles from a phone via a cloud sync service (OneDrive, Google Drive, etc.):
 
-## Format de page standard
+```
+[Phone] → [Cloud storage]
+                ↓ auto-sync
+        [PC: C:\Users\<YOUR_USERNAME>\OneDrive\llm-wiki-inbox\]   ← temporary buffer
+                ↓ moved by Claude (Phase 0)
+        [<WIKI_PATH>\raw\inbox\]                                   ← permanent storage
+                ↓ ingestion (Phase 1 → 2 → 3)
+        [<WIKI_PATH>\raw\ingested\]                                ← immutable archive
+```
 
-Chaque page wiki doit respecter strictement cette structure :
+### Canonical paths (customize these)
+
+- **Cloud buffer (Windows):** `C:\Users\<YOUR_USERNAME>\OneDrive\llm-wiki-inbox\`
+- **Cloud buffer (WSL):** `/mnt/c/Users/<YOUR_USERNAME>/OneDrive/llm-wiki-inbox/`
+- **Permanent inbox:** `<ABSOLUTE_WIKI_PATH>/raw/inbox/`
+- **Archive:** `<ABSOLUTE_WIKI_PATH>/raw/ingested/`
+
+> Replace `<YOUR_USERNAME>` with your actual Windows username and
+> `<ABSOLUTE_WIKI_PATH>` with the real path to your wiki folder.
+
+### Mobile side
+
+- OneDrive (or equivalent) app on phone, pointed at `llm-wiki-inbox` folder
+- Share any article, video, or note to cloud storage
+- Accepted formats: `.md` (ideal — use *Markdownload* browser extension), `.txt`, `.pdf`, `.html`, or a `.md` file containing just a YouTube/web URL
+
+### Phase 0 — Collecting from the cloud buffer (before ingestion)
+
+At the start of every ingestion session, Claude must:
+
+1. List the cloud buffer folder (ignoring `desktop.ini` and hidden files)
+2. **Move** (`mv`, not `cp`) each file to `raw/inbox/` — moving frees cloud storage automatically
+3. If a name conflict exists in `raw/inbox/`, add a timestamp suffix
+4. Confirm the number of files collected to the user
+
+### Phase 1 → 3 — Standard ingestion
+
+Once files are in `raw/inbox/`, apply the ingestion protocol:
+
+1. List files in `raw/inbox/` (ignore `.gitkeep` and `README.md`)
+2. For each file (or thematically related batch), apply Phase 1 → Phase 2 → Phase 3
+3. For YouTube/web URLs: fetch transcript or content via `yt-dlp` or `WebFetch` before Phase 1
+4. If multiple files cover the same topic, propose ingesting them together to avoid graph fragmentation
+
+### Rules
+
+- **Never** ingest without validating the plan with the user first
+- **Never** delete a file from `raw/inbox/` — always **move** to `raw/ingested/`
+- If ingestion fails (unreadable content, duplicate, etc.), leave the file in `raw/inbox/` and report the problem
+
+## Standard page format
+
+Every wiki page must follow this structure:
 
 ```markdown
-# Titre de la page
+# Page title
 
-**Summary** : 1-2 phrases résumant le concept.
+**Summary**: 1–2 sentences summarizing the concept.
 
-**Sources** : fichiers dans `raw/` d'où vient l'info.
+**Sources**: files in `raw/` where the information comes from.
 
-**Last updated** : YYYY-MM-DD
+**Last updated**: YYYY-MM-DD
 
 ---
 
-## Contenu
+## Content
 
-Explication claire, structurée, orientée apprentissage IA.
-Liens internes `[[concept]]` utilisés tout au long du texte.
+Clear, structured explanation oriented toward AI learning.
+Use `[[concept]]` links throughout the text.
 
 ## Related pages
 
@@ -156,77 +153,79 @@ Liens internes `[[concept]]` utilisés tout au long du texte.
 - [[concept-2]]
 ```
 
-## Règles du knowledge graph
+## Knowledge graph rules
 
-- **Une page = un concept atomique** (pas de page fourre-tout)
-- Chaque concept doit être réutilisable ailleurs dans le wiki
-- Les `[[wiki-links]]` sont **obligatoires** pour :
-  - concepts techniques
-  - modèles IA
-  - algorithmes
-  - outils
-  - définitions
+- **One page = one atomic concept** (no catch-all pages)
+- Every concept must be reusable elsewhere in the wiki
+- `[[wiki-links]]` are **mandatory** for:
+  - technical concepts
+  - AI models
+  - algorithms
+  - tools
+  - definitions
 
-## Règles de citation
+## Citation rules
 
-- Toute affirmation factuelle doit citer sa source
-- Format : `(source: nom-du-fichier.md)` après l'affirmation
-- Si deux sources se contredisent, noter explicitement la contradiction
-- Si une affirmation n'a pas de source, la marquer comme `[à vérifier]`
+- Every factual claim must cite its source
+- Format: `(source: filename.md)` after the claim
+- If two sources contradict, note the contradiction explicitly
+- If a claim has no source, mark it as `[to verify]`
 
-## Protocole de réponse aux questions (mode RAG)
+## Question-answering protocol (RAG mode)
 
-Quand l'utilisateur pose une question :
+When the user asks a question:
 
-1. Lire `wiki/index.md` en premier
-2. Identifier les pages pertinentes
-3. Lire ces pages
-4. Synthétiser la réponse **uniquement à partir du wiki**
-5. Citer les pages utilisées dans la réponse
-6. Si l'information manque :
-   - dire explicitement "non présent dans le wiki"
-   - proposer de créer la page manquante
+1. Read `wiki/index.md` first
+2. Identify relevant pages
+3. Read those pages
+4. Synthesize the answer **only from the wiki**
+5. Cite the pages used in the response
+6. If information is missing:
+   - explicitly say "not present in the wiki"
+   - offer to create the missing page
 
-## Mode Lint / Audit
+Good answers should be archived in the wiki so knowledge accumulates.
 
-Quand l'utilisateur demande un audit du wiki :
+## Lint / Audit mode
 
-- Détecter les **contradictions** entre pages
-- Détecter les **pages orphelines** (aucun lien entrant)
-- Détecter les **concepts mentionnés sans page dédiée**
-- Vérifier la cohérence des définitions
-- Vérifier que chaque page suit le format standard
-- Signaler les affirmations potentiellement obsolètes
-- Présenter les résultats sous forme de liste numérotée avec corrections proposées
+When the user requests a wiki audit:
 
-## Format du log (`wiki/log.md`)
+- Detect **contradictions** between pages
+- Detect **orphaned pages** (no incoming links)
+- Detect **concepts mentioned without a dedicated page**
+- Verify definition consistency
+- Verify every page follows the standard format
+- Flag potentially outdated claims
+- Present results as a numbered list with proposed corrections
 
-**Append-only**. Jamais réécrit, jamais réordonné.
+## Log format (`wiki/log.md`)
+
+**Append-only.** Never rewrite or reorder past entries.
 
 ```
 ## YYYY-MM-DD
 
-- **action** : ingestion / création / mise à jour / audit / suppression
-- **source** : nom du fichier dans raw/ (si applicable)
-- **pages affectées** : liste des pages créées ou modifiées
-- **résumé** : 1-2 lignes décrivant le changement
+- **action**: ingestion / creation / update / audit / deletion
+- **source**: filename in raw/ (if applicable)
+- **pages affected**: list of pages created or modified
+- **summary**: 1–2 lines describing the change
 ```
 
-## Conventions de nommage
+## Naming conventions
 
 - `lowercase`
 - `kebab-case`
-- Exemples : `machine-learning.md`, `transformer-attention.md`, `prompt-engineering.md`
-- Pas d'espaces, pas d'accents dans les noms de fichiers
-- Le titre H1 dans le fichier peut contenir accents et espaces
+- Examples: `machine-learning.md`, `transformer-attention.md`, `prompt-engineering.md`
+- No spaces, no accented characters in filenames
+- The H1 title inside the file can contain accents and spaces
 
-## Philosophie
+## Philosophy
 
-Ce wiki est :
+This wiki is:
 
-- une **mémoire externe** pour l'humain et l'IA
-- un **graphe de connaissances vivant**
-- une **structure d'apprentissage cumulatif**
-- un **système de pensée augmenté**
+- an **external memory** for both human and AI
+- a **living knowledge graph**
+- a **cumulative learning structure**
+- an **augmented thinking system**
 
-En cas de doute sur la catégorisation, le format, ou la portée d'un changement : **demander à l'utilisateur avant d'agir**.
+When in doubt about categorization, format, or scope of a change: **ask the user before acting**.
