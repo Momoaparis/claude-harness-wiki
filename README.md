@@ -1,7 +1,7 @@
 # 🧠 LLM Wiki — AI Knowledge Base
 
 > A structured, graph-based knowledge base about AI, Claude Code, and agentic systems — maintained by Claude Code itself.
-> **100+ pages in French** | Built with Obsidian | Powered by Claude
+> **110+ pages in French** | Built with Obsidian | Powered by Claude
 
 ---
 
@@ -35,8 +35,9 @@ It covers:
 
 ```
 llm-wiki/
-├── wiki/                    ← 100+ knowledge pages (the core)
+├── wiki/                    ← 110+ knowledge pages (the core)
 │   ├── index.md             ← table of contents — start here
+│   ├── templates/           ← ready-to-use harness templates
 │   └── *.md                 ← one file = one atomic concept
 ├── raw/
 │   └── ingested/            ← original source documents (open-source)
@@ -86,6 +87,7 @@ The AI reads → understands → acts. You don't need to read anything.
 | Theme | Pages | Example concepts |
 |---|---|---|
 | 🏗️ Harness Engineering | 15+ | `five-subsystem-harness-architecture`, `harness-rot-et-dette-technique`, `session-clean-handoff` |
+| 🔧 Skills | 8+ | `skill-anatomy`, `skill-creation-workflow`, `skill-creator-meta-skill`, `skill-description-optimization`, `skill-eval-workflow` |
 | 🧠 Memory & Context | 10+ | `session-storage-pattern`, `strategic-compact`, `cross-session-context-loss` |
 | 🪝 Hooks & Commands | 8+ | `claude-code-hooks`, `claude-code-commands`, `memory-persistence-hooks` |
 | 🔐 Agentic Security | 10+ | `claude-code-cves-2026`, `agent-sandboxing`, `prompt-injection-sanitization` |

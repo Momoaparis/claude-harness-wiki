@@ -49,6 +49,8 @@ Mesure :
 
 Ablation typique :
 
+> Données illustratives — à remplacer par vos mesures réelles.
+
 | Config | VCR | Temps moy | Notes |
 |--------|-----|-----------|-------|
 | Full harness | 87% | 35 min/feat | Baseline |

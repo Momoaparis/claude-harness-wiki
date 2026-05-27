@@ -2,7 +2,7 @@
 
 **Summary** : Table des matières de la base de connaissances. Mise à jour à chaque ingestion ou création de page.
 
-**Last updated** : 2026-05-24
+**Last updated** : 2026-05-27
 
 ---
 
@@ -15,6 +15,7 @@
 - [[the-agentic-security-summary]] — Guide shorthand d'Affaan Mustafa sur la sécurité des agents (fév 2026) — CVEs Claude Code + standards opsec 2026
 - [[ecc-overview]] — Écosystème ECC (Affaan Mustafa) : skills, agents, hooks, rules + tooling (AgentShield, instincts)
 - [[the-harness-engineering-curriculum-summary]] — Cours Learn Harness Engineering : 12 lectures + 6 projets + 7 templates pour construire des harnesses Claude Code/Codex robustes
+- [[harness-creator-et-skill-creator-summary]] — harness-creator (walkinglabs) + skill-creator (Anthropic) : outils complémentaires pour scaffolding de harness et création de skills
 
 ## Pages par thème
 
@@ -40,6 +41,26 @@
 - [[claude-code-hooks]] — Vue d'ensemble : PreToolUse, PostToolUse, PreCompact, SessionStart, Stop, UserPromptSubmit, Notification
 - [[claude-code-commands]] — Commandes slash : `/rename`, `/fork`, `/clear`, `/compact`, `/learn`, `/rewind`, `/statusline`, `/checkpoints`
 - [[claude-code-keyboard-shortcuts]] — Raccourcis clavier, préfixes !, @, /, intégration éditeurs (Zed, VSCode)
+
+### 📁 Templates harness-creator (walkinglabs)
+
+Fichiers bruts du repo `walkinglabs/learn-harness-engineering`, stockés tels quels.
+
+- `wiki/templates/harness-creator/agents.md` — AGENTS.md / CLAUDE.md scaffold (instructions de workflow)
+- `wiki/templates/harness-creator/progress.md` — Journal de session append-only
+- `wiki/templates/harness-creator/session-handoff.md` — Snapshot compact pour passation de session
+- `wiki/templates/harness-creator/feature-list.json` — Feature list exemple (5 features placeholder)
+- `wiki/templates/harness-creator/feature-list.schema.json` — JSON Schema de feature-list.json
+- `wiki/templates/harness-creator/init.sh` — Script d'init multi-stack (Node/Python/Go/Rust/Maven/Gradle/.NET)
+
+### 🛠️ Skills — création & ingénierie
+
+- [[harness-creator-skill]] — Skill NPX walkinglabs : scaffold + validation structurelle d'un harness (5 subsystèmes : Instructions / State / Verification / Scope / Lifecycle)
+- [[skill-creator-meta-skill]] — Meta-skill Anthropic pour créer et améliorer des skills : capture intention → SKILL.md → test → eval → iterate
+- [[skill-anatomy]] — Anatomie d'un skill : SKILL.md + bundled resources, chargement progressif à 3 niveaux
+- [[skill-creation-workflow]] — Cycle draft → test parallèle (with/without skill) → évaluation → amélioration
+- [[skill-eval-workflow]] — Eval runner, grader, benchmark viewer, feedback loop pour valider un skill
+- [[skill-description-optimization]] — Mécanisme de triggering, design des eval queries, boucle d'optimisation automatisée
 
 ### 🔌 Plugins, MCPs & skills
 
