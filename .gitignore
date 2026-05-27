@@ -31,3 +31,9 @@ raw/inbox/*
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Screenshots
+*.JPG
+*.jpg
+*.PNG
+*.png
