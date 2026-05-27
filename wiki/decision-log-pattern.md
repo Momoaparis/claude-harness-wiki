@@ -143,7 +143,7 @@ Problèmes :
 
 | Fichier | Granularité | Contenu |
 |---------|-------------|---------|
-| [PROGRESS.md](progress-file-pattern/.md) | Par session | Quoi fait, quoi prévu |
+| [PROGRESS.md](progress-file-pattern.md) | Par session | Quoi fait, quoi prévu |
 | `DECISIONS.md` | Par décision | Pourquoi tel choix |
 
 Les deux sont complémentaires. Une session peut générer 0 ou plusieurs décisions ; la session change toujours le PROGRESS, mais pas toujours le DECISIONS.

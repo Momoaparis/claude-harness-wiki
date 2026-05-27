@@ -43,9 +43,9 @@ C'est le pendant économique du [fresh-session-readability-test](fresh-session-r
 
 | Artefact | Rebuild cost évité |
 |----------|---------------------|
-| [`claude-progress.md`](progress-file-pattern/.md) | Diagnostic d'état (15 → 5 min) |
-| [`session-handoff.md`](template-session-handoff-md/.md) | Re-découverte des décisions |
-| [`feature_list.json`](feature-list-as-primitive/.md) | Choix de la prochaine tâche |
+| [`claude-progress.md`](progress-file-pattern.md) | Diagnostic d'état (15 → 5 min) |
+| [`session-handoff.md`](template-session-handoff-md.md) | Re-découverte des décisions |
+| [`feature_list.json`](feature-list-as-primitive.md) | Choix de la prochaine tâche |
 | [startup-readiness-checklist](startup-readiness-checklist.md) | Re-vérification baseline |
 
 ### Lien avec l'observabilité
