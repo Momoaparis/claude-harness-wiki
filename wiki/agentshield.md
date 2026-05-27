@@ -1,6 +1,6 @@
 # AgentShield
 
-**Summary** : Scanner de sécurité pour les configurations Claude Code, construit pendant le Claude Code Hackathon (Cerebral Valley × Anthropic, fév 2026). Détecte hooks malveillants, injection patterns, permissions trop larges, MCP risqués, exposition de secrets. Fait partie de l'écosystème [[ecc-overview|ECC]].
+**Summary** : Scanner de sécurité pour les configurations Claude Code, construit pendant le Claude Code Hackathon (Cerebral Valley × Anthropic, fév 2026). Détecte hooks malveillants, injection patterns, permissions trop larges, MCP risqués, exposition de secrets. Fait partie de l'écosystème [ECC](ecc-overview.md).
 
 **Sources** : `raw/ingested/the-shorthand-guide-to-everything-agentic-security.md`, `raw/ingested/affaan-m-ecc-readme-part*.md`
 
@@ -57,12 +57,12 @@ Raisonnement adversarial, pas juste matching de patterns. Coûteux mais utile su
 
 ## Lien avec les CVEs Claude Code
 
-AgentShield est en grande partie une réaction aux [[claude-code-cves-2026|CVEs de février 2026]]. Les vecteurs qu'il cherche (hooks, MCP consent, env vars repo-controlled) sont exactement ceux qui ont été exploités. Voir aussi [[toxicskills-study]] pour le même angle sur les skills.
+AgentShield est en grande partie une réaction aux [CVEs de février 2026](claude-code-cves-2026.md). Les vecteurs qu'il cherche (hooks, MCP consent, env vars repo-controlled) sont exactement ceux qui ont été exploités. Voir aussi [toxicskills-study](toxicskills-study.md) pour le même angle sur les skills.
 
 ## Related pages
 
-- [[claude-code-cves-2026]]
-- [[ecc-overview]]
-- [[toxicskills-study]]
-- [[prompt-injection-sanitization]]
-- [[the-agentic-security-summary]]
+- [claude-code-cves-2026](claude-code-cves-2026.md)
+- [ecc-overview](ecc-overview.md)
+- [toxicskills-study](toxicskills-study.md)
+- [prompt-injection-sanitization](prompt-injection-sanitization.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

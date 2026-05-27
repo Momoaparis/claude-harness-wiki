@@ -34,7 +34,7 @@ skill-name/
 
 Les scripts peuvent s'exécuter **sans être chargés en contexte** — avantage fort pour les opérations lourdes.
 
-Ce pattern de chargement progressif est la même logique que [[modular-instruction-architecture]] appliquée aux skills (entry file court + topic docs on-demand).
+Ce pattern de chargement progressif est la même logique que [modular-instruction-architecture](modular-instruction-architecture.md) appliquée aux skills (entry file court + topic docs on-demand).
 
 ### SKILL.md — Frontmatter
 
@@ -82,9 +82,9 @@ python -m scripts.package_skill <path/to/skill-folder>
 
 ## Related pages
 
-- [[skill-creator-meta-skill]]
-- [[skill-creation-workflow]]
-- [[modular-instruction-architecture]]
-- [[prompt-as-asset]]
-- [[mcp-vs-cli-skills]]
-- [[lost-in-the-middle-effect]]
+- [skill-creator-meta-skill](skill-creator-meta-skill.md)
+- [skill-creation-workflow](skill-creation-workflow.md)
+- [modular-instruction-architecture](modular-instruction-architecture.md)
+- [prompt-as-asset](prompt-as-asset.md)
+- [mcp-vs-cli-skills](mcp-vs-cli-skills.md)
+- [lost-in-the-middle-effect](lost-in-the-middle-effect.md)

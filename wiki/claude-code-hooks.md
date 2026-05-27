@@ -57,10 +57,10 @@ Les hooks sont des scripts shell qui s'exécutent automatiquement en réponse à
 
 ### Patterns recommandés
 
-- **`PreToolUse` sur Edit/Write** : suggérer un compact stratégique (voir [[strategic-compact]])
+- **`PreToolUse` sur Edit/Write** : suggérer un compact stratégique (voir [strategic-compact](strategic-compact.md))
 - **`PostToolUse`** : auto-format, lint, tests rapides
-- **`Stop`** : extraction d'apprentissage (voir [[continuous-learning-skill]])
-- **Triplet `PreCompact`/`SessionStart`/`Stop`** : persistance mémoire (voir [[memory-persistence-hooks]])
+- **`Stop`** : extraction d'apprentissage (voir [continuous-learning-skill](continuous-learning-skill.md))
+- **Triplet `PreCompact`/`SessionStart`/`Stop`** : persistance mémoire (voir [memory-persistence-hooks](memory-persistence-hooks.md))
 
 ### Règle de coût
 
@@ -68,7 +68,7 @@ Préférer les hooks de cycle de session aux hooks par-prompt — leur coût est
 
 ## Related pages
 
-- [[strategic-compact]]
-- [[memory-persistence-hooks]]
-- [[continuous-learning-skill]]
-- [[the-longform-guide-summary]]
+- [strategic-compact](strategic-compact.md)
+- [memory-persistence-hooks](memory-persistence-hooks.md)
+- [continuous-learning-skill](continuous-learning-skill.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

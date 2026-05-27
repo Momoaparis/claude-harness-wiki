@@ -42,7 +42,7 @@ Le dossier de sessions grandit avec le temps. Stratégies :
 
 ## Related pages
 
-- [[strategic-compact]]
-- [[memory-persistence-hooks]]
-- [[continuous-learning-skill]]
-- [[the-longform-guide-summary]]
+- [strategic-compact](strategic-compact.md)
+- [memory-persistence-hooks](memory-persistence-hooks.md)
+- [continuous-learning-skill](continuous-learning-skill.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

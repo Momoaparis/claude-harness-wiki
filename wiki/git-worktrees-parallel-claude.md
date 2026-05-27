@@ -66,7 +66,7 @@ Pattern utilisé pour comparer modèles ou configurations :
 [git diff + tests = benchmark]
 ```
 
-Voir [[subagent-architecture]] pour le benchmarking méthodique.
+Voir [subagent-architecture](subagent-architecture.md) pour le benchmarking méthodique.
 
 ### Précaution
 
@@ -74,8 +74,8 @@ Le multi-instance n'est utile que si les tâches sont **orthogonales** (peu de c
 
 ## Related pages
 
-- [[cascade-method]]
-- [[two-instance-kickoff]]
-- [[subagent-architecture]]
-- [[claude-code-commands]]
-- [[the-longform-guide-summary]]
+- [cascade-method](cascade-method.md)
+- [two-instance-kickoff](two-instance-kickoff.md)
+- [subagent-architecture](subagent-architecture.md)
+- [claude-code-commands](claude-code-commands.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

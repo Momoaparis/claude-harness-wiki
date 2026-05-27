@@ -123,15 +123,15 @@ Arrêter le serveur viewer : `kill $VIEWER_PID 2>/dev/null`.
 
 ### Lien avec les concepts d'évaluation généraux
 
-Ce workflow est une instanciation du [[eval-roadmap]] appliqué aux skills. Les [[grader-types]] (code-based, model-based, human) correspondent ici aux assertions automatiques + review humaine. La métrique [[pass-at-k-metric]] s'applique aux runs parallèles.
+Ce workflow est une instanciation du [eval-roadmap](eval-roadmap.md) appliqué aux skills. Les [grader-types](grader-types.md) (code-based, model-based, human) correspondent ici aux assertions automatiques + review humaine. La métrique [pass-at-k-metric](pass-at-k-metric.md) s'applique aux runs parallèles.
 
 ## Related pages
 
-- [[skill-creator-meta-skill]]
-- [[skill-creation-workflow]]
-- [[skill-description-optimization]]
-- [[eval-roadmap]]
-- [[grader-types]]
-- [[pass-at-k-metric]]
-- [[checkpoint-vs-continuous-evals]]
-- [[worker-checker-separation]]
+- [skill-creator-meta-skill](skill-creator-meta-skill.md)
+- [skill-creation-workflow](skill-creation-workflow.md)
+- [skill-description-optimization](skill-description-optimization.md)
+- [eval-roadmap](eval-roadmap.md)
+- [grader-types](grader-types.md)
+- [pass-at-k-metric](pass-at-k-metric.md)
+- [checkpoint-vs-continuous-evals](checkpoint-vs-continuous-evals.md)
+- [worker-checker-separation](worker-checker-separation.md)

@@ -24,7 +24,7 @@
 | Scope | `feature_list.json` + limites explicites |
 | Lifecycle | `init.sh`, `session-handoff.md` — bootstrap et passation |
 
-Cette taxonomie diffère de celle du cours ([[five-subsystem-harness-architecture]] : Instructions / Tools / Environment / State / Feedback) — le harness-creator opérationnalise le concept avec des composants concrets et validables.
+Cette taxonomie diffère de celle du cours ([five-subsystem-harness-architecture](five-subsystem-harness-architecture.md) : Instructions / Tools / Environment / State / Feedback) — le harness-creator opérationnalise le concept avec des composants concrets et validables.
 
 ### Installation
 
@@ -53,10 +53,10 @@ Les scripts utilisent uniquement des modules Node.js built-in (aucune dépendanc
 ### Templates générés
 
 - `AGENTS.md` / `CLAUDE.md` — scaffold d'instructions avec règles fonctionnelles
-- `feature_list.json` — JSON Schema + exemple de feature list (→ [[feature-list-as-primitive]])
-- `progress.md` — journal de session append-only (→ [[progress-file-pattern]])
-- `init.sh` — script d'initialisation standard (→ [[initialization-phase-separation]])
-- `session-handoff.md` — snapshot compact pour reprise (→ [[template-session-handoff-md]])
+- `feature_list.json` — JSON Schema + exemple de feature list (→ [feature-list-as-primitive](feature-list-as-primitive.md))
+- `progress.md` — journal de session append-only (→ [progress-file-pattern](progress-file-pattern.md))
+- `init.sh` — script d'initialisation standard (→ [initialization-phase-separation](initialization-phase-separation.md))
+- `session-handoff.md` — snapshot compact pour reprise (→ [template-session-handoff-md](template-session-handoff-md.md))
 
 ### Validation structurelle
 
@@ -78,15 +78,15 @@ Les scripts utilisent uniquement des modules Node.js built-in (aucune dépendanc
 
 ### Développement du skill
 
-`harness-creator` a été développé avec la méthodologie [[skill-creator-meta-skill]] (draft → test → eval → iterate), ce qui en fait un exemple concret d'application du meta-skill.
+`harness-creator` a été développé avec la méthodologie [skill-creator-meta-skill](skill-creator-meta-skill.md) (draft → test → eval → iterate), ce qui en fait un exemple concret d'application du meta-skill.
 
 ## Related pages
 
-- [[harness-creator-et-skill-creator-summary]]
-- [[skill-creator-meta-skill]]
-- [[five-subsystem-harness-architecture]]
-- [[feature-list-as-primitive]]
-- [[progress-file-pattern]]
-- [[initialization-phase-separation]]
-- [[template-session-handoff-md]]
-- [[session-clean-handoff]]
+- [harness-creator-et-skill-creator-summary](harness-creator-et-skill-creator-summary.md)
+- [skill-creator-meta-skill](skill-creator-meta-skill.md)
+- [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [progress-file-pattern](progress-file-pattern.md)
+- [initialization-phase-separation](initialization-phase-separation.md)
+- [template-session-handoff-md](template-session-handoff-md.md)
+- [session-clean-handoff](session-clean-handoff.md)

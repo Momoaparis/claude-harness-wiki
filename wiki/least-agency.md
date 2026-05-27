@@ -12,7 +12,7 @@
 
 > Beaucoup de gens pensent que la safety boundary est le system prompt. **C'est faux.**
 
-Le system prompt est un input parmi d'autres pour le modèle. Il est ignorable, contournable, écrasable par n'importe quel autre input avec assez de poids (cf. [[prompt-injection-sanitization]]). La vraie frontière est la **politique d'autorisation** qui s'interpose entre la décision du modèle et l'exécution.
+Le system prompt est un input parmi d'autres pour le modèle. Il est ignorable, contournable, écrasable par n'importe quel autre input avec assez de poids (cf. [prompt-injection-sanitization](prompt-injection-sanitization.md)). La vraie frontière est la **politique d'autorisation** qui s'interpose entre la décision du modèle et l'exécution.
 
 ## Le template GitHub Coding Agent
 
@@ -46,12 +46,12 @@ Le vocabulaire « least privilege » d'OWASP se focalise sur les permissions tec
 
 ## Anti-pattern
 
-`claude --dangerously-skip-permissions` sur un loop. Comme noté dans [[agent-kill-switches]], c'est aussi le moment où le mécanisme d'arrêt cesse de fonctionner.
+`claude --dangerously-skip-permissions` sur un loop. Comme noté dans [agent-kill-switches](agent-kill-switches.md), c'est aussi le moment où le mécanisme d'arrêt cesse de fonctionner.
 
 ## Related pages
 
-- [[lethal-trifecta]]
-- [[agent-sandboxing]]
-- [[agent-observability]]
-- [[agent-kill-switches]]
-- [[the-agentic-security-summary]]
+- [lethal-trifecta](lethal-trifecta.md)
+- [agent-sandboxing](agent-sandboxing.md)
+- [agent-observability](agent-observability.md)
+- [agent-kill-switches](agent-kill-switches.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

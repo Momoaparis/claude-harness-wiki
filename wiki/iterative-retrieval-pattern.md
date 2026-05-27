@@ -12,7 +12,7 @@
 
 ### Vue d'ensemble
 
-Le pattern résout le [[sub-agent-context-problem]] : au lieu d'accepter aveuglément le premier résumé du sub-agent, l'orchestrateur le challenge et fait du retrieval itératif.
+Le pattern résout le [sub-agent-context-problem](sub-agent-context-problem.md) : au lieu d'accepter aveuglément le premier résumé du sub-agent, l'orchestrateur le challenge et fait du retrieval itératif.
 
 ### Le diagramme
 
@@ -43,7 +43,7 @@ Le pattern résout le [[sub-agent-context-problem]] : au lieu d'accepter aveugl�
 
 ### Les règles
 
-1. **Dispatch avec query + objective** : voir [[sub-agent-context-problem]]
+1. **Dispatch avec query + objective** : voir [sub-agent-context-problem](sub-agent-context-problem.md)
 2. **Évaluer chaque retour** : le résumé répond-il à l'objectif ?
 3. **Re-dispatcher si insuffisant** : avec follow-up précis
 4. **Cap à 3 cycles** : pour éviter les boucles infinies
@@ -78,7 +78,7 @@ Accepter le premier résumé sans le challenger. C'est la cause principale des "
 
 ## Related pages
 
-- [[sub-agent-context-problem]]
-- [[subagent-architecture]]
-- [[agent-abstraction-tierlist]]
-- [[the-longform-guide-summary]]
+- [sub-agent-context-problem](sub-agent-context-problem.md)
+- [subagent-architecture](subagent-architecture.md)
+- [agent-abstraction-tierlist](agent-abstraction-tierlist.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

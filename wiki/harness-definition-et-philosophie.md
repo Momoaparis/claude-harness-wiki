@@ -38,7 +38,7 @@ Conséquence : l'investissement dans la harness a un meilleur ROI que l'investis
 
 ### Pourquoi c'est une discipline d'ingénierie
 
-La harness se décompose en [[five-subsystem-harness-architecture|5 subsystèmes]] aux responsabilités distinctes. Chaque subsystème est testable (via [[ablation-study-methodology|ablation]]) et peut [[harness-rot-et-dette-technique|pourrir]] s'il n'est pas maintenu.
+La harness se décompose en [5 subsystèmes](five-subsystem-harness-architecture.md) aux responsabilités distinctes. Chaque subsystème est testable (via [ablation](ablation-study-methodology.md)) et peut [pourrir](harness-rot-et-dette-technique.md) s'il n'est pas maintenu.
 
 Les deux écoles (OpenAI et Anthropic) convergent sur le même message :
 
@@ -58,7 +58,7 @@ Une harness incomplète laisse au moins un des deux gulfs ouvert.
 
 ### Lien avec ECC et l'écosystème
 
-[[ecc-overview]] est un bundle qui opérationnalise ces concepts en composants installables (skills, hooks, rules). Le curriculum Learn Harness Engineering donne la **théorie sous-jacente** ; ECC fournit une **implémentation** packagée. Voir aussi [[the-longform-guide-summary]] pour les techniques avancées Claude Code.
+[ecc-overview](ecc-overview.md) est un bundle qui opérationnalise ces concepts en composants installables (skills, hooks, rules). Le curriculum Learn Harness Engineering donne la **théorie sous-jacente** ; ECC fournit une **implémentation** packagée. Voir aussi [the-longform-guide-summary](the-longform-guide-summary.md) pour les techniques avancées Claude Code.
 
 ### À retenir
 
@@ -69,8 +69,8 @@ Une harness incomplète laisse au moins un des deux gulfs ouvert.
 
 ## Related pages
 
-- [[five-subsystem-harness-architecture]]
-- [[five-failure-modes-agents-en-prod]]
-- [[harness-rot-et-dette-technique]]
-- [[the-harness-engineering-curriculum-summary]]
-- [[ecc-overview]]
+- [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)
+- [five-failure-modes-agents-en-prod](five-failure-modes-agents-en-prod.md)
+- [harness-rot-et-dette-technique](harness-rot-et-dette-technique.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)
+- [ecc-overview](ecc-overview.md)

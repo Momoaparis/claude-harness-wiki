@@ -28,7 +28,7 @@ Comparaison :
 | Approche textuelle | Approche mécanique |
 |--------------------|---------------------|
 | `AGENTS.md` : "Don't import `fs` in renderer code" | Linter custom : `grep -r "require('fs')" src/renderer/ && exit 1` |
-| Risque : l'agent ignore la règle ([[lost-in-the-middle-effect]]) | Garantie : le build échoue immédiatement |
+| Risque : l'agent ignore la règle ([lost-in-the-middle-effect](lost-in-the-middle-effect.md)) | Garantie : le build échoue immédiatement |
 | Mise à jour : modifier la doc | Mise à jour : modifier le script |
 | Traçabilité : Aucune ("est-ce que l'agent a lu ?") | Traçabilité : exit code, log |
 
@@ -149,11 +149,11 @@ Quand un check échoue, le message **doit être actionable** :
   Reference: docs/architecture/electron-ipc.md
 ```
 
-Format **What / Why / Fix / Reference**. Voir [[end-to-end-verification-only|agent-oriented error messages]].
+Format **What / Why / Fix / Reference**. Voir [agent-oriented error messages](end-to-end-verification-only.md).
 
 ### Lien avec instruction design patterns
 
-C'est l'application directe de "constrain, don't micromanage" (voir [[instruction-design-patterns]]). Plutôt qu'accumuler des règles textuelles ([[modular-instruction-architecture|instruction bloat]]), encoder les invariants en checks.
+C'est l'application directe de "constrain, don't micromanage" (voir [instruction-design-patterns](instruction-design-patterns.md)). Plutôt qu'accumuler des règles textuelles ([instruction bloat](modular-instruction-architecture.md)), encoder les invariants en checks.
 
 ### Coût de mise en place
 
@@ -198,7 +198,7 @@ grep -r ": any" src/ --include="*.ts" && {
 
 > "For agent-generated codebases, architectural constraints must be established as early prerequisites on day one." — OpenAI
 
-Justification : les agents **copient** les patterns existants ([[harness-rot-et-dette-technique|coffee cup effect]]). Si un pattern non-désiré apparaît une fois, il se reproduit. Donc encoder les boundaries dès le jour 1.
+Justification : les agents **copient** les patterns existants ([coffee cup effect](harness-rot-et-dette-technique.md)). Si un pattern non-désiré apparaît une fois, il se reproduit. Donc encoder les boundaries dès le jour 1.
 
 ### À retenir
 
@@ -210,9 +210,9 @@ Justification : les agents **copient** les patterns existants ([[harness-rot-et-
 
 ## Related pages
 
-- [[end-to-end-verification-only]]
-- [[instruction-design-patterns]]
-- [[modular-instruction-architecture]]
-- [[claude-code-hooks]]
-- [[harness-rot-et-dette-technique]]
-- [[the-harness-engineering-curriculum-summary]]
+- [end-to-end-verification-only](end-to-end-verification-only.md)
+- [instruction-design-patterns](instruction-design-patterns.md)
+- [modular-instruction-architecture](modular-instruction-architecture.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [harness-rot-et-dette-technique](harness-rot-et-dette-technique.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

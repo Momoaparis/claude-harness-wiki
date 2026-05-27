@@ -47,12 +47,12 @@ Résultat : benchmark numérique cases passés/échoués par modèle.
 
 ### Lien avec l'orchestration
 
-L'orchestrateur (Sonnet ou Opus) dispatche aux sub-agents (Haiku pour repétitif, Sonnet pour standard, Opus pour critique). Voir [[iterative-retrieval-pattern]] et [[model-selection-claude]].
+L'orchestrateur (Sonnet ou Opus) dispatche aux sub-agents (Haiku pour repétitif, Sonnet pour standard, Opus pour critique). Voir [iterative-retrieval-pattern](iterative-retrieval-pattern.md) et [model-selection-claude](model-selection-claude.md).
 
 ## Related pages
 
-- [[model-selection-claude]]
-- [[sub-agent-context-problem]]
-- [[iterative-retrieval-pattern]]
-- [[agent-abstraction-tierlist]]
-- [[the-longform-guide-summary]]
+- [model-selection-claude](model-selection-claude.md)
+- [sub-agent-context-problem](sub-agent-context-problem.md)
+- [iterative-retrieval-pattern](iterative-retrieval-pattern.md)
+- [agent-abstraction-tierlist](agent-abstraction-tierlist.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

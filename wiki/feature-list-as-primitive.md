@@ -27,7 +27,7 @@ Chaque entrée de la feature list contient **trois éléments** :
 
 1. **Behavior** — description du comportement attendu (1 phrase)
 2. **Verification** — commande exécutable qui prouve que ça marche
-3. **State** — `not_started` / `active` / `blocked` / `passing` (voir [[feature-state-machine]])
+3. **State** — `not_started` / `active` / `blocked` / `passing` (voir [feature-state-machine](feature-state-machine.md))
 
 Sans un des trois → l'item n'est pas utilisable par la harness.
 
@@ -48,7 +48,7 @@ Les trois deviennent **inutilisables** sans feature list à jour. C'est précis�
 
 ### Le format minimal
 
-JSON pour usage machine, Markdown pour humains. Voir [[template-feature-list-json]] pour le format complet :
+JSON pour usage machine, Markdown pour humains. Voir [template-feature-list-json](template-feature-list-json.md) pour le format complet :
 
 ```json
 {
@@ -83,8 +83,8 @@ La feature list est **la** source pour répondre à "que reste-t-il à faire ?".
 | Question | Source | Notes |
 |----------|--------|-------|
 | Que doit faire le projet ? | `feature_list.json` | Le **quoi** |
-| Pourquoi telle décision ? | `DECISIONS.md` ([[decision-log-pattern]]) | Le **pourquoi** |
-| Où en est-on ? | `PROGRESS.md` ([[progress-file-pattern]]) | Le **état session** |
+| Pourquoi telle décision ? | `DECISIONS.md` ([decision-log-pattern](decision-log-pattern.md)) | Le **pourquoi** |
+| Où en est-on ? | `PROGRESS.md` ([progress-file-pattern](progress-file-pattern.md)) | Le **état session** |
 | Quelles features passent ? | `feature_list.json` | Le **état tâche** |
 
 ### Granularité calibrée
@@ -94,7 +94,7 @@ La feature list est **la** source pour répondre à "que reste-t-il à faire ?".
 Une feature trop large → jamais finie.
 Une feature trop étroite → overhead de gestion supérieur à la valeur.
 
-Pour calibrer, voir [[atomic-task-decomposition]].
+Pour calibrer, voir [atomic-task-decomposition](atomic-task-decomposition.md).
 
 ### Cas réel : 10-feature e-commerce (Lecture 08)
 
@@ -127,7 +127,7 @@ Sans feature list structurée, à chaque fin de session :
 - L'agent invente (drift) si l'humain n'est pas là
 - Conflits possibles entre ce que l'agent croit fini et la réalité
 
-Feature list = **information continuity** entre sessions. Voir aussi [[cross-session-context-loss]].
+Feature list = **information continuity** entre sessions. Voir aussi [cross-session-context-loss](cross-session-context-loss.md).
 
 ### Antipatterns
 
@@ -138,7 +138,7 @@ Feature list = **information continuity** entre sessions. Voir aussi [[cross-ses
 
 ### Lien avec WIP=1
 
-[[wip-limit-discipline|WIP=1]] s'enforce **via** la feature list : un seul item avec state `active`. La feature list rend cette discipline mécaniquement vérifiable.
+[WIP=1](wip-limit-discipline.md) s'enforce **via** la feature list : un seul item avec state `active`. La feature list rend cette discipline mécaniquement vérifiable.
 
 ### À retenir
 
@@ -150,10 +150,10 @@ Feature list = **information continuity** entre sessions. Voir aussi [[cross-ses
 
 ## Related pages
 
-- [[feature-state-machine]]
-- [[harness-pipeline-scheduler-verifier-handoff]]
-- [[completion-evidence-executable]]
-- [[template-feature-list-json]]
-- [[atomic-task-decomposition]]
-- [[wip-limit-discipline]]
-- [[the-harness-engineering-curriculum-summary]]
+- [feature-state-machine](feature-state-machine.md)
+- [harness-pipeline-scheduler-verifier-handoff](harness-pipeline-scheduler-verifier-handoff.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [template-feature-list-json](template-feature-list-json.md)
+- [atomic-task-decomposition](atomic-task-decomposition.md)
+- [wip-limit-discipline](wip-limit-discipline.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

@@ -1,6 +1,6 @@
 # Continuous Learning v2 (instinct-based)
 
-**Summary** : Évolution du [[continuous-learning-skill|système v1]] (Stop-hook learned-skill). v2 introduit la notion d'**instincts** : patterns appris avec score de confidence, importables, exportables, et clusterables en skills via `/evolve`.
+**Summary** : Évolution du [système v1](continuous-learning-skill.md) (Stop-hook learned-skill). v2 introduit la notion d'**instincts** : patterns appris avec score de confidence, importables, exportables, et clusterables en skills via `/evolve`.
 
 **Sources** : `raw/ingested/affaan-m-ecc-readme-part*.md`
 
@@ -10,7 +10,7 @@
 
 ## Différence avec v1
 
-v1 ([[continuous-learning-skill]]) écoutait le hook `Stop` pour extraire les patterns d'une session en fin de session.
+v1 ([continuous-learning-skill](continuous-learning-skill.md)) écoutait le hook `Stop` pour extraire les patterns d'une session en fin de session.
 
 v2 introduit un modèle plus riche :
 
@@ -34,10 +34,10 @@ v2 introduit un modèle plus riche :
 
 Les instincts sont **persistés** entre sessions — ils sont donc soumis aux mêmes risques que tout autre canal de mémoire long-terme :
 
-- [[agent-memory-hygiene|AI Recommendation Poisoning]] : un instinct injecté via une session compromise peut influencer toutes les sessions futures.
-- L'import d'instincts tiers (`/instinct-import`) est un acte de supply chain — voir [[toxicskills-study]].
+- [AI Recommendation Poisoning](agent-memory-hygiene.md) : un instinct injecté via une session compromise peut influencer toutes les sessions futures.
+- L'import d'instincts tiers (`/instinct-import`) est un acte de supply chain — voir [toxicskills-study](toxicskills-study.md).
 
-Recommandation : reset des instincts après tout run non fiable, et scanner les fichiers d'import via [[agentshield]] avant `/instinct-import`.
+Recommandation : reset des instincts après tout run non fiable, et scanner les fichiers d'import via [agentshield](agentshield.md) avant `/instinct-import`.
 
 ### Pas un remplacement systématique de v1
 
@@ -49,14 +49,14 @@ v1 et v2 cohabitent — choisir selon le besoin.
 
 ## Lien avec le reste du wiki
 
-- [[continuous-learning-skill]] — v1, parent.
-- [[agent-memory-hygiene]] — risques mémoire long-terme.
-- [[toxicskills-study]] — supply chain des artefacts partagés.
-- [[ecc-overview]] — écosystème global.
+- [continuous-learning-skill](continuous-learning-skill.md) — v1, parent.
+- [agent-memory-hygiene](agent-memory-hygiene.md) — risques mémoire long-terme.
+- [toxicskills-study](toxicskills-study.md) — supply chain des artefacts partagés.
+- [ecc-overview](ecc-overview.md) — écosystème global.
 
 ## Related pages
 
-- [[continuous-learning-skill]]
-- [[agent-memory-hygiene]]
-- [[toxicskills-study]]
-- [[ecc-overview]]
+- [continuous-learning-skill](continuous-learning-skill.md)
+- [agent-memory-hygiene](agent-memory-hygiene.md)
+- [toxicskills-study](toxicskills-study.md)
+- [ecc-overview](ecc-overview.md)

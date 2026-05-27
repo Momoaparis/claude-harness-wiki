@@ -45,11 +45,11 @@ OpenAI : "The repo IS the spec." Pas "le repo *contient* la spec". L'agent doit 
 
 | Type d'info | Où | Pourquoi |
 |-------------|---|----------|
-| Overview projet | `AGENTS.md` / `CLAUDE.md` (root) | Landing page, voir [[template-claude-md]] |
+| Overview projet | `AGENTS.md` / `CLAUDE.md` (root) | Landing page, voir [template-claude-md](template-claude-md.md) |
 | Décisions d'architecture | `docs/architecture/` ou `ARCHITECTURE.md` per module | Proximité = découvrabilité |
 | Contraintes hard | `docs/CONSTRAINTS.md` ou inline dans modules | Doit pouvoir être ignoré difficilement |
-| Décisions passées | `DECISIONS.md` (append-only) | Voir [[decision-log-pattern]] |
-| État courant | `PROGRESS.md` / `claude-progress.md` | Voir [[progress-file-pattern]] |
+| Décisions passées | `DECISIONS.md` (append-only) | Voir [decision-log-pattern](decision-log-pattern.md) |
+| État courant | `PROGRESS.md` / `claude-progress.md` | Voir [progress-file-pattern](progress-file-pattern.md) |
 | Commandes standards | `Makefile` ou scripts/ | "How to run", reproductible |
 
 ### Le pattern "knowledge next to code"
@@ -85,11 +85,11 @@ Concrètement :
 - **Confluence comme source primaire** → agent ne peut pas accéder, drift inévitable
 - **Slack pour décisions** → introuvable, agent ne sait pas que ça existe
 - **Comments sparses** → "knowledge in heads" reste invisible
-- **Giant root README** → l'agent doit lire 600 lignes pour trouver l'info pertinente (voir [[modular-instruction-architecture]])
+- **Giant root README** → l'agent doit lire 600 lignes pour trouver l'info pertinente (voir [modular-instruction-architecture](modular-instruction-architecture.md))
 
 ### Comment tester si le repo est suffisant
 
-[[fresh-session-readability-test]] : 5 questions à poser à une session fresh. Si la session ne peut pas répondre à partir du repo seul → le repo est incomplet.
+[fresh-session-readability-test](fresh-session-readability-test.md) : 5 questions à poser à une session fresh. Si la session ne peut pas répondre à partir du repo seul → le repo est incomplet.
 
 ### Minimum viable repo
 
@@ -103,13 +103,13 @@ Concrètement :
 2. "Knowledge next to code" — proximité bat exhaustivité.
 3. Le repo joue deux rôles : spec (intention) et state (où on en est).
 4. Pas de doc obsolète : pire que pas de doc.
-5. Tester via [[fresh-session-readability-test|fresh session test]].
+5. Tester via [fresh session test](fresh-session-readability-test.md).
 
 ## Related pages
 
-- [[fresh-session-readability-test]]
-- [[acid-principles-agent-state]]
-- [[modular-instruction-architecture]]
-- [[progress-file-pattern]]
-- [[decision-log-pattern]]
-- [[the-harness-engineering-curriculum-summary]]
+- [fresh-session-readability-test](fresh-session-readability-test.md)
+- [acid-principles-agent-state](acid-principles-agent-state.md)
+- [modular-instruction-architecture](modular-instruction-architecture.md)
+- [progress-file-pattern](progress-file-pattern.md)
+- [decision-log-pattern](decision-log-pattern.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

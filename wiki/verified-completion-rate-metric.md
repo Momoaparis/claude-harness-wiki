@@ -96,7 +96,7 @@ fi
 
 ### Lien avec evidence executable
 
-VCR n'a de valeur que si la transition `active → passing` est **gardée par une evidence executable** (voir [[completion-evidence-executable]]). Sinon l'agent peut auto-marquer `passing` et VCR=1.0 est faux.
+VCR n'a de valeur que si la transition `active → passing` est **gardée par une evidence executable** (voir [completion-evidence-executable](completion-evidence-executable.md)). Sinon l'agent peut auto-marquer `passing` et VCR=1.0 est faux.
 
 ### Tracking dans le temps
 
@@ -139,7 +139,7 @@ Solution : refuser de calculer VCR si `evidence` est null, et logger l'incident.
 
 #### Le "stagnant"
 
-VCR reste à 0.0 longtemps → personne ne ferme rien. Probablement parce que les tâches sont trop grosses ([[atomic-task-decomposition]] manquant).
+VCR reste à 0.0 longtemps → personne ne ferme rien. Probablement parce que les tâches sont trop grosses ([atomic-task-decomposition](atomic-task-decomposition.md) manquant).
 
 ### Quel VCR cible ?
 
@@ -157,9 +157,9 @@ VCR reste à 0.0 longtemps → personne ne ferme rien. Probablement parce que le
 
 ## Related pages
 
-- [[wip-limit-discipline]]
-- [[completion-evidence-executable]]
-- [[atomic-task-decomposition]]
-- [[feature-state-machine]]
-- [[feature-list-as-primitive]]
-- [[the-harness-engineering-curriculum-summary]]
+- [wip-limit-discipline](wip-limit-discipline.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [atomic-task-decomposition](atomic-task-decomposition.md)
+- [feature-state-machine](feature-state-machine.md)
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

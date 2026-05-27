@@ -84,13 +84,13 @@ Prendre `best_description` du JSON output et mettre à jour le frontmatter du `S
 
 ### Parallèle avec l'évaluation générale
 
-Cette optimisation est une forme spécialisée d'[[eval-roadmap]] appliquée non pas aux *outputs* du skill mais à sa *condition de déclenchement*. Le split train/test évite le même problème d'overfitting que dans les ML classiques.
+Cette optimisation est une forme spécialisée d'[eval-roadmap](eval-roadmap.md) appliquée non pas aux *outputs* du skill mais à sa *condition de déclenchement*. Le split train/test évite le même problème d'overfitting que dans les ML classiques.
 
 ## Related pages
 
-- [[skill-creator-meta-skill]]
-- [[skill-anatomy]]
-- [[skill-eval-workflow]]
-- [[skill-creation-workflow]]
-- [[eval-roadmap]]
-- [[confidence-calibration-bias]]
+- [skill-creator-meta-skill](skill-creator-meta-skill.md)
+- [skill-anatomy](skill-anatomy.md)
+- [skill-eval-workflow](skill-eval-workflow.md)
+- [skill-creation-workflow](skill-creation-workflow.md)
+- [eval-roadmap](eval-roadmap.md)
+- [confidence-calibration-bias](confidence-calibration-bias.md)

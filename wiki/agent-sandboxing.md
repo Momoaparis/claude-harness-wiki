@@ -14,7 +14,7 @@ Root access est dangereux. Accès large au filesystem local est dangereux. Crede
 
 > If the agent gets compromised, the blast radius needs to be small.
 
-C'est la mise en œuvre concrète du [[least-agency|principe de moindre agence]] au niveau infrastructure.
+C'est la mise en œuvre concrète du [principe de moindre agence](least-agency.md) au niveau infrastructure.
 
 ## Docker Compose avec réseau interne
 
@@ -38,7 +38,7 @@ networks:
     internal: true
 ```
 
-`internal: true` est la pièce critique. Sans route vers l'extérieur, un agent compromis ne peut pas « phoner home » — ce qui casse le 3ᵉ pilier du [[lethal-trifecta]].
+`internal: true` est la pièce critique. Sans route vers l'extérieur, un agent compromis ne peut pas « phoner home » — ce qui casse le 3ᵉ pilier du [lethal-trifecta](lethal-trifecta.md).
 
 ## Container ponctuel pour repo review
 
@@ -86,8 +86,8 @@ Tout le monde admet désormais que l'isolation est la défense baseline, pas une
 
 ## Related pages
 
-- [[lethal-trifecta]]
-- [[least-agency]]
-- [[agent-identity-separation]]
-- [[claude-code-cves-2026]]
-- [[the-agentic-security-summary]]
+- [lethal-trifecta](lethal-trifecta.md)
+- [least-agency](least-agency.md)
+- [agent-identity-separation](agent-identity-separation.md)
+- [claude-code-cves-2026](claude-code-cves-2026.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

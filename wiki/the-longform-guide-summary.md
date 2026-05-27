@@ -20,7 +20,7 @@
 
 ### Positionnement
 
-Ce guide est la **suite avancée** du Shorthand Guide (sep 2025, [[the-shorthand-guide-summary]]). Il assume que tu as déjà :
+Ce guide est la **suite avancée** du Shorthand Guide (sep 2025, [the-shorthand-guide-summary](the-shorthand-guide-summary.md)). Il assume que tu as déjà :
 - Skills configurés
 - Agents configurés
 - Hooks configurés
@@ -30,53 +30,53 @@ Il couvre les **techniques qui séparent les sessions productives des sessions g
 
 ### Les 8 thèmes du guide
 
-1. **[[session-storage-pattern|Context & Memory Management]]** — Persister le contexte entre sessions
-2. **[[continuous-learning-skill|Continuous Learning / Memory]]** — Auto-extraire les apprentissages
-3. **[[subagent-architecture|Token Optimization]]** — Réduire le coût en tokens
-4. **[[checkpoint-vs-continuous-evals|Verification Loops and Evals]]** — Valider le travail
-5. **[[git-worktrees-parallel-claude|Parallelization]]** — Plusieurs instances en parallèle
-6. **[[two-instance-kickoff|Groundwork]]** — Démarrer un projet correctement
-7. **[[sub-agent-context-problem|Best Practices for Agents]]** — Orchestration et sub-agents
-8. **[[mcp-vs-cli-skills|Tips and Tricks]]** — MCPs et alternatives
+1. **[Context & Memory Management](session-storage-pattern.md)** — Persister le contexte entre sessions
+2. **[Continuous Learning / Memory](continuous-learning-skill.md)** — Auto-extraire les apprentissages
+3. **[Token Optimization](subagent-architecture.md)** — Réduire le coût en tokens
+4. **[Verification Loops and Evals](checkpoint-vs-continuous-evals.md)** — Valider le travail
+5. **[Parallelization](git-worktrees-parallel-claude.md)** — Plusieurs instances en parallèle
+6. **[Groundwork](two-instance-kickoff.md)** — Démarrer un projet correctement
+7. **[Best Practices for Agents](sub-agent-context-problem.md)** — Orchestration et sub-agents
+8. **[Tips and Tricks](mcp-vs-cli-skills.md)** — MCPs et alternatives
 
 ### Concepts extraits dans le wiki
 
 #### Gestion mémoire & contexte
-- [[session-storage-pattern]]
-- [[strategic-compact]]
-- [[dynamic-system-prompt-injection]]
-- [[memory-persistence-hooks]]
-- [[continuous-learning-skill]]
+- [session-storage-pattern](session-storage-pattern.md)
+- [strategic-compact](strategic-compact.md)
+- [dynamic-system-prompt-injection](dynamic-system-prompt-injection.md)
+- [memory-persistence-hooks](memory-persistence-hooks.md)
+- [continuous-learning-skill](continuous-learning-skill.md)
 
 #### Hooks
-- [[claude-code-hooks]]
+- [claude-code-hooks](claude-code-hooks.md)
 
 #### Optimisation tokens
-- [[subagent-architecture]]
-- [[model-selection-claude]]
-- [[mgrep-vs-grep]]
-- [[modular-codebase-tokens]]
-- [[background-processes-tmux]]
+- [subagent-architecture](subagent-architecture.md)
+- [model-selection-claude](model-selection-claude.md)
+- [mgrep-vs-grep](mgrep-vs-grep.md)
+- [modular-codebase-tokens](modular-codebase-tokens.md)
+- [background-processes-tmux](background-processes-tmux.md)
 
 #### Évaluations
-- [[checkpoint-vs-continuous-evals]]
-- [[grader-types]]
-- [[pass-at-k-metric]]
-- [[eval-roadmap]]
+- [checkpoint-vs-continuous-evals](checkpoint-vs-continuous-evals.md)
+- [grader-types](grader-types.md)
+- [pass-at-k-metric](pass-at-k-metric.md)
+- [eval-roadmap](eval-roadmap.md)
 
 #### Parallélisation
-- [[git-worktrees-parallel-claude]]
-- [[cascade-method]]
-- [[two-instance-kickoff]]
+- [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)
+- [cascade-method](cascade-method.md)
+- [two-instance-kickoff](two-instance-kickoff.md)
 
 #### Agents & orchestration
-- [[sub-agent-context-problem]]
-- [[iterative-retrieval-pattern]]
-- [[agent-abstraction-tierlist]]
+- [sub-agent-context-problem](sub-agent-context-problem.md)
+- [iterative-retrieval-pattern](iterative-retrieval-pattern.md)
+- [agent-abstraction-tierlist](agent-abstraction-tierlist.md)
 
 #### MCPs & tips
-- [[mcp-vs-cli-skills]]
-- [[llms-txt-pattern]]
+- [mcp-vs-cli-skills](mcp-vs-cli-skills.md)
+- [llms-txt-pattern](llms-txt-pattern.md)
 
 ### Citations et personnes
 
@@ -108,4 +108,4 @@ Il couvre les **techniques qui séparent les sessions productives des sessions g
 
 ## Related pages
 
-Voir l'index complet : [[index]]
+Voir l'index complet : [index](index.md)

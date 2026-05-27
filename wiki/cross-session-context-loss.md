@@ -83,10 +83,10 @@ Pour une équipe qui démarre 5 sessions / jour → économie de **1h+ / jour / 
 
 Le minimum vital pour qu'une session N+1 reprenne sans interroger un humain :
 
-1. **`PROGRESS.md`** ou **`claude-progress.md`** — voir [[progress-file-pattern]]
-2. **`DECISIONS.md`** — voir [[decision-log-pattern]]
-3. **Git commits** — granulaires, messages explicatifs (voir [[acid-principles-agent-state]])
-4. **`session-handoff.md`** — note compacte de transition (voir [[template-session-handoff-md]])
+1. **`PROGRESS.md`** ou **`claude-progress.md`** — voir [progress-file-pattern](progress-file-pattern.md)
+2. **`DECISIONS.md`** — voir [decision-log-pattern](decision-log-pattern.md)
+3. **Git commits** — granulaires, messages explicatifs (voir [acid-principles-agent-state](acid-principles-agent-state.md))
+4. **`session-handoff.md`** — note compacte de transition (voir [template-session-handoff-md](template-session-handoff-md.md))
 
 ### Le handoff protocol
 
@@ -104,15 +104,15 @@ Discipline "clock-in / clock-out" :
 - Update `PROGRESS.md`
 - Append à `DECISIONS.md` si nouvelles décisions
 - Commit tout
-- Verifier que l'état est clean ([[session-clean-handoff]])
+- Verifier que l'état est clean ([session-clean-handoff](session-clean-handoff.md))
 
 ### Lien avec la context anxiety
 
-L'agent qui sent le contexte se remplir [[context-anxiety-modeles|panique]] et termine vite mal — il saute la mise à jour des artefacts. Solution : déclencher le "clock-out" **avant** la zone d'anxiety, pas au dernier moment.
+L'agent qui sent le contexte se remplir [panique](context-anxiety-modeles.md) et termine vite mal — il saute la mise à jour des artefacts. Solution : déclencher le "clock-out" **avant** la zone d'anxiety, pas au dernier moment.
 
 ### Compaction vs reset
 
-[[compaction-vs-reset-strategie|Compaction]] (résumer dans la même session) garde la "psychologie" de l'agent mais perd les "pourquoi". Reset (nouvelle session) part propre mais demande des artefacts complets. Le choix dépend du modèle (Sonnet 4.5 vs Opus 4.6) et de la nature de la tâche.
+[Compaction](compaction-vs-reset-strategie.md) (résumer dans la même session) garde la "psychologie" de l'agent mais perd les "pourquoi". Reset (nouvelle session) part propre mais demande des artefacts complets. Le choix dépend du modèle (Sonnet 4.5 vs Opus 4.6) et de la nature de la tâche.
 
 ### Cas réel (Lecture 05)
 
@@ -131,10 +131,10 @@ L'agent qui sent le contexte se remplir [[context-anxiety-modeles|panique]] et t
 
 ## Related pages
 
-- [[progress-file-pattern]]
-- [[decision-log-pattern]]
-- [[compaction-vs-reset-strategie]]
-- [[context-anxiety-modeles]]
-- [[session-clean-handoff]]
-- [[acid-principles-agent-state]]
-- [[the-harness-engineering-curriculum-summary]]
+- [progress-file-pattern](progress-file-pattern.md)
+- [decision-log-pattern](decision-log-pattern.md)
+- [compaction-vs-reset-strategie](compaction-vs-reset-strategie.md)
+- [context-anxiety-modeles](context-anxiety-modeles.md)
+- [session-clean-handoff](session-clean-handoff.md)
+- [acid-principles-agent-state](acid-principles-agent-state.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

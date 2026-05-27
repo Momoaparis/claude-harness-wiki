@@ -49,7 +49,7 @@ Clarifier les edge cases, exemples, dépendances, critères de succès **avant**
 
 ### Étape 3 — Rédaction SKILL.md
 
-Rédiger le `SKILL.md` avec frontmatter complet (→ [[skill-anatomy]]). La description doit inclure les contextes de déclenchement ET être "légèrement pushy" pour compenser la tendance à l'undertriggering de Claude.
+Rédiger le `SKILL.md` avec frontmatter complet (→ [skill-anatomy](skill-anatomy.md)). La description doit inclure les contextes de déclenchement ET être "légèrement pushy" pour compenser la tendance à l'undertriggering de Claude.
 
 Relire avec des yeux frais après rédaction initiale — améliorer avant de tester.
 
@@ -69,7 +69,7 @@ skill-workspace/
     └── eval_metadata.json
 ```
 
-→ Voir [[skill-eval-workflow]] pour le détail complet.
+→ Voir [skill-eval-workflow](skill-eval-workflow.md) pour le détail complet.
 
 ### Étape 5 — Évaluation
 
@@ -100,10 +100,10 @@ Le skill sera utilisé des millions de fois sur des prompts variés. L'itératio
 
 ## Related pages
 
-- [[skill-creator-meta-skill]]
-- [[skill-anatomy]]
-- [[skill-eval-workflow]]
-- [[skill-description-optimization]]
-- [[eval-roadmap]]
-- [[pass-at-k-metric]]
-- [[checkpoint-vs-continuous-evals]]
+- [skill-creator-meta-skill](skill-creator-meta-skill.md)
+- [skill-anatomy](skill-anatomy.md)
+- [skill-eval-workflow](skill-eval-workflow.md)
+- [skill-description-optimization](skill-description-optimization.md)
+- [eval-roadmap](eval-roadmap.md)
+- [pass-at-k-metric](pass-at-k-metric.md)
+- [checkpoint-vs-continuous-evals](checkpoint-vs-continuous-evals.md)

@@ -41,7 +41,7 @@ Conclusion: bug confirmé, agent ne savait pas, evaluator l'a détecté → re-i
 
 ### Runtime observability
 
-Voir [[agent-observability]] (page existante du wiki) pour le socle. Le curriculum **étend** avec :
+Voir [agent-observability](agent-observability.md) (page existante du wiki) pour le socle. Le curriculum **étend** avec :
 
 #### Signal collection automatique
 
@@ -72,7 +72,7 @@ Backends recommandés : Jaeger, Zipkin (self-hosted), Honeycomb, DataDog.
 
 #### 1. Sprint contract
 
-Voir [[sprint-contract-pattern]] :
+Voir [sprint-contract-pattern](sprint-contract-pattern.md) :
 
 ```yaml
 sprint: dark-mode-toggle
@@ -93,7 +93,7 @@ Capture ce qui est **attendu** avant l'écriture du code.
 
 #### 2. Evaluator rubric
 
-Voir [[template-evaluator-rubric]] : grille de scoring structurée qui transforme l'évaluation subjective en scoring reproductible.
+Voir [template-evaluator-rubric](template-evaluator-rubric.md) : grille de scoring structurée qui transforme l'évaluation subjective en scoring reproductible.
 
 #### 3. Task trace
 
@@ -149,7 +149,7 @@ Avec :
 - Runtime logs → "voici le comportement actuel"
 - → reprise en 3 min
 
-Voir [[cross-session-context-loss]] et [[rebuild-cost-metric|rebuild cost]].
+Voir [cross-session-context-loss](cross-session-context-loss.md) et [rebuild cost](rebuild-cost-metric.md).
 
 ### Layered observability — design simultané
 
@@ -163,7 +163,7 @@ Les deux couches doivent être **conçues ensemble** :
 
 ### Lien avec agent-observability existante
 
-[[agent-observability]] couvre la **couche runtime** (logs tool calls, network attempts, OpenTelemetry, baseline session, kill switch link). Cette page **complète** avec la couche process, et formalise la distinction.
+[agent-observability](agent-observability.md) couvre la **couche runtime** (logs tool calls, network attempts, OpenTelemetry, baseline session, kill switch link). Cette page **complète** avec la couche process, et formalise la distinction.
 
 Cross-link à faire à l'avenir : étendre `agent-observability` avec une section "Process layer" pointant vers cette page.
 
@@ -196,9 +196,9 @@ Le scoring devient **stable** après quelques itérations. C'est l'observabilit�
 
 ## Related pages
 
-- [[sprint-contract-pattern]]
-- [[planner-generator-evaluator-3-agent-architecture]]
-- [[agent-observability]]
-- [[template-evaluator-rubric]]
-- [[cross-session-context-loss]]
-- [[the-harness-engineering-curriculum-summary]]
+- [sprint-contract-pattern](sprint-contract-pattern.md)
+- [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)
+- [agent-observability](agent-observability.md)
+- [template-evaluator-rubric](template-evaluator-rubric.md)
+- [cross-session-context-loss](cross-session-context-loss.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

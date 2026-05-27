@@ -28,7 +28,7 @@ Chaque couche capture des **catégories différentes** de bugs :
 - L2 manque → la logique métier est cassée
 - L3 manque → l'intégration entre composants est cassée (le cas le plus subtil)
 
-Voir [[end-to-end-verification-only]] pour le focus sur L3.
+Voir [end-to-end-verification-only](end-to-end-verification-only.md) pour le focus sur L3.
 
 ### Le flow
 
@@ -99,7 +99,7 @@ make test-e2e        # Playwright, Cypress
 ./scripts/smoke-test.sh  # Curl scripts qui simulent un user flow
 ```
 
-**Ce que ça attrape** (voir [[end-to-end-verification-only]] pour le détail) :
+**Ce que ça attrape** (voir [end-to-end-verification-only](end-to-end-verification-only.md) pour le détail) :
 
 - **Interface mismatch** entre couches (renderer passe relative path, service attend absolute)
 - **State propagation** error (DB migration changée, ORM cache pas vidé)
@@ -126,7 +126,7 @@ L1 + L2 ne suffisent pas. L3 est obligatoire.
 
 > "Your harness must replace the agent's feelings with externalized, execution-based verification." — Lecture 09
 
-Le sentiment de l'agent n'est pas une evidence. Voir [[confidence-calibration-bias]] : les LLMs sont systématiquement overconfident.
+Le sentiment de l'agent n'est pas une evidence. Voir [confidence-calibration-bias](confidence-calibration-bias.md) : les LLMs sont systématiquement overconfident.
 
 Solution :
 - L1, L2, L3 sont chacune une **commande exécutable**
@@ -228,9 +228,9 @@ Format **What / Why / Fix**.
 
 ## Related pages
 
-- [[confidence-calibration-bias]]
-- [[worker-checker-separation]]
-- [[end-to-end-verification-only]]
-- [[architectural-boundary-enforcement]]
-- [[completion-evidence-executable]]
-- [[the-harness-engineering-curriculum-summary]]
+- [confidence-calibration-bias](confidence-calibration-bias.md)
+- [worker-checker-separation](worker-checker-separation.md)
+- [end-to-end-verification-only](end-to-end-verification-only.md)
+- [architectural-boundary-enforcement](architectural-boundary-enforcement.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

@@ -22,9 +22,9 @@ Skill NPX du repo `walkinglabs/learn-harness-engineering`. Sert à scaffolder et
 npx skills add walkinglabs/learn-harness-engineering --skill harness-creator
 ```
 
-Il génère les fichiers canoniques d'un harness (`AGENTS.md` / `CLAUDE.md`, `feature_list.json`, `progress.md`, `init.sh`, `session-handoff.md`) et les valide via un score structurel sur les [[five-subsystem-harness-architecture|5 subsystèmes]] : Instructions / State / Verification / Scope / Lifecycle.
+Il génère les fichiers canoniques d'un harness (`AGENTS.md` / `CLAUDE.md`, `feature_list.json`, `progress.md`, `init.sh`, `session-handoff.md`) et les valide via un score structurel sur les [5 subsystèmes](five-subsystem-harness-architecture.md) : Instructions / State / Verification / Scope / Lifecycle.
 
-→ Voir [[harness-creator-skill]] pour le détail des scripts et templates.
+→ Voir [harness-creator-skill](harness-creator-skill.md) pour le détail des scripts et templates.
 
 ### skill-creator
 
@@ -37,20 +37,20 @@ Meta-skill officiel Anthropic (`anthropics/skills`). Fournit un workflow complet
 5. **Itération** jusqu'à satisfaction
 6. **Optimisation du triggering** : boucle d'optimisation de la description
 
-→ Voir [[skill-creator-meta-skill]], [[skill-anatomy]], [[skill-creation-workflow]], [[skill-eval-workflow]], [[skill-description-optimization]].
+→ Voir [skill-creator-meta-skill](skill-creator-meta-skill.md), [skill-anatomy](skill-anatomy.md), [skill-creation-workflow](skill-creation-workflow.md), [skill-eval-workflow](skill-eval-workflow.md), [skill-description-optimization](skill-description-optimization.md).
 
 ### Relation entre les deux
 
-`harness-creator` a lui-même été développé avec la méthodologie `skill-creator` (draft → test → eval → iterate). Les deux partagent le concept d'[[eval-roadmap|évaluation]] et de vérification, et s'appuient sur la même notion de [[prompt-as-asset|skill-as-reusable-asset]].
+`harness-creator` a lui-même été développé avec la méthodologie `skill-creator` (draft → test → eval → iterate). Les deux partagent le concept d'[évaluation](eval-roadmap.md) et de vérification, et s'appuient sur la même notion de [skill-as-reusable-asset](prompt-as-asset.md).
 
 ## Related pages
 
-- [[harness-creator-skill]]
-- [[skill-creator-meta-skill]]
-- [[skill-anatomy]]
-- [[skill-creation-workflow]]
-- [[skill-eval-workflow]]
-- [[skill-description-optimization]]
-- [[five-subsystem-harness-architecture]]
-- [[prompt-as-asset]]
-- [[eval-roadmap]]
+- [harness-creator-skill](harness-creator-skill.md)
+- [skill-creator-meta-skill](skill-creator-meta-skill.md)
+- [skill-anatomy](skill-anatomy.md)
+- [skill-creation-workflow](skill-creation-workflow.md)
+- [skill-eval-workflow](skill-eval-workflow.md)
+- [skill-description-optimization](skill-description-optimization.md)
+- [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)
+- [prompt-as-asset](prompt-as-asset.md)
+- [eval-roadmap](eval-roadmap.md)

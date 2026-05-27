@@ -12,7 +12,7 @@
 
 ### Définition
 
-Le mécanisme de **self-verification** (自我验证) introduit dans [[claude-opus-47]] est une boucle d'auto-évaluation post-tâche :
+Le mécanisme de **self-verification** (自我验证) introduit dans [claude-opus-47](claude-opus-47.md) est une boucle d'auto-évaluation post-tâche :
 
 1. L'agent produit un output (image, vidéo, code, etc.)
 2. Il "relit" cet output avec son propre jugement
@@ -45,7 +45,7 @@ Après analyse autonome de la première vidéo, Opus 4.7 a conclu :
 
 ### Relation avec la perception visuelle
 
-La self-verification sur des outputs visuels (images, vidéos) dépend directement du benchmark de perception visuelle du modèle. Avec un saut de 54.5% → 98.5% pour [[claude-opus-47]], le modèle peut réellement évaluer la qualité esthétique et la cohérence thématique d'un visuel.
+La self-verification sur des outputs visuels (images, vidéos) dépend directement du benchmark de perception visuelle du modèle. Avec un saut de 54.5% → 98.5% pour [claude-opus-47](claude-opus-47.md), le modèle peut réellement évaluer la qualité esthétique et la cohérence thématique d'un visuel.
 
 ### Comportement "codexy"
 
@@ -53,7 +53,7 @@ La self-verification contribue au comportement dit "codexy" : le modèle se comp
 
 ## Related pages
 
-- [[claude-opus-47]]
-- [[ai-design-agent]]
-- [[seedance-video-gen]]
-- [[claude-opus-47-lovart-brand-design-summary]]
+- [claude-opus-47](claude-opus-47.md)
+- [ai-design-agent](ai-design-agent.md)
+- [seedance-video-gen](seedance-video-gen.md)
+- [claude-opus-47-lovart-brand-design-summary](claude-opus-47-lovart-brand-design-summary.md)

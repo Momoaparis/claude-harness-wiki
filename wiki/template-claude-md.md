@@ -12,7 +12,7 @@
 
 ### Rôle dans la harness
 
-Voir [[five-subsystem-harness-architecture|subsystème Instructions]]. C'est le fichier que l'agent lit en premier, en **chaque** session. Doit être **court** (50-200 lignes max — voir [[modular-instruction-architecture]]).
+Voir [subsystème Instructions](five-subsystem-harness-architecture.md). C'est le fichier que l'agent lit en premier, en **chaque** session. Doit être **court** (50-200 lignes max — voir [modular-instruction-architecture](modular-instruction-architecture.md)).
 
 ### Template verbatim (anglais)
 
@@ -120,11 +120,11 @@ CLAUDE.md = entry point. Les autres = artefacts spécifiques.
 
 ### Critère de qualité du CLAUDE.md
 
-Si une **session fresh** ne peut pas répondre aux [[fresh-session-readability-test|5 questions]] (What / How org / How run / How verify / Where now) après avoir lu seulement le `CLAUDE.md` + les fichiers référencés → le `CLAUDE.md` est incomplet.
+Si une **session fresh** ne peut pas répondre aux [5 questions](fresh-session-readability-test.md) (What / How org / How run / How verify / Where now) après avoir lu seulement le `CLAUDE.md` + les fichiers référencés → le `CLAUDE.md` est incomplet.
 
 ### Antipatterns
 
-- ❌ `CLAUDE.md` à 600 lignes → [[lost-in-the-middle-effect]] garanti
+- ❌ `CLAUDE.md` à 600 lignes → [lost-in-the-middle-effect](lost-in-the-middle-effect.md) garanti
 - ❌ Mélange hard constraints + soft guidelines sans distinction
 - ❌ Pas de référence à `feature_list.json` → l'agent invente sa todo
 - ❌ Pas de startup sequence claire → diagnostic à chaque session
@@ -144,14 +144,14 @@ Le `CLAUDE.md` doit être versionné comme du code :
 2. **Startup + Methodology + Documentation + Handoff** = 4 sections-clés.
 3. **Hard constraints** explicites, **soft guidelines** dans topic docs.
 4. Variant `AGENTS.md` pour Codex — même contenu, autre nom.
-5. Audit via [[fresh-session-readability-test]].
+5. Audit via [fresh-session-readability-test](fresh-session-readability-test.md).
 
 ## Related pages
 
-- [[template-claude-progress-md]]
-- [[template-feature-list-json]]
-- [[template-session-handoff-md]]
-- [[template-clean-state-checklist]]
-- [[modular-instruction-architecture]]
-- [[fresh-session-readability-test]]
-- [[the-harness-engineering-curriculum-summary]]
+- [template-claude-progress-md](template-claude-progress-md.md)
+- [template-feature-list-json](template-feature-list-json.md)
+- [template-session-handoff-md](template-session-handoff-md.md)
+- [template-clean-state-checklist](template-clean-state-checklist.md)
+- [modular-instruction-architecture](modular-instruction-architecture.md)
+- [fresh-session-readability-test](fresh-session-readability-test.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

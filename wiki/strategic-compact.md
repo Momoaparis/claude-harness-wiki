@@ -47,13 +47,13 @@ Une fois le plan défini et le contexte nettoyé (option par défaut en plan mod
 
 ### Côté ECC
 
-ECC recommande aussi de basculer `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE` de 95 → **50** pour déclencher le compact plus tôt et préserver la qualité en sessions longues. Cf. [[ecc-token-optimization]].
+ECC recommande aussi de basculer `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE` de 95 → **50** pour déclencher le compact plus tôt et préserver la qualité en sessions longues. Cf. [ecc-token-optimization](ecc-token-optimization.md).
 
 ## Related pages
 
-- [[session-storage-pattern]]
-- [[memory-persistence-hooks]]
-- [[claude-code-hooks]]
-- [[claude-code-commands]]
-- [[ecc-token-optimization]]
-- [[the-longform-guide-summary]]
+- [session-storage-pattern](session-storage-pattern.md)
+- [memory-persistence-hooks](memory-persistence-hooks.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [claude-code-commands](claude-code-commands.md)
+- [ecc-token-optimization](ecc-token-optimization.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

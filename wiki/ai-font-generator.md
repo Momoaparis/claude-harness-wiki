@@ -20,7 +20,7 @@ Durée de génération : ~3 minutes. La police générée est automatiquement sa
 
 ### Exemple documenté
 
-Prompt utilisé par [[claude-opus-47]] :
+Prompt utilisé par [claude-opus-47](claude-opus-47.md) :
 
 > "A serif typeface with subtle brush-stroke texture. Heavy weight, with elegant tapered serifs that hint at Chinese stone-rubbing calligraphy. Like inscriptions on bronze ware or stone steles. Inspired by Black Myth: Wukong — oriental epic, dignified, weighty."
 
@@ -45,7 +45,7 @@ Pour un développeur ou non-designer :
 
 ### Intégration dans le pipeline
 
-Le Font Generator s'insère dans le pipeline [[ai-design-agent]] après le [[lovart-brand-kit|Brand Kit]] :
+Le Font Generator s'insère dans le pipeline [ai-design-agent](ai-design-agent.md) après le [Brand Kit](lovart-brand-kit.md) :
 1. Brand Kit → philosophie + palette
 2. **Font Generator** → typographie alignée avec la philosophie
 3. Poster → utilise la police + la palette
@@ -53,6 +53,6 @@ Le Font Generator s'insère dans le pipeline [[ai-design-agent]] après le [[lov
 
 ## Related pages
 
-- [[lovart-brand-kit]]
-- [[ai-design-agent]]
-- [[claude-opus-47-lovart-brand-design-summary]]
+- [lovart-brand-kit](lovart-brand-kit.md)
+- [ai-design-agent](ai-design-agent.md)
+- [claude-opus-47-lovart-brand-design-summary](claude-opus-47-lovart-brand-design-summary.md)

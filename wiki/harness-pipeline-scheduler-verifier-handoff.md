@@ -1,6 +1,6 @@
 # Harness pipeline — scheduler, verifier, handoff reporter
 
-**Summary** : Une harness mature contient 3 composants qui dépendent tous de la [[feature-list-as-primitive|feature list]] : le scheduler (pick la prochaine tâche), le verifier (exécute la verification command), le handoff reporter (résume l'état de session). Sans ces 3 maillons, la feature list est inutilisée.
+**Summary** : Une harness mature contient 3 composants qui dépendent tous de la [feature list](feature-list-as-primitive.md) : le scheduler (pick la prochaine tâche), le verifier (exécute la verification command), le handoff reporter (résume l'état de session). Sans ces 3 maillons, la feature list est inutilisée.
 
 **Sources** : `raw/ingested/lecture-08-use-feature-lists-to-constrain-what-the-agent-does.md`
 
@@ -49,7 +49,7 @@ def next_task(feature_list):
 
 Le scheduler peut être :
 - Un script bash run manuellement
-- Une commande slash custom dans Claude Code (voir [[claude-code-commands]])
+- Une commande slash custom dans Claude Code (voir [claude-code-commands](claude-code-commands.md))
 - Un hook SessionStart qui auto-propose
 
 ### 2. Verifier
@@ -58,7 +58,7 @@ Le scheduler peut être :
 
 **Logique** :
 - Lire la verification command de la tâche
-- L'exécuter (idéalement dans un sandbox, voir [[agent-sandboxing]])
+- L'exécuter (idéalement dans un sandbox, voir [agent-sandboxing](agent-sandboxing.md))
 - Si exit code 0 → transition `active → passing` + record evidence
 - Si exit code non-0 → record l'erreur, garder `active`
 
@@ -80,7 +80,7 @@ else
 fi
 ```
 
-Le verifier doit être **séparé de l'agent qui code** ([[worker-checker-separation]]).
+Le verifier doit être **séparé de l'agent qui code** ([worker-checker-separation](worker-checker-separation.md)).
 
 ### 3. Handoff reporter
 
@@ -92,7 +92,7 @@ Le verifier doit être **séparé de l'agent qui code** ([[worker-checker-separa
 - Générer un résumé court : "5 tasks done, 1 active (004), 0 blocked"
 - Identifier le `Next best step`
 
-**Output** : section à append dans `claude-progress.md` (voir [[progress-file-pattern]]).
+**Output** : section à append dans `claude-progress.md` (voir [progress-file-pattern](progress-file-pattern.md)).
 
 **Exemple** :
 ```markdown
@@ -136,11 +136,11 @@ Pour un team ou un projet plus gros :
 - `feature_list.json` versionné
 - Un CLI dédié : `harness next`, `harness verify`, `harness handoff`
 - CI qui run `harness verify-all` à chaque PR
-- Dashboard qui affiche l'état (cf. Lecture 11 sur [[observability-runtime-vs-process]])
+- Dashboard qui affiche l'état (cf. Lecture 11 sur [observability-runtime-vs-process](observability-runtime-vs-process.md))
 
 ### Implémentation avancée
 
-Pour un setup multi-agent (Anthropic [[planner-generator-evaluator-3-agent-architecture]]) :
+Pour un setup multi-agent (Anthropic [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)) :
 
 - Planner agent → écrit la feature list
 - Generator agent → implémente, signal au verifier
@@ -157,7 +157,7 @@ Tu peux brancher chaque composant à un mécanisme Claude Code :
 | Verifier | Hook PostToolUse + commande `make verify-XXX` |
 | Handoff reporter | Hook Stop |
 
-Voir [[claude-code-hooks]] et [[claude-code-commands]].
+Voir [claude-code-hooks](claude-code-hooks.md) et [claude-code-commands](claude-code-commands.md).
 
 ### Antipatterns
 
@@ -176,9 +176,9 @@ Voir [[claude-code-hooks]] et [[claude-code-commands]].
 
 ## Related pages
 
-- [[feature-list-as-primitive]]
-- [[feature-state-machine]]
-- [[worker-checker-separation]]
-- [[planner-generator-evaluator-3-agent-architecture]]
-- [[claude-code-hooks]]
-- [[the-harness-engineering-curriculum-summary]]
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [feature-state-machine](feature-state-machine.md)
+- [worker-checker-separation](worker-checker-separation.md)
+- [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

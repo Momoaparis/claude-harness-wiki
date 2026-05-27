@@ -12,7 +12,7 @@
 
 ### Rôle
 
-Différent de [[template-claude-progress-md|claude-progress.md]] :
+Différent de [claude-progress.md](template-claude-progress-md.md) :
 
 | Document | Pour qui | Granularité | Quand |
 |----------|----------|-------------|-------|
@@ -194,7 +194,7 @@ SessionStart hook qui affiche le handoff :
 }
 ```
 
-Voir [[claude-code-hooks]].
+Voir [claude-code-hooks](claude-code-hooks.md).
 
 ### À retenir
 
@@ -206,9 +206,9 @@ Voir [[claude-code-hooks]].
 
 ## Related pages
 
-- [[template-claude-progress-md]]
-- [[template-claude-md]]
-- [[template-clean-state-checklist]]
-- [[session-clean-handoff]]
-- [[progress-file-pattern]]
-- [[the-harness-engineering-curriculum-summary]]
+- [template-claude-progress-md](template-claude-progress-md.md)
+- [template-claude-md](template-claude-md.md)
+- [template-clean-state-checklist](template-clean-state-checklist.md)
+- [session-clean-handoff](session-clean-handoff.md)
+- [progress-file-pattern](progress-file-pattern.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

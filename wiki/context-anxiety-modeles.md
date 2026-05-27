@@ -21,7 +21,7 @@ Comme un humain en fin de quart : on bâcle pour clore. Sauf que le modèle ne *
 - L'agent saute des tests qu'il avait promis d'écrire
 - Il choisit une solution "qui marche à peu près" au lieu d'investiguer la vraie cause
 - Il déclare une tâche terminée alors qu'il sait qu'il y a un blocker
-- Il ne met pas à jour les artefacts ([[progress-file-pattern]], [[decision-log-pattern]])
+- Il ne met pas à jour les artefacts ([progress-file-pattern](progress-file-pattern.md), [decision-log-pattern](decision-log-pattern.md))
 - Réponses plus courtes en fin de session, sans suivi
 
 ### Variations par modèle (Lecture 05)
@@ -31,7 +31,7 @@ Comme un humain en fin de quart : on bâcle pour clore. Sauf que le modèle ne *
 | **Claude Sonnet 4.5** | Forte | **Reset** (nouvelle session) avant la zone anxiety |
 | **Claude Sonnet 4.6** | Modérée | Reset ou compaction selon tâche |
 | **Claude Opus 4.5/4.6** | Faible | Compaction généralement viable |
-| **Claude Opus 4.7** | Faible | Compaction viable, [[self-verification-mechanism]] aide |
+| **Claude Opus 4.7** | Faible | Compaction viable, [self-verification-mechanism](self-verification-mechanism.md) aide |
 
 Pour les autres modèles (GPT-5, Codex, etc.) — observer le comportement empirique avant de fixer la stratégie.
 
@@ -45,11 +45,11 @@ Un harness conçu pour Opus 4.7 (où compaction marche bien) **cassera** sur Son
 
 #### 1. Détection précoce
 
-Déclencher le [[session-clean-handoff|clock-out]] à **70-80%** de la context window, pas à 95%. Garder une marge.
+Déclencher le [clock-out](session-clean-handoff.md) à **70-80%** de la context window, pas à 95%. Garder une marge.
 
 #### 2. Reset planifié
 
-Pour les modèles à forte anxiety (Sonnet 4.5), planifier un reset de session toutes les N tâches (où N dépend de la tâche). Voir [[compaction-vs-reset-strategie]].
+Pour les modèles à forte anxiety (Sonnet 4.5), planifier un reset de session toutes les N tâches (où N dépend de la tâche). Voir [compaction-vs-reset-strategie](compaction-vs-reset-strategie.md).
 
 #### 3. Encoder la clôture en mécanique
 
@@ -60,7 +60,7 @@ PostToolUse hook → si context > 75% → forcer écriture PROGRESS.md
 Stop hook → vérifier que clean state checklist passe
 ```
 
-Voir [[claude-code-hooks]] et [[template-clean-state-checklist]].
+Voir [claude-code-hooks](claude-code-hooks.md) et [template-clean-state-checklist](template-clean-state-checklist.md).
 
 #### 4. Profils par modèle
 
@@ -101,7 +101,7 @@ Si la qualité dégrade significativement en fin de session → ton modèle a un
 
 ### Lien avec self-verification
 
-[[self-verification-mechanism|La self-verification d'Opus 4.7]] (relire et corriger autonome) **compense** partiellement l'anxiety. Modèles sans self-verification ont besoin de plus de structures externes (rubrics, evaluators).
+[La self-verification d'Opus 4.7](self-verification-mechanism.md) (relire et corriger autonome) **compense** partiellement l'anxiety. Modèles sans self-verification ont besoin de plus de structures externes (rubrics, evaluators).
 
 ### À retenir
 
@@ -113,10 +113,10 @@ Si la qualité dégrade significativement en fin de session → ton modèle a un
 
 ## Related pages
 
-- [[cross-session-context-loss]]
-- [[compaction-vs-reset-strategie]]
-- [[session-clean-handoff]]
-- [[self-verification-mechanism]]
-- [[strategic-compact]]
-- [[claude-opus-47]]
-- [[the-harness-engineering-curriculum-summary]]
+- [cross-session-context-loss](cross-session-context-loss.md)
+- [compaction-vs-reset-strategie](compaction-vs-reset-strategie.md)
+- [session-clean-handoff](session-clean-handoff.md)
+- [self-verification-mechanism](self-verification-mechanism.md)
+- [strategic-compact](strategic-compact.md)
+- [claude-opus-47](claude-opus-47.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

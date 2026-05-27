@@ -75,7 +75,7 @@ L'**existence** d'un test E2E qui sera run force l'agent à intégrer ces préoc
 
 ### Pattern : verification = E2E command
 
-Dans [[task-breakdown-structure|le task breakdown]], la verification command doit être E2E quand possible :
+Dans [le task breakdown](task-breakdown-structure.md), la verification command doit être E2E quand possible :
 
 ❌ `pytest tests/unit/test_register.py` (unit)
 ✅ `make test-e2e -- --grep "user registration flow"` (E2E)
@@ -121,7 +121,7 @@ grep -r "require('fs')" src/renderer/ && {
 }
 ```
 
-Voir [[architectural-boundary-enforcement]].
+Voir [architectural-boundary-enforcement](architectural-boundary-enforcement.md).
 
 ### Tools E2E recommandés
 
@@ -148,7 +148,7 @@ E2E test failed: tests/e2e/auth.spec.ts:42
   Fix: in src/renderer/forms.ts line 87, use path.resolve(...)
 ```
 
-Le format **What / Why / Fix** rend l'erreur exploitable par l'agent. Voir [[architectural-boundary-enforcement]] pour le Review Feedback Promotion pattern.
+Le format **What / Why / Fix** rend l'erreur exploitable par l'agent. Voir [architectural-boundary-enforcement](architectural-boundary-enforcement.md) pour le Review Feedback Promotion pattern.
 
 ### Cas réel : Electron file export (Lecture 10)
 
@@ -194,9 +194,9 @@ Mais : **toute nouvelle feature critique** doit avoir au moins un E2E.
 
 ## Related pages
 
-- [[three-layer-termination-validation]]
-- [[architectural-boundary-enforcement]]
-- [[completion-evidence-executable]]
-- [[task-breakdown-structure]]
-- [[checkpoint-vs-continuous-evals]]
-- [[the-harness-engineering-curriculum-summary]]
+- [three-layer-termination-validation](three-layer-termination-validation.md)
+- [architectural-boundary-enforcement](architectural-boundary-enforcement.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [task-breakdown-structure](task-breakdown-structure.md)
+- [checkpoint-vs-continuous-evals](checkpoint-vs-continuous-evals.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

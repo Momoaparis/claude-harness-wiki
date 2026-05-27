@@ -38,13 +38,13 @@ Avec les progrès récents de Claude Code (équipe Boris Cherny), les MCPs sont 
 Même avec lazy loading :
 - Les opérations MCP heavy (database queries, deployments) consomment beaucoup de tokens
 - Les exécuter via CLI **hors contexte** (output non-streamé) puis re-feeder le résumé à Claude économise massivement
-- Voir [[background-processes-tmux]] pour le pattern
+- Voir [background-processes-tmux](background-processes-tmux.md) pour le pattern
 
 ### Cas où le MCP est irremplaçable : `--chrome`
 
-Le flag [[claude-code-chrome-flag|`--chrome`]] de Claude Code est un MCP browser qui permet à Claude de piloter Chrome local. Il ne peut pas être remplacé par une CLI car les interfaces web (Lovart, Figma, etc.) n'exposent pas d'API CLI.
+Le flag [`--chrome`](claude-code-chrome-flag.md) de Claude Code est un MCP browser qui permet à Claude de piloter Chrome local. Il ne peut pas être remplacé par une CLI car les interfaces web (Lovart, Figma, etc.) n'exposent pas d'API CLI.
 
-C'est le cas d'usage où le MCP apporte une valeur exclusive : accès à une session navigateur déjà authentifiée, interaction avec des interfaces uniquement web. Documenté avec [[claude-opus-47]] pilotant Lovart de bout en bout (Brand Kit → poster → police → PSD → vidéo).
+C'est le cas d'usage où le MCP apporte une valeur exclusive : accès à une session navigateur déjà authentifiée, interaction avec des interfaces uniquement web. Documenté avec [claude-opus-47](claude-opus-47.md) pilotant Lovart de bout en bout (Brand Kit → poster → police → PSD → vidéo).
 
 ### Quand utiliser MCP vs CLI+skill
 
@@ -58,15 +58,15 @@ C'est le cas d'usage où le MCP apporte une valeur exclusive : accès à une ses
 ### Lien avec optimisation tokens
 
 Ce pattern s'inscrit dans la stratégie globale d'**optimisation des tokens** :
-- [[mgrep-vs-grep]] pour la recherche
-- [[modular-codebase-tokens]] pour l'architecture
-- [[background-processes-tmux]] pour les longs jobs
+- [mgrep-vs-grep](mgrep-vs-grep.md) pour la recherche
+- [modular-codebase-tokens](modular-codebase-tokens.md) pour l'architecture
+- [background-processes-tmux](background-processes-tmux.md) pour les longs jobs
 - CLI+skills pour les MCPs
 
 ## Related pages
 
-- [[background-processes-tmux]]
-- [[mgrep-vs-grep]]
-- [[modular-codebase-tokens]]
-- [[llms-txt-pattern]]
-- [[the-longform-guide-summary]]
+- [background-processes-tmux](background-processes-tmux.md)
+- [mgrep-vs-grep](mgrep-vs-grep.md)
+- [modular-codebase-tokens](modular-codebase-tokens.md)
+- [llms-txt-pattern](llms-txt-pattern.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

@@ -70,8 +70,8 @@ Forcer ce pattern sur un projet déjà existant — il est conçu pour la phase 
 
 ## Related pages
 
-- [[git-worktrees-parallel-claude]]
-- [[cascade-method]]
-- [[llms-txt-pattern]]
-- [[claude-code-commands]]
-- [[the-longform-guide-summary]]
+- [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)
+- [cascade-method](cascade-method.md)
+- [llms-txt-pattern](llms-txt-pattern.md)
+- [claude-code-commands](claude-code-commands.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

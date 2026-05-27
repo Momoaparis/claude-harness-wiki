@@ -15,110 +15,110 @@
 - **Site** : https://walkinglabs.github.io/learn-harness-engineering/en/
 - **Format** : 12 lectures théoriques + 6 projets hands-on + 8 templates + Resource library
 - **Cible** : ingénieurs construisant leurs propres harnesses pour agents codeurs (Claude Code, Codex, Cursor)
-- **Positionnement** : complète [[the-longform-guide-summary]] et [[ecc-overview]] par une approche curriculum-style
+- **Positionnement** : complète [the-longform-guide-summary](the-longform-guide-summary.md) et [ecc-overview](ecc-overview.md) par une approche curriculum-style
 
 ### Le diagnostic central (Lecture 01)
 
 Les modèles forts (SWE-bench ~60%) échouent en production (~40% de succès net). Ce n'est pas un problème de modèle, c'est un problème de **harness**. Tout ce qui n'est pas les poids du modèle — instructions, tools, environnement, state, feedback — détermine combien de la capacité du modèle se traduit en travail réel.
 
-Voir [[harness-definition-et-philosophie]], [[five-failure-modes-agents-en-prod]].
+Voir [harness-definition-et-philosophie](harness-definition-et-philosophie.md), [five-failure-modes-agents-en-prod](five-failure-modes-agents-en-prod.md).
 
 ### Les 5 subsystèmes (Lecture 02)
 
-Une harness complète = 5 composants : Instructions, Tools, Environment, State, Feedback. Étude de cas Anthropic : même modèle, taux de succès 20% → 100% en ajoutant les subsystèmes manquants. Voir [[five-subsystem-harness-architecture]].
+Une harness complète = 5 composants : Instructions, Tools, Environment, State, Feedback. Étude de cas Anthropic : même modèle, taux de succès 20% → 100% en ajoutant les subsystèmes manquants. Voir [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md).
 
 ### Les 12 thèmes du curriculum
 
 | Lecture | Thème central | Page wiki principale |
 |---------|---------------|---------------------|
-| 01 | Pourquoi les modèles forts échouent | [[five-failure-modes-agents-en-prod]] |
-| 02 | Définition d'une harness | [[five-subsystem-harness-architecture]] |
-| 03 | Repo = système d'enregistrement | [[repository-as-system-of-record]] |
-| 04 | Instructions modulaires | [[modular-instruction-architecture]] |
-| 05 | Contexte multi-session | [[cross-session-context-loss]] |
-| 06 | Phase d'initialisation dédiée | [[initialization-phase-separation]] |
-| 07 | Limites de scope claires (WIP=1) | [[wip-limit-discipline]] |
-| 08 | Feature lists comme primitives | [[feature-list-as-primitive]] |
-| 09 | Empêcher "victoire prématurée" | [[three-layer-termination-validation]] |
-| 10 | Seul l'end-to-end vérifie | [[end-to-end-verification-only]] |
-| 11 | Observabilité runtime + process | [[observability-runtime-vs-process]] |
-| 12 | Handoff propre en fin de session | [[session-clean-handoff]] |
+| 01 | Pourquoi les modèles forts échouent | [five-failure-modes-agents-en-prod](five-failure-modes-agents-en-prod.md) |
+| 02 | Définition d'une harness | [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md) |
+| 03 | Repo = système d'enregistrement | [repository-as-system-of-record](repository-as-system-of-record.md) |
+| 04 | Instructions modulaires | [modular-instruction-architecture](modular-instruction-architecture.md) |
+| 05 | Contexte multi-session | [cross-session-context-loss](cross-session-context-loss.md) |
+| 06 | Phase d'initialisation dédiée | [initialization-phase-separation](initialization-phase-separation.md) |
+| 07 | Limites de scope claires (WIP=1) | [wip-limit-discipline](wip-limit-discipline.md) |
+| 08 | Feature lists comme primitives | [feature-list-as-primitive](feature-list-as-primitive.md) |
+| 09 | Empêcher "victoire prématurée" | [three-layer-termination-validation](three-layer-termination-validation.md) |
+| 10 | Seul l'end-to-end vérifie | [end-to-end-verification-only](end-to-end-verification-only.md) |
+| 11 | Observabilité runtime + process | [observability-runtime-vs-process](observability-runtime-vs-process.md) |
+| 12 | Handoff propre en fin de session | [session-clean-handoff](session-clean-handoff.md) |
 
 ### Les 6 projets pratiques
 
-Voir [[harness-curriculum-projects-overview]]. Progression : baseline (P01) → workspace lisible (P02) → continuité multi-session (P03) → feedback runtime (P04) → role separation (P05) → harness complet + ablation (P06).
+Voir [harness-curriculum-projects-overview](harness-curriculum-projects-overview.md). Progression : baseline (P01) → workspace lisible (P02) → continuité multi-session (P03) → feedback runtime (P04) → role separation (P05) → harness complet + ablation (P06).
 
 ### Les templates concrets
 
 Le cours fournit 7 templates copy-paste pour démarrer immédiatement :
 
-- [[template-claude-md]] — fichier root d'instructions (Claude Code et variant AGENTS.md pour Codex)
-- [[template-claude-progress-md]] — journal de session
-- [[template-feature-list-json]] — état machine-lisible des features
-- [[template-session-handoff-md]] — note de transition inter-session
-- [[template-clean-state-checklist]] — checklist 6-points de clôture
-- [[template-evaluator-rubric]] — grille d'évaluation 6 dimensions
+- [template-claude-md](template-claude-md.md) — fichier root d'instructions (Claude Code et variant AGENTS.md pour Codex)
+- [template-claude-progress-md](template-claude-progress-md.md) — journal de session
+- [template-feature-list-json](template-feature-list-json.md) — état machine-lisible des features
+- [template-session-handoff-md](template-session-handoff-md.md) — note de transition inter-session
+- [template-clean-state-checklist](template-clean-state-checklist.md) — checklist 6-points de clôture
+- [template-evaluator-rubric](template-evaluator-rubric.md) — grille d'évaluation 6 dimensions
 
 ### Concepts-clés extraits dans le wiki
 
 #### Fondamentaux
-- [[harness-definition-et-philosophie]]
-- [[five-subsystem-harness-architecture]]
-- [[five-failure-modes-agents-en-prod]]
-- [[harness-rot-et-dette-technique]]
+- [harness-definition-et-philosophie](harness-definition-et-philosophie.md)
+- [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)
+- [five-failure-modes-agents-en-prod](five-failure-modes-agents-en-prod.md)
+- [harness-rot-et-dette-technique](harness-rot-et-dette-technique.md)
 
 #### Repository = SSoT
-- [[repository-as-system-of-record]]
-- [[fresh-session-readability-test]]
-- [[acid-principles-agent-state]]
+- [repository-as-system-of-record](repository-as-system-of-record.md)
+- [fresh-session-readability-test](fresh-session-readability-test.md)
+- [acid-principles-agent-state](acid-principles-agent-state.md)
 
 #### Instructions modulaires
-- [[modular-instruction-architecture]]
-- [[lost-in-the-middle-effect]]
-- [[instruction-design-patterns]]
+- [modular-instruction-architecture](modular-instruction-architecture.md)
+- [lost-in-the-middle-effect](lost-in-the-middle-effect.md)
+- [instruction-design-patterns](instruction-design-patterns.md)
 
 #### Continuité multi-session
-- [[cross-session-context-loss]]
-- [[context-anxiety-modeles]]
-- [[progress-file-pattern]]
-- [[decision-log-pattern]]
-- [[compaction-vs-reset-strategie]]
+- [cross-session-context-loss](cross-session-context-loss.md)
+- [context-anxiety-modeles](context-anxiety-modeles.md)
+- [progress-file-pattern](progress-file-pattern.md)
+- [decision-log-pattern](decision-log-pattern.md)
+- [compaction-vs-reset-strategie](compaction-vs-reset-strategie.md)
 
 #### Initialisation
-- [[initialization-phase-separation]]
-- [[startup-readiness-checklist]]
-- [[task-breakdown-structure]]
+- [initialization-phase-separation](initialization-phase-separation.md)
+- [startup-readiness-checklist](startup-readiness-checklist.md)
+- [task-breakdown-structure](task-breakdown-structure.md)
 
 #### Contrôle de scope
-- [[wip-limit-discipline]]
-- [[completion-evidence-executable]]
-- [[verified-completion-rate-metric]]
-- [[atomic-task-decomposition]]
+- [wip-limit-discipline](wip-limit-discipline.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [verified-completion-rate-metric](verified-completion-rate-metric.md)
+- [atomic-task-decomposition](atomic-task-decomposition.md)
 
 #### Feature lists
-- [[feature-list-as-primitive]]
-- [[feature-state-machine]]
-- [[harness-pipeline-scheduler-verifier-handoff]]
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [feature-state-machine](feature-state-machine.md)
+- [harness-pipeline-scheduler-verifier-handoff](harness-pipeline-scheduler-verifier-handoff.md)
 
 #### Vérification
-- [[three-layer-termination-validation]]
-- [[confidence-calibration-bias]]
-- [[worker-checker-separation]]
-- [[end-to-end-verification-only]]
-- [[architectural-boundary-enforcement]]
+- [three-layer-termination-validation](three-layer-termination-validation.md)
+- [confidence-calibration-bias](confidence-calibration-bias.md)
+- [worker-checker-separation](worker-checker-separation.md)
+- [end-to-end-verification-only](end-to-end-verification-only.md)
+- [architectural-boundary-enforcement](architectural-boundary-enforcement.md)
 
 #### Observabilité
-- [[observability-runtime-vs-process]]
-- [[sprint-contract-pattern]]
-- [[planner-generator-evaluator-3-agent-architecture]]
+- [observability-runtime-vs-process](observability-runtime-vs-process.md)
+- [sprint-contract-pattern](sprint-contract-pattern.md)
+- [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)
 
 #### Handoff & entropie
-- [[session-clean-handoff]]
-- [[harness-entropy-management]]
+- [session-clean-handoff](session-clean-handoff.md)
+- [harness-entropy-management](harness-entropy-management.md)
 
 #### Pratique
-- [[harness-curriculum-projects-overview]]
-- [[ablation-study-methodology]]
+- [harness-curriculum-projects-overview](harness-curriculum-projects-overview.md)
+- [ablation-study-methodology](ablation-study-methodology.md)
 
 ### Sources & références externes citées
 
@@ -133,10 +133,10 @@ Le cours fournit 7 templates copy-paste pour démarrer immédiatement :
 
 ### Lien avec le reste du wiki
 
-- [[ecc-overview]] est ton bundle perso ECC ; ce curriculum fournit la **théorie** que ECC opérationnalise.
-- [[the-longform-guide-summary]] couvre les techniques avancées Claude Code ; ce curriculum couvre la **discipline** d'opération.
-- [[agent-observability]] cadrait jusqu'ici la couche runtime ; [[observability-runtime-vs-process]] ajoute la couche process.
-- [[session-storage-pattern]] décrit le pattern `.tmp` ; [[progress-file-pattern]] et [[decision-log-pattern]] formalisent les artefacts du curriculum.
+- [ecc-overview](ecc-overview.md) est ton bundle perso ECC ; ce curriculum fournit la **théorie** que ECC opérationnalise.
+- [the-longform-guide-summary](the-longform-guide-summary.md) couvre les techniques avancées Claude Code ; ce curriculum couvre la **discipline** d'opération.
+- [agent-observability](agent-observability.md) cadrait jusqu'ici la couche runtime ; [observability-runtime-vs-process](observability-runtime-vs-process.md) ajoute la couche process.
+- [session-storage-pattern](session-storage-pattern.md) décrit le pattern `.tmp` ; [progress-file-pattern](progress-file-pattern.md) et [decision-log-pattern](decision-log-pattern.md) formalisent les artefacts du curriculum.
 
 ### Philosophie centrale à retenir
 
@@ -150,7 +150,7 @@ Le cours fournit 7 templates copy-paste pour démarrer immédiatement :
 
 ## Related pages
 
-- [[ecc-overview]]
-- [[the-longform-guide-summary]]
-- [[the-agentic-security-summary]]
-- Index complet : [[index]]
+- [ecc-overview](ecc-overview.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)
+- Index complet : [index](index.md)

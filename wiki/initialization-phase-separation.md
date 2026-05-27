@@ -27,8 +27,8 @@ Mélanger = perdre les deux.
 
 1. **Runnable environment** — `make setup` réussit sans intervention
 2. **Verifiable test framework** — au moins 1 test exemple passe (preuve que le framework marche)
-3. **Startup readiness checklist** — listée explicitement (voir [[startup-readiness-checklist]])
-4. **Task breakdown** — découpage en tâches ordonnées et vérifiables (voir [[task-breakdown-structure]])
+3. **Startup readiness checklist** — listée explicitement (voir [startup-readiness-checklist](startup-readiness-checklist.md))
+4. **Task breakdown** — découpage en tâches ordonnées et vérifiables (voir [task-breakdown-structure](task-breakdown-structure.md))
 
 Si une seule manque, l'init n'est pas terminée.
 
@@ -121,7 +121,7 @@ Plutôt qu'init from-scratch, démarrer d'un template :
 - React : `create-react-app`, `vite create`, `next-app`
 - Python : `cookiecutter`, `fastapi-template`
 - TypeScript Node : `tsdx`, custom starter
-- Codex/Claude Code : voir [[harness-curriculum-projects-overview|projects starter/ folders]]
+- Codex/Claude Code : voir [projects starter/ folders](harness-curriculum-projects-overview.md)
 
 Bénéfice : 80% de l'init est déjà fait. On adapte les 20% project-specific.
 
@@ -133,11 +133,11 @@ Sans phase d'init disciplinée, des décisions implicites sont prises silencieus
 - "DB migrations dans `migrations/`" → l'agent en crée une dans `db/` → divergence
 - "Lint config = strict" → un agent loosen → l'autre re-strict
 
-L'init phase **documente** ces choix explicitement (voir [[decision-log-pattern]]).
+L'init phase **documente** ces choix explicitement (voir [decision-log-pattern](decision-log-pattern.md)).
 
 ### Lien avec fresh session test
 
-[[fresh-session-readability-test|Le fresh session test]] est le **critère de validation** de l'init phase. Si une session démarre fresh et peut répondre aux 5 questions → init est OK.
+[Le fresh session test](fresh-session-readability-test.md) est le **critère de validation** de l'init phase. Si une session démarre fresh et peut répondre aux 5 questions → init est OK.
 
 ### Comment savoir si l'init est complète
 
@@ -150,7 +150,7 @@ Checklist :
 - [ ] Tout est committé sur main
 - [ ] Aucun fichier non-tracké important
 
-Voir [[template-clean-state-checklist]] pour le format complet.
+Voir [template-clean-state-checklist](template-clean-state-checklist.md) pour le format complet.
 
 ### À retenir
 
@@ -158,13 +158,13 @@ Voir [[template-clean-state-checklist]] pour le format complet.
 2. Init produit : **runnable + tested + checklist + task list**.
 3. Init est une **session dédiée** (au moins une), pas un pré-traitement avant la première feature.
 4. Démarrer d'un **template** plutôt que from-scratch.
-5. Valider via le [[fresh-session-readability-test|fresh session test]].
+5. Valider via le [fresh session test](fresh-session-readability-test.md).
 
 ## Related pages
 
-- [[startup-readiness-checklist]]
-- [[task-breakdown-structure]]
-- [[fresh-session-readability-test]]
-- [[five-failure-modes-agents-en-prod]]
-- [[decision-log-pattern]]
-- [[the-harness-engineering-curriculum-summary]]
+- [startup-readiness-checklist](startup-readiness-checklist.md)
+- [task-breakdown-structure](task-breakdown-structure.md)
+- [fresh-session-readability-test](fresh-session-readability-test.md)
+- [five-failure-modes-agents-en-prod](five-failure-modes-agents-en-prod.md)
+- [decision-log-pattern](decision-log-pattern.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

@@ -58,12 +58,12 @@ Trois hooks ciblent le cycle de vie de la session pour automatiser la mémoire c
 
 ### Bénéfice
 
-Mémoire continue **sans intervention manuelle** — chaque session démarre informée des précédentes. Combine bien avec [[session-storage-pattern]] qui fournit le format des fichiers.
+Mémoire continue **sans intervention manuelle** — chaque session démarre informée des précédentes. Combine bien avec [session-storage-pattern](session-storage-pattern.md) qui fournit le format des fichiers.
 
 ## Related pages
 
-- [[claude-code-hooks]]
-- [[session-storage-pattern]]
-- [[strategic-compact]]
-- [[continuous-learning-skill]]
-- [[the-longform-guide-summary]]
+- [claude-code-hooks](claude-code-hooks.md)
+- [session-storage-pattern](session-storage-pattern.md)
+- [strategic-compact](strategic-compact.md)
+- [continuous-learning-skill](continuous-learning-skill.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

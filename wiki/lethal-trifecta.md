@@ -16,7 +16,7 @@
 | 2 | **Untrusted content** | PDF d'un mail, page web, issue GitHub, output d'un MCP, attachement |
 | 3 | **External communication** | n'importe quelle capacité d'I/O sortant (HTTP, push git, webhook, mail) |
 
-Tant qu'un seul est absent, l'exfiltration ne fonctionne pas. Quand les trois sont réunis, le [[prompt-injection-sanitization|prompt injection]] cesse d'être une démo amusante et devient un vecteur de fuite.
+Tant qu'un seul est absent, l'exfiltration ne fonctionne pas. Quand les trois sont réunis, le [prompt injection](prompt-injection-sanitization.md) cesse d'être une démo amusante et devient un vecteur de fuite.
 
 ## Utilité opérationnelle
 
@@ -26,7 +26,7 @@ Le cadre sert d'**outil de diagnostic** avant tout workflow :
 2. Lister d'où vient le **contenu** qu'il va ingérer (de confiance ou non ?).
 3. Lister ce qu'il peut **émettre** vers l'extérieur.
 
-Si la réponse est « les trois », l'agent doit tourner en [[agent-sandboxing|sandbox isolé]], ou bien la pipeline doit être scindée (cf. ci-dessous).
+Si la réponse est « les trois », l'agent doit tourner en [sandbox isolé](agent-sandboxing.md), ou bien la pipeline doit être scindée (cf. ci-dessous).
 
 ## Pattern de scission
 
@@ -34,7 +34,7 @@ Une parade classique : séparer la phase d'**extraction** (sur contenu non fiabl
 
 > One agent can parse a document in a restricted environment. Another agent, with stronger approvals, can act only on the cleaned summary.
 
-C'est l'application du [[least-agency|principe de moindre agence]] à l'architecture d'un workflow.
+C'est l'application du [principe de moindre agence](least-agency.md) à l'architecture d'un workflow.
 
 ## Pourquoi c'est plus utile que « least privilege »
 
@@ -42,8 +42,8 @@ C'est l'application du [[least-agency|principe de moindre agence]] à l'architec
 
 ## Related pages
 
-- [[prompt-injection-sanitization]]
-- [[least-agency]]
-- [[agent-sandboxing]]
-- [[agent-memory-hygiene]]
-- [[the-agentic-security-summary]]
+- [prompt-injection-sanitization](prompt-injection-sanitization.md)
+- [least-agency](least-agency.md)
+- [agent-sandboxing](agent-sandboxing.md)
+- [agent-memory-hygiene](agent-memory-hygiene.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

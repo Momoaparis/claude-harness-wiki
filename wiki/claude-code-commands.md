@@ -24,7 +24,7 @@ Renomme le chat courant. Essentiel quand on fait tourner **plusieurs instances e
 /rename research-pricing
 ```
 
-**Voir** : [[cascade-method]], [[git-worktrees-parallel-claude]], [[two-instance-kickoff]]
+**Voir** : [cascade-method](cascade-method.md), [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md), [two-instance-kickoff](two-instance-kickoff.md)
 
 ### `/fork`
 
@@ -34,7 +34,7 @@ Duplique un état de conversation pour partir explorer dans une direction sans p
 - Forker pour poser une question de recherche sans casser le contexte de coding
 - Forker pour tester une approche alternative
 
-**Voir** : [[two-instance-kickoff]]
+**Voir** : [two-instance-kickoff](two-instance-kickoff.md)
 
 ### `/clear`
 
@@ -46,7 +46,7 @@ Réinitialise le contexte de la conversation. Recommandé entre les phases d'un 
 Phase 1: Research → /clear → Phase 2: Plan → /clear → Phase 3: Implement
 ```
 
-**Voir** : [[iterative-retrieval-pattern]], [[strategic-compact]]
+**Voir** : [iterative-retrieval-pattern](iterative-retrieval-pattern.md), [strategic-compact](strategic-compact.md)
 
 ### `/compact`
 
@@ -56,7 +56,7 @@ Déclenche manuellement un compactage du contexte (résumé de la conversation p
 - Après une phase d'exploration, avant l'exécution
 - Après un milestone, avant le suivant
 
-**Voir** : [[strategic-compact]]
+**Voir** : [strategic-compact](strategic-compact.md)
 
 ### `/learn`
 
@@ -68,7 +68,7 @@ Extrait manuellement un pattern utile vers `~/.claude/skills/learned/` sans atte
 3. Claude propose un fichier skill draft
 4. Tu confirmes avant sauvegarde
 
-**Voir** : [[continuous-learning-skill]]
+**Voir** : [continuous-learning-skill](continuous-learning-skill.md)
 
 ### `/rewind`
 
@@ -80,7 +80,7 @@ Retourner à un état antérieur de la conversation. Annule une série d'actions
 
 Personnaliser la barre de statut. Affichables : utilisateur, répertoire, branche git (+ dirty indicator), % context window restant, modèle, heure, todos.
 
-**Voir** : [[claude-code-keyboard-shortcuts]]
+**Voir** : [claude-code-keyboard-shortcuts](claude-code-keyboard-shortcuts.md)
 
 ### `/checkpoints`
 
@@ -122,10 +122,10 @@ Le pattern courant dans une session productive :
 
 ## Related pages
 
-- [[strategic-compact]]
-- [[continuous-learning-skill]]
-- [[cascade-method]]
-- [[git-worktrees-parallel-claude]]
-- [[two-instance-kickoff]]
-- [[iterative-retrieval-pattern]]
-- [[the-longform-guide-summary]]
+- [strategic-compact](strategic-compact.md)
+- [continuous-learning-skill](continuous-learning-skill.md)
+- [cascade-method](cascade-method.md)
+- [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)
+- [two-instance-kickoff](two-instance-kickoff.md)
+- [iterative-retrieval-pattern](iterative-retrieval-pattern.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

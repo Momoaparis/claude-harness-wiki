@@ -41,9 +41,9 @@ Cycle :
 
 Le repo **forme l'agent** à produire de la dette technique.
 
-### Voir aussi [[harness-rot-et-dette-technique]]
+### Voir aussi [harness-rot-et-dette-technique](harness-rot-et-dette-technique.md)
 
-Cette page est complémentaire : [[harness-rot-et-dette-technique]] explique le *pourquoi* du rot, cette page la *gestion* concrète.
+Cette page est complémentaire : [harness-rot-et-dette-technique](harness-rot-et-dette-technique.md) explique le *pourquoi* du rot, cette page la *gestion* concrète.
 
 ### Dual-mode cleanup
 
@@ -56,7 +56,7 @@ Reference counting — l'agent qui a touché un truc le nettoie.
 - Update `feature_list.json`
 - Build + tests verts
 - Pas de `console.log`, `debugger`, `TODO` parasites
-- 5 conditions de [[session-clean-handoff]]
+- 5 conditions de [session-clean-handoff](session-clean-handoff.md)
 
 Coût : 2-5 min par session.
 
@@ -112,7 +112,7 @@ Plutôt qu'accumuler des "best practices" textuelles, encoder les invariants en 
 - CI rules
 - Pre-commit hooks (légers)
 
-Voir [[architectural-boundary-enforcement]].
+Voir [architectural-boundary-enforcement](architectural-boundary-enforcement.md).
 
 Exemple :
 
@@ -143,7 +143,7 @@ Une fois par mois :
 
 1. **Pick un composant** de la harness (un hook, une règle, un script, une instruction)
 2. **Disable** temporairement
-3. **Run benchmarks** (voir [[ablation-study-methodology]])
+3. **Run benchmarks** (voir [ablation-study-methodology](ablation-study-methodology.md))
 4. Si pas de dégradation → **supprimer** (obsolète)
 5. Si dégradation → **garder** ou remplacer par alternative plus légère
 
@@ -213,8 +213,8 @@ Trend mensuel :
 
 ## Related pages
 
-- [[session-clean-handoff]]
-- [[harness-rot-et-dette-technique]]
-- [[architectural-boundary-enforcement]]
-- [[ablation-study-methodology]]
-- [[the-harness-engineering-curriculum-summary]]
+- [session-clean-handoff](session-clean-handoff.md)
+- [harness-rot-et-dette-technique](harness-rot-et-dette-technique.md)
+- [architectural-boundary-enforcement](architectural-boundary-enforcement.md)
+- [ablation-study-methodology](ablation-study-methodology.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

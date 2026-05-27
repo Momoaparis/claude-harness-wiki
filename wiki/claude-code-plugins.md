@@ -65,7 +65,7 @@ Claude génère et configure le hook automatiquement.
 
 #### mgrep
 
-Plugin marketplace (Mixedbread) pour la recherche sémantique — voir [[mgrep-vs-grep]].
+Plugin marketplace (Mixedbread) pour la recherche sémantique — voir [mgrep-vs-grep](mgrep-vs-grep.md).
 
 #### Chrome (navigateur intégré)
 
@@ -80,13 +80,13 @@ Plugin MCP built-in qui permet à Claude de contrôler le navigateur de façon a
 - Garder **moins de 10 actifs** simultanément
 - Maintenir **moins de 80 outils actifs** en tout
 
-Détail des settings recommandés dans [[ecc-token-optimization]].
+Détail des settings recommandés dans [ecc-token-optimization](ecc-token-optimization.md).
 
 ### Auto-loading des hooks de plugins (v2.1+)
 
-Depuis Claude Code v2.1+, `hooks/hooks.json` des plugins installés est **automatiquement chargé**. Ne pas le redéclarer dans `plugin.json` ni le recopier dans `settings.json` — cela cause des doublons d'exécution. Cf. [[ecc-hooks-autoloading]] pour le détail.
+Depuis Claude Code v2.1+, `hooks/hooks.json` des plugins installés est **automatiquement chargé**. Ne pas le redéclarer dans `plugin.json` ni le recopier dans `settings.json` — cela cause des doublons d'exécution. Cf. [ecc-hooks-autoloading](ecc-hooks-autoloading.md) pour le détail.
 
-⚠️ Cette auto-chargement est précisément la surface exploitée par [[claude-code-cves-2026|CVE-2025-59536]] : auditer les plugins tiers avant install via [[agentshield]].
+⚠️ Cette auto-chargement est précisément la surface exploitée par [CVE-2025-59536](claude-code-cves-2026.md) : auditer les plugins tiers avant install via [agentshield](agentshield.md).
 
 **Désactivation par projet** dans `~/.claude.json` :
 ```json
@@ -101,7 +101,7 @@ Depuis Claude Code v2.1+, `hooks/hooks.json` des plugins installés est **automa
 
 La règle : activer uniquement ce qui est pertinent pour le projet courant.
 
-**Voir aussi** : [[mcp-vs-cli-skills]] pour la stratégie CLI vs MCP.
+**Voir aussi** : [mcp-vs-cli-skills](mcp-vs-cli-skills.md) pour la stratégie CLI vs MCP.
 
 ### Marketplace officiel vs communauté
 
@@ -122,10 +122,10 @@ Les deux coexistent — les plugins sont pratiques pour des outils établis, les
 
 ## Related pages
 
-- [[claude-code-hooks]]
-- [[mcp-vs-cli-skills]]
-- [[mgrep-vs-grep]]
-- [[ecc-hooks-autoloading]]
-- [[ecc-token-optimization]]
-- [[claude-code-cves-2026]]
-- [[the-shorthand-guide-summary]]
+- [claude-code-hooks](claude-code-hooks.md)
+- [mcp-vs-cli-skills](mcp-vs-cli-skills.md)
+- [mgrep-vs-grep](mgrep-vs-grep.md)
+- [ecc-hooks-autoloading](ecc-hooks-autoloading.md)
+- [ecc-token-optimization](ecc-token-optimization.md)
+- [claude-code-cves-2026](claude-code-cves-2026.md)
+- [the-shorthand-guide-summary](the-shorthand-guide-summary.md)

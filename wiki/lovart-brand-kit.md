@@ -52,13 +52,13 @@ Point notable : Lovart a nommé `Stamp Red` (印章红) en analysant les sceaux 
 ### Lien avec l'identité de marque globale
 
 Le Brand Kit est la première étape du pipeline complet :
-Brand Kit → Poster → [[ai-font-generator|Font]] → [[prompt-as-asset|Skill]] → PSD → [[seedance-video-gen|Vidéo]]
+Brand Kit → Poster → [Font](ai-font-generator.md) → [Skill](prompt-as-asset.md) → PSD → [Vidéo](seedance-video-gen.md)
 
-Voir [[ai-design-agent]] pour la vision d'ensemble.
+Voir [ai-design-agent](ai-design-agent.md) pour la vision d'ensemble.
 
 ## Related pages
 
-- [[ai-design-agent]]
-- [[ai-font-generator]]
-- [[prompt-as-asset]]
-- [[claude-opus-47-lovart-brand-design-summary]]
+- [ai-design-agent](ai-design-agent.md)
+- [ai-font-generator](ai-font-generator.md)
+- [prompt-as-asset](prompt-as-asset.md)
+- [claude-opus-47-lovart-brand-design-summary](claude-opus-47-lovart-brand-design-summary.md)

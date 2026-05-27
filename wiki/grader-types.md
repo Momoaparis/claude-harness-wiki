@@ -70,7 +70,7 @@ https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
 
 ## Related pages
 
-- [[checkpoint-vs-continuous-evals]]
-- [[pass-at-k-metric]]
-- [[eval-roadmap]]
-- [[the-longform-guide-summary]]
+- [checkpoint-vs-continuous-evals](checkpoint-vs-continuous-evals.md)
+- [pass-at-k-metric](pass-at-k-metric.md)
+- [eval-roadmap](eval-roadmap.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

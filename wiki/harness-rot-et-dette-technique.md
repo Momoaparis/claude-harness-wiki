@@ -62,7 +62,7 @@ Reference counting — l'agent qui a touché un truc le nettoie.
 - `make build` + `make test` verts
 - Pas de `console.log`, `debugger`, `TODO` parasites
 
-Voir [[session-clean-handoff]] et [[template-clean-state-checklist]].
+Voir [session-clean-handoff](session-clean-handoff.md) et [template-clean-state-checklist](template-clean-state-checklist.md).
 
 #### Periodic cleanup (hebdomadaire)
 
@@ -73,7 +73,7 @@ Tracing — scan global du repo.
 - Drift benchmarks (a-t-on perdu en perf ?)
 - Suppression de docs obsolètes
 
-Voir [[harness-entropy-management]].
+Voir [harness-entropy-management](harness-entropy-management.md).
 
 ### Les "golden rules" mécaniquement vérifiables
 
@@ -83,7 +83,7 @@ Plutôt que d'accumuler des "best practices" textuelles, encoder les invariants 
 - Tests architecturaux (`check-architecture.sh`)
 - CI rules sur la structure de fichiers
 
-Voir [[architectural-boundary-enforcement]].
+Voir [architectural-boundary-enforcement](architectural-boundary-enforcement.md).
 
 ### Le harness audit mensuel (Lecture 12)
 
@@ -91,7 +91,7 @@ Une fois par mois :
 
 1. Pick un composant de la harness
 2. Disable temporairement
-3. Run benchmarks (voir [[ablation-study-methodology]])
+3. Run benchmarks (voir [ablation-study-methodology](ablation-study-methodology.md))
 4. Si **pas** de dégradation → supprimer le composant (obsolète)
 5. Si dégradation → garder ou remplacer par alternative plus légère
 
@@ -115,9 +115,9 @@ La prochaine session ne sait pas ce que la précédente a laissé. Elle ignore l
 
 ## Related pages
 
-- [[session-clean-handoff]]
-- [[harness-entropy-management]]
-- [[architectural-boundary-enforcement]]
-- [[ablation-study-methodology]]
-- [[harness-definition-et-philosophie]]
-- [[the-harness-engineering-curriculum-summary]]
+- [session-clean-handoff](session-clean-handoff.md)
+- [harness-entropy-management](harness-entropy-management.md)
+- [architectural-boundary-enforcement](architectural-boundary-enforcement.md)
+- [ablation-study-methodology](ablation-study-methodology.md)
+- [harness-definition-et-philosophie](harness-definition-et-philosophie.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

@@ -42,7 +42,7 @@ Cette optimisation s'inscrit dans une stratégie plus large d'**audit des outils
 
 ## Related pages
 
-- [[modular-codebase-tokens]]
-- [[background-processes-tmux]]
-- [[mcp-vs-cli-skills]]
-- [[the-longform-guide-summary]]
+- [modular-codebase-tokens](modular-codebase-tokens.md)
+- [background-processes-tmux](background-processes-tmux.md)
+- [mcp-vs-cli-skills](mcp-vs-cli-skills.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

@@ -37,20 +37,20 @@ Source : études de cas curriculum Harness Engineering (Lectures 03, 08, 11).
 
 Le rebuild cost est **invisible dans les métriques standard** (tests passent, code compile) mais représente 15-30% du temps total sur les projets multi-session sans harness.
 
-C'est le pendant économique du [[fresh-session-readability-test]] : le test détecte l'absence d'information, la métrique chiffre le coût de cette absence.
+C'est le pendant économique du [fresh-session-readability-test](fresh-session-readability-test.md) : le test détecte l'absence d'information, la métrique chiffre le coût de cette absence.
 
 ### Lien avec les artefacts de continuité
 
 | Artefact | Rebuild cost évité |
 |----------|---------------------|
-| [[progress-file-pattern\|`claude-progress.md`]] | Diagnostic d'état (15 → 5 min) |
-| [[template-session-handoff-md\|`session-handoff.md`]] | Re-découverte des décisions |
-| [[feature-list-as-primitive\|`feature_list.json`]] | Choix de la prochaine tâche |
-| [[startup-readiness-checklist]] | Re-vérification baseline |
+| [`claude-progress.md`](progress-file-pattern/.md) | Diagnostic d'état (15 → 5 min) |
+| [`session-handoff.md`](template-session-handoff-md/.md) | Re-découverte des décisions |
+| [`feature_list.json`](feature-list-as-primitive/.md) | Choix de la prochaine tâche |
+| [startup-readiness-checklist](startup-readiness-checklist.md) | Re-vérification baseline |
 
 ### Lien avec l'observabilité
 
-[[observability-runtime-vs-process|L'observabilité process]] (sprint contracts, task traces, rubrics) réduit directement le rebuild cost du point de vue évaluateur : sans elle, la session N+1 diagnostique from scratch.
+[L'observabilité process](observability-runtime-vs-process.md) (sprint contracts, task traces, rubrics) réduit directement le rebuild cost du point de vue évaluateur : sans elle, la session N+1 diagnostique from scratch.
 
 > "Session handoff information cliff. When incomplete work is handed to the next session, missing observability means the new session has to diagnose the system state from scratch." — Lecture 11
 
@@ -60,9 +60,9 @@ C'est le pendant économique du [[fresh-session-readability-test]] : le test dé
 
 ## Related pages
 
-- [[progress-file-pattern]]
-- [[fresh-session-readability-test]]
-- [[cross-session-context-loss]]
-- [[session-clean-handoff]]
-- [[observability-runtime-vs-process]]
-- [[the-harness-engineering-curriculum-summary]]
+- [progress-file-pattern](progress-file-pattern.md)
+- [fresh-session-readability-test](fresh-session-readability-test.md)
+- [cross-session-context-loss](cross-session-context-loss.md)
+- [session-clean-handoff](session-clean-handoff.md)
+- [observability-runtime-vs-process](observability-runtime-vs-process.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

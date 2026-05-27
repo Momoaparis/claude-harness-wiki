@@ -1,6 +1,6 @@
 # Template — feature_list.json
 
-**Summary** : Format machine-lisible canonique de la feature list. Structure JSON avec id, behavior, verification, dependencies, state, evidence pour chaque tâche atomique. Lu par scheduler / verifier / handoff reporter. C'est la primitive du harness (voir [[feature-list-as-primitive]]).
+**Summary** : Format machine-lisible canonique de la feature list. Structure JSON avec id, behavior, verification, dependencies, state, evidence pour chaque tâche atomique. Lu par scheduler / verifier / handoff reporter. C'est la primitive du harness (voir [feature-list-as-primitive](feature-list-as-primitive.md)).
 
 **Sources** : `raw/ingested/lecture-08-use-feature-lists-to-constrain-what-the-agent-does.md`, projets P01-P06 du curriculum
 
@@ -12,7 +12,7 @@
 
 ### Rôle
 
-Voir [[feature-list-as-primitive]] pour la théorie. Cette page = le format concret à utiliser.
+Voir [feature-list-as-primitive](feature-list-as-primitive.md) pour la théorie. Cette page = le format concret à utiliser.
 
 ### Template verbatim (JSON)
 
@@ -59,7 +59,7 @@ Voir [[feature-list-as-primitive]] pour la théorie. Cette page = le format conc
 | `tasks` | array | yes | Liste des tâches atomiques |
 | `tasks[].id` | string | yes | Identifiant unique (ex: "001", "auth-001") |
 | `tasks[].behavior` | string | yes | Single behavior description |
-| `tasks[].verification` | string | yes | Commande exécutable (voir [[completion-evidence-executable]]) |
+| `tasks[].verification` | string | yes | Commande exécutable (voir [completion-evidence-executable](completion-evidence-executable.md)) |
 | `tasks[].dependencies` | array of ids | yes | Tâches qui doivent être `passing` avant |
 | `tasks[].state` | enum | yes | `not_started` / `active` / `blocked` / `passing` |
 | `tasks[].evidence` | string \| null | optional | Path vers log/commit prouvant la complétion |
@@ -68,7 +68,7 @@ Voir [[feature-list-as-primitive]] pour la théorie. Cette page = le format conc
 
 ### Les 4 états
 
-Voir [[feature-state-machine]] :
+Voir [feature-state-machine](feature-state-machine.md) :
 
 ```
 not_started → active → passing (terminal)
@@ -142,7 +142,7 @@ PASSING=$(jq '[.tasks[] | select(.state == "passing")] | length' feature_list.js
 echo "VCR: $(bc <<< "scale=2; $PASSING / $TOTAL")"
 ```
 
-Voir [[verified-completion-rate-metric]].
+Voir [verified-completion-rate-metric](verified-completion-rate-metric.md).
 
 #### Lister les next tasks
 
@@ -161,7 +161,7 @@ if [ "$ACTIVE" -gt 1 ]; then
 fi
 ```
 
-Voir [[wip-limit-discipline]].
+Voir [wip-limit-discipline](wip-limit-discipline.md).
 
 ### Update workflow
 
@@ -183,7 +183,7 @@ Pour les humains, c'est plus agréable d'écrire en markdown. Un script peut gé
 # Parse task-breakdown.md, output feature_list.json
 ```
 
-Voir [[task-breakdown-structure]].
+Voir [task-breakdown-structure](task-breakdown-structure.md).
 
 ### Antipatterns
 
@@ -225,10 +225,10 @@ PostToolUse hook qui re-calcule VCR et bloque si > 0 active :
 
 ## Related pages
 
-- [[feature-list-as-primitive]]
-- [[feature-state-machine]]
-- [[harness-pipeline-scheduler-verifier-handoff]]
-- [[task-breakdown-structure]]
-- [[wip-limit-discipline]]
-- [[verified-completion-rate-metric]]
-- [[the-harness-engineering-curriculum-summary]]
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [feature-state-machine](feature-state-machine.md)
+- [harness-pipeline-scheduler-verifier-handoff](harness-pipeline-scheduler-verifier-handoff.md)
+- [task-breakdown-structure](task-breakdown-structure.md)
+- [wip-limit-discipline](wip-limit-discipline.md)
+- [verified-completion-rate-metric](verified-completion-rate-metric.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

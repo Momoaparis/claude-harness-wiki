@@ -59,8 +59,8 @@ Pas besoin d'attendre la fin de session — la commande `/learn` permet d'extrai
 
 ## Related pages
 
-- [[memory-persistence-hooks]]
-- [[claude-code-hooks]]
-- [[session-storage-pattern]]
-- [[claude-code-commands]]
-- [[the-longform-guide-summary]]
+- [memory-persistence-hooks](memory-persistence-hooks.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [session-storage-pattern](session-storage-pattern.md)
+- [claude-code-commands](claude-code-commands.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

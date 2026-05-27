@@ -43,33 +43,33 @@ Workflow recommandé :
 
 ### Lien avec sub-agents
 
-L'assignation du modèle se fait par sub-agent — voir [[subagent-architecture]].
+L'assignation du modèle se fait par sub-agent — voir [subagent-architecture](subagent-architecture.md).
 
 ### Settings ECC recommandés
 
-[[ecc-overview|ECC]] cible **`model: sonnet`** comme défaut global (vs `opus`) pour ~60% de réduction de coût sur 80%+ des tâches. Et pour les subagents :
+[ECC](ecc-overview.md) cible **`model: sonnet`** comme défaut global (vs `opus`) pour ~60% de réduction de coût sur 80%+ des tâches. Et pour les subagents :
 
 ```json
 { "env": { "CLAUDE_CODE_SUBAGENT_MODEL": "haiku" } }
 ```
 
-Détail complet dans [[ecc-token-optimization]].
+Détail complet dans [ecc-token-optimization](ecc-token-optimization.md).
 
 ### Opus 4.7 — capacités spécifiques
 
-[[claude-opus-47]] introduit deux améliorations majeures qui influencent le choix du modèle :
+[claude-opus-47](claude-opus-47.md) introduit deux améliorations majeures qui influencent le choix du modèle :
 
 - **Perception visuelle** : benchmark 54.5% → 98.5% — rend Opus 4.7 pertinent pour les tâches impliquant des images, screenshots, ou interfaces graphiques
 - **Self-verification** : relance autonome si l'output est jugé insuffisant → moins d'allers-retours utilisateur sur les tâches longues
-- **Computer Use** : pilotage de navigateur via [[claude-code-chrome-flag|`--chrome`]] MCP, fiable là où Opus 4.6 échouait
+- **Computer Use** : pilotage de navigateur via [`--chrome`](claude-code-chrome-flag.md) MCP, fiable là où Opus 4.6 échouait
 
 Ajouter Opus 4.7 aux cas d'usage : tâches visuelles, agents long-running, orchestration d'interfaces web.
 
 ## Related pages
 
-- [[subagent-architecture]]
-- [[agent-abstraction-tierlist]]
-- [[modular-codebase-tokens]]
-- [[ecc-token-optimization]]
-- [[the-longform-guide-summary]]
-- [[claude-opus-47]]
+- [subagent-architecture](subagent-architecture.md)
+- [agent-abstraction-tierlist](agent-abstraction-tierlist.md)
+- [modular-codebase-tokens](modular-codebase-tokens.md)
+- [ecc-token-optimization](ecc-token-optimization.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)
+- [claude-opus-47](claude-opus-47.md)

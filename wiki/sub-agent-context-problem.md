@@ -40,7 +40,7 @@ Résultat : le résumé du sub-agent **manque des détails que l'orchestrateur j
 
 Deux approches discutées dans le guide :
 
-1. **[[iterative-retrieval-pattern]]** : l'orchestrateur évalue chaque retour et peut renvoyer des follow-ups (max 3 cycles)
+1. **[iterative-retrieval-pattern](iterative-retrieval-pattern.md)** : l'orchestrateur évalue chaque retour et peut renvoyer des follow-ups (max 3 cycles)
 2. **Pass objective context** : ne pas envoyer juste la query mais aussi l'objectif global et les raisons de la demande
 
 ### Pattern d'envoi recommandé
@@ -55,7 +55,7 @@ Plus le sub-agent comprend le **but**, mieux il filtre son résumé.
 
 ## Related pages
 
-- [[iterative-retrieval-pattern]]
-- [[subagent-architecture]]
-- [[agent-abstraction-tierlist]]
-- [[the-longform-guide-summary]]
+- [iterative-retrieval-pattern](iterative-retrieval-pattern.md)
+- [subagent-architecture](subagent-architecture.md)
+- [agent-abstraction-tierlist](agent-abstraction-tierlist.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

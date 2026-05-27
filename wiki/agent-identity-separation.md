@@ -21,7 +21,7 @@ L'agent doit avoir une identité propre, séparée :
 
 ## Pourquoi c'est différent du sandboxing
 
-[[agent-sandboxing|Sandboxing]] limite ce que l'agent peut **faire localement** quand il est compromis. La séparation d'identités limite ce qu'il peut **faire à distance** via les services tiers auxquels il est connecté.
+[Sandboxing](agent-sandboxing.md) limite ce que l'agent peut **faire localement** quand il est compromis. La séparation d'identités limite ce qu'il peut **faire à distance** via les services tiers auxquels il est connecté.
 
 Les deux sont nécessaires. Ils ne se remplacent pas.
 
@@ -30,15 +30,15 @@ Les deux sont nécessaires. Ils ne se remplacent pas.
 - **Credentials short-lived** : tokens de 1h plutôt que des PAT GitHub permanents. AWS STS plutôt qu'access keys.
 - **Scope minimal** : un repo, pas l'org. Un canal Slack, pas le workspace. Une boîte mail, pas tous tes contacts.
 - **Révocation rapide** : un agent compromis se neutralise par révocation côté serveur — pas par confiance dans `Ctrl+C`.
-- **Audit log distinct** : les actions de l'agent doivent apparaître séparément dans tes logs (mailbox, GitHub audit log, Slack admin). Cf. [[agent-observability]].
+- **Audit log distinct** : les actions de l'agent doivent apparaître séparément dans tes logs (mailbox, GitHub audit log, Slack admin). Cf. [agent-observability](agent-observability.md).
 
 ## Anti-pattern courant
 
-Cloner un repo tiers et le laisser tourner avec son propre `git` configuré sur ton compte personnel. Si le repo contient des [[claude-code-cves-2026|hooks malveillants]], ton compte personnel est immédiatement exposé.
+Cloner un repo tiers et le laisser tourner avec son propre `git` configuré sur ton compte personnel. Si le repo contient des [hooks malveillants](claude-code-cves-2026.md), ton compte personnel est immédiatement exposé.
 
 ## Related pages
 
-- [[agent-sandboxing]]
-- [[least-agency]]
-- [[lethal-trifecta]]
-- [[the-agentic-security-summary]]
+- [agent-sandboxing](agent-sandboxing.md)
+- [least-agency](least-agency.md)
+- [lethal-trifecta](lethal-trifecta.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

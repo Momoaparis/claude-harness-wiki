@@ -125,7 +125,7 @@ Problèmes :
 
 **Pendant une session** : quand une décision non-triviale est prise, l'agent (ou l'humain) ajoute une entrée au log avant de continuer.
 
-**Fin de session** : check que toutes les décisions prises ont été tracées (voir [[template-clean-state-checklist]]).
+**Fin de session** : check que toutes les décisions prises ont été tracées (voir [template-clean-state-checklist](template-clean-state-checklist.md)).
 
 **Démarrage de session N+1** : l'agent lit `DECISIONS.md` (au moins les dernières N entrées) pour comprendre le terrain.
 
@@ -143,7 +143,7 @@ Problèmes :
 
 | Fichier | Granularité | Contenu |
 |---------|-------------|---------|
-| [[progress-file-pattern\|PROGRESS.md]] | Par session | Quoi fait, quoi prévu |
+| [PROGRESS.md](progress-file-pattern/.md) | Par session | Quoi fait, quoi prévu |
 | `DECISIONS.md` | Par décision | Pourquoi tel choix |
 
 Les deux sont complémentaires. Une session peut générer 0 ou plusieurs décisions ; la session change toujours le PROGRESS, mais pas toujours le DECISIONS.
@@ -158,8 +158,8 @@ Les deux sont complémentaires. Une session peut générer 0 ou plusieurs décis
 
 ## Related pages
 
-- [[progress-file-pattern]]
-- [[cross-session-context-loss]]
-- [[acid-principles-agent-state]]
-- [[session-clean-handoff]]
-- [[the-harness-engineering-curriculum-summary]]
+- [progress-file-pattern](progress-file-pattern.md)
+- [cross-session-context-loss](cross-session-context-loss.md)
+- [acid-principles-agent-state](acid-principles-agent-state.md)
+- [session-clean-handoff](session-clean-handoff.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

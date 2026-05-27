@@ -22,7 +22,7 @@ Trois exigences :
 
 ### Pourquoi pas la subjective "ça marche"
 
-L'agent qui auto-évalue son travail souffre de [[confidence-calibration-bias|confidence calibration bias]] : il se sent fini bien avant d'avoir réellement fini.
+L'agent qui auto-évalue son travail souffre de [confidence calibration bias](confidence-calibration-bias.md) : il se sent fini bien avant d'avoir réellement fini.
 
 > "Modern neural networks are systematically overconfident." — Guo et al. 2017
 
@@ -61,11 +61,11 @@ Chaque tâche dans `task-breakdown.md` ou `feature_list.json` doit déclarer sa 
 }
 ```
 
-Voir [[template-feature-list-json]].
+Voir [template-feature-list-json](template-feature-list-json.md).
 
 ### Les 3 couches de vérification (Lecture 09)
 
-Voir [[three-layer-termination-validation]] :
+Voir [three-layer-termination-validation](three-layer-termination-validation.md) :
 
 1. **Syntaxe / static** : lint clean, typecheck clean
 2. **Behavior runtime** : tests unitaires, intégration
@@ -116,7 +116,7 @@ pytest tests/test_registration.py -v --tb=short
 
 ### Tests unitaires ne sont pas assez (Lecture 10)
 
-Voir [[end-to-end-verification-only]] : les tests unitaires testent des morceaux isolés. Les défauts de **limites** (interface mismatch, state propagation) ne sont visibles qu'en E2E.
+Voir [end-to-end-verification-only](end-to-end-verification-only.md) : les tests unitaires testent des morceaux isolés. Les défauts de **limites** (interface mismatch, state propagation) ne sont visibles qu'en E2E.
 
 Pour qu'une feature soit "passing" en sens strict, il faut idéalement :
 - Test unitaire de la logique
@@ -125,7 +125,7 @@ Pour qu'une feature soit "passing" en sens strict, il faut idéalement :
 
 ### Lien avec WIP=1
 
-[[wip-limit-discipline|WIP=1]] dit "finir avant de démarrer une autre". Mais "finir" doit avoir un critère **objectif** — c'est exactement le rôle de completion evidence.
+[WIP=1](wip-limit-discipline.md) dit "finir avant de démarrer une autre". Mais "finir" doit avoir un critère **objectif** — c'est exactement le rôle de completion evidence.
 
 Sans evidence executable :
 - Agent peut auto-déclarer `passing`
@@ -161,10 +161,10 @@ L'agent run `make verify-feature-001` avant de marquer `passing`. La harness peu
 
 ## Related pages
 
-- [[verified-completion-rate-metric]]
-- [[wip-limit-discipline]]
-- [[three-layer-termination-validation]]
-- [[end-to-end-verification-only]]
-- [[confidence-calibration-bias]]
-- [[feature-list-as-primitive]]
-- [[the-harness-engineering-curriculum-summary]]
+- [verified-completion-rate-metric](verified-completion-rate-metric.md)
+- [wip-limit-discipline](wip-limit-discipline.md)
+- [three-layer-termination-validation](three-layer-termination-validation.md)
+- [end-to-end-verification-only](end-to-end-verification-only.md)
+- [confidence-calibration-bias](confidence-calibration-bias.md)
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

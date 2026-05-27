@@ -18,33 +18,33 @@
 
 #### 1. Specs vagues
 
-L'agent reçoit "implémente la feature X" sans définition observable de "fait". Sans [[completion-evidence-executable|completion evidence]], il code jusqu'à ce que le code "ait l'air" complet, puis déclare victoire.
+L'agent reçoit "implémente la feature X" sans définition observable de "fait". Sans [completion evidence](completion-evidence-executable.md), il code jusqu'à ce que le code "ait l'air" complet, puis déclare victoire.
 
-**Solution harness** : [[feature-list-as-primitive|feature lists structurées]] avec critères de vérification.
+**Solution harness** : [feature lists structurées](feature-list-as-primitive.md) avec critères de vérification.
 
 #### 2. Conventions implicites
 
 Le projet a des conventions (formatage, naming, layering) que les humains connaissent mais qui ne sont écrites nulle part. L'agent invente ses propres conventions à chaque session.
 
-**Solution harness** : `AGENTS.md` (voir [[template-claude-md]]) + [[repository-as-system-of-record|repo comme SSoT]].
+**Solution harness** : `AGENTS.md` (voir [template-claude-md](template-claude-md.md)) + [repo comme SSoT](repository-as-system-of-record.md).
 
 #### 3. Environnement incomplet
 
 Build cassé, deps non pinées, tests qui ne passent pas localement. L'agent passe la session à diagnostiquer l'environnement au lieu de coder.
 
-**Solution harness** : [[initialization-phase-separation|phase d'initialisation dédiée]] qui produit un environnement runnable.
+**Solution harness** : [phase d'initialisation dédiée](initialization-phase-separation.md) qui produit un environnement runnable.
 
 #### 4. Aucune méthode de vérification
 
 Pas de tests E2E, pas de commande `make verify`, pas de critère objectif. L'agent ne peut pas savoir s'il a réussi, donc il triche en se basant sur son sentiment.
 
-**Solution harness** : subsystème Feedback (voir [[five-subsystem-harness-architecture]]) + [[end-to-end-verification-only]].
+**Solution harness** : subsystème Feedback (voir [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)) + [end-to-end-verification-only](end-to-end-verification-only.md).
 
 #### 5. Perte de state multi-session
 
 Chaque nouvelle session redémarre à zéro. Décisions oubliées, hypothèses re-faites, mêmes erreurs reproduites.
 
-**Solution harness** : [[progress-file-pattern]] + [[decision-log-pattern]] + [[session-clean-handoff]].
+**Solution harness** : [progress-file-pattern](progress-file-pattern.md) + [decision-log-pattern](decision-log-pattern.md) + [session-clean-handoff](session-clean-handoff.md).
 
 ### Pourquoi un meilleur modèle ne résout pas
 
@@ -66,7 +66,7 @@ Pour chaque échec observé, attribuer à une couche :
 Exécuter → Observer → Attribuer à une couche → Fixer la couche → Re-exécuter
 ```
 
-Couches possibles : Instructions / Tools / Environment / State / Feedback (voir [[five-subsystem-harness-architecture]]).
+Couches possibles : Instructions / Tools / Environment / State / Feedback (voir [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)).
 
 ### Cas réels cités
 
@@ -82,9 +82,9 @@ Couches possibles : Instructions / Tools / Environment / State / Feedback (voir 
 
 ## Related pages
 
-- [[harness-definition-et-philosophie]]
-- [[five-subsystem-harness-architecture]]
-- [[feature-list-as-primitive]]
-- [[initialization-phase-separation]]
-- [[cross-session-context-loss]]
-- [[the-harness-engineering-curriculum-summary]]
+- [harness-definition-et-philosophie](harness-definition-et-philosophie.md)
+- [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [initialization-phase-separation](initialization-phase-separation.md)
+- [cross-session-context-loss](cross-session-context-loss.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

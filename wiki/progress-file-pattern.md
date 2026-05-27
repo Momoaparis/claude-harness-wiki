@@ -12,7 +12,7 @@
 
 ### Le rôle
 
-Un fichier qui répond à la question : **"Where are we right now?"** (question #5 du [[fresh-session-readability-test|fresh session test]]).
+Un fichier qui répond à la question : **"Where are we right now?"** (question #5 du [fresh session test](fresh-session-readability-test.md)).
 
 Sans lui, chaque session redémarre en mode "deviner". Avec lui, 3 minutes pour reprendre le travail.
 
@@ -21,7 +21,7 @@ Sans lui, chaque session redémarre en mode "deviner". Avec lui, 3 minutes pour 
 | Nom | Contexte |
 |-----|----------|
 | `PROGRESS.md` | Format générique cross-tool (Codex, Cursor, etc.) |
-| `claude-progress.md` | Variant Claude Code spécifique (voir [[template-claude-progress-md]]) |
+| `claude-progress.md` | Variant Claude Code spécifique (voir [template-claude-progress-md](template-claude-progress-md.md)) |
 
 Choisir un seul et s'y tenir. Le contenu est essentiellement identique.
 
@@ -141,7 +141,7 @@ L'historique du fichier = traçabilité complète des décisions de prog.
 
 ### Lien avec session-storage-pattern
 
-[[session-storage-pattern]] décrit le pattern `.tmp` côté Claude Code (mémoire externe). `PROGRESS.md` est l'équivalent **dans le repo**, donc :
+[session-storage-pattern](session-storage-pattern.md) décrit le pattern `.tmp` côté Claude Code (mémoire externe). `PROGRESS.md` est l'équivalent **dans le repo**, donc :
 
 - Durable (git)
 - Lisible par tout agent (pas que Claude Code)
@@ -159,10 +159,10 @@ Les deux sont compatibles : `.tmp` pour notes informelles intra-session, `PROGRE
 
 ## Related pages
 
-- [[decision-log-pattern]]
-- [[cross-session-context-loss]]
-- [[session-clean-handoff]]
-- [[template-claude-progress-md]]
-- [[session-storage-pattern]]
-- [[fresh-session-readability-test]]
-- [[the-harness-engineering-curriculum-summary]]
+- [decision-log-pattern](decision-log-pattern.md)
+- [cross-session-context-loss](cross-session-context-loss.md)
+- [session-clean-handoff](session-clean-handoff.md)
+- [template-claude-progress-md](template-claude-progress-md.md)
+- [session-storage-pattern](session-storage-pattern.md)
+- [fresh-session-readability-test](fresh-session-readability-test.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

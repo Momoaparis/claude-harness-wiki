@@ -53,6 +53,6 @@ Pour la majorité du travail quotidien, la différence est marginale. C'est une 
 
 ## Related pages
 
-- [[strategic-compact]]
-- [[session-storage-pattern]]
-- [[the-longform-guide-summary]]
+- [strategic-compact](strategic-compact.md)
+- [session-storage-pattern](session-storage-pattern.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

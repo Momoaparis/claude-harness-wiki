@@ -1,6 +1,6 @@
 # Template — evaluator-rubric.md
 
-**Summary** : Grille d'évaluation 6 dimensions × scoring 0-2, opérée par un evaluator (humain ou agent) **distinct** du worker. Produit un verdict Accept / Revise / Block + liste d'issues actionables. Cœur du [[worker-checker-separation]] et de la couche **process observability** (Lecture 11).
+**Summary** : Grille d'évaluation 6 dimensions × scoring 0-2, opérée par un evaluator (humain ou agent) **distinct** du worker. Produit un verdict Accept / Revise / Block + liste d'issues actionables. Cœur du [worker-checker-separation](worker-checker-separation.md) et de la couche **process observability** (Lecture 11).
 
 **Sources** : `raw/ingested/template-evaluator-rubric.txt` (https://walkinglabs.github.io/learn-harness-engineering/en/resources/templates/evaluator-rubric)
 
@@ -12,7 +12,7 @@
 
 ### Rôle
 
-Voir [[worker-checker-separation]] et [[confidence-calibration-bias]] pour le pourquoi. Cette page = le format concret.
+Voir [worker-checker-separation](worker-checker-separation.md) et [confidence-calibration-bias](confidence-calibration-bias.md) pour le pourquoi. Cette page = le format concret.
 
 ### Template verbatim (anglais)
 
@@ -105,7 +105,7 @@ Scoring scale:
 **Score**:
 - 0 — Critical artifacts missing or incoherent
 - 1 — Artifacts present but partial (e.g., progress log written but `Next best step` vague)
-- 2 — Full handoff readiness — [[fresh-session-readability-test]] would pass
+- 2 — Full handoff readiness — [fresh-session-readability-test](fresh-session-readability-test.md) would pass
 
 **Notes**: [specific gaps]
 
@@ -220,7 +220,7 @@ Le verdict détermine la transition d'état :
 
 ### Lien avec sprint contract
 
-L'evaluator rubric **score** la conformité au [[sprint-contract-pattern|sprint contract]]. Sans sprint contract clair, le scoring est arbitraire (chaque evaluator a sa propre idée).
+L'evaluator rubric **score** la conformité au [sprint contract](sprint-contract-pattern.md). Sans sprint contract clair, le scoring est arbitraire (chaque evaluator a sa propre idée).
 
 ### Workflow
 
@@ -265,13 +265,13 @@ Be nitpicky. Trust nothing. Verify everything.
 
 ### Le nitpicky checker
 
-Voir [[worker-checker-separation]] : le evaluator doit être **mandaté** pour trouver des défauts, pas pour confirmer. Le prompt ci-dessus le précise.
+Voir [worker-checker-separation](worker-checker-separation.md) : le evaluator doit être **mandaté** pour trouver des défauts, pas pour confirmer. Le prompt ci-dessus le précise.
 
 ### Antipatterns
 
 - ❌ Scoring 2/2 partout sans evidence → evaluator complaisant
 - ❌ Pas de feedback actionable pour Revise → generator ne sait pas quoi corriger
-- ❌ Même agent que generator → biais maximal ([[confidence-calibration-bias]])
+- ❌ Même agent que generator → biais maximal ([confidence-calibration-bias](confidence-calibration-bias.md))
 - ❌ Rubric figée sans audit → ne s'adapte pas aux apprentissages
 - ❌ Verdict ignoré ("Revise mais on merge quand même") → la harness perd sa valeur
 
@@ -305,10 +305,10 @@ Ou ajuster les seuils :
 
 ## Related pages
 
-- [[worker-checker-separation]]
-- [[planner-generator-evaluator-3-agent-architecture]]
-- [[sprint-contract-pattern]]
-- [[confidence-calibration-bias]]
-- [[three-layer-termination-validation]]
-- [[observability-runtime-vs-process]]
-- [[the-harness-engineering-curriculum-summary]]
+- [worker-checker-separation](worker-checker-separation.md)
+- [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)
+- [sprint-contract-pattern](sprint-contract-pattern.md)
+- [confidence-calibration-bias](confidence-calibration-bias.md)
+- [three-layer-termination-validation](three-layer-termination-validation.md)
+- [observability-runtime-vs-process](observability-runtime-vs-process.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

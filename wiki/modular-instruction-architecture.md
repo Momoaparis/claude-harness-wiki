@@ -17,7 +17,7 @@ Quand toutes les instructions s'accumulent dans un seul `AGENTS.md` :
 | Problème | Impact |
 |----------|--------|
 | **Context budget eaten** | 600 lignes ≈ 10-20K tokens ≈ 10-15% de la fenêtre |
-| **[[lost-in-the-middle-effect|Lost in the middle]]** | Les règles au milieu sont ignorées par le modèle |
+| **[Lost in the middle](lost-in-the-middle-effect.md)** | Les règles au milieu sont ignorées par le modèle |
 | **Cant-tell-what-matters** | Hard constraints et soft guidelines mélangées, l'agent ne sait pas |
 | **Priority conflicts** | Règles ajoutées à différents moments se contredisent |
 | **Maintenance decay** | Personne n'ose supprimer, donc le fichier grandit seul |
@@ -111,11 +111,11 @@ Agent fails → équipe ajoute une règle dans AGENTS.md → fix temporaire
 → AGENTS.md à 600 lignes → agent ignore les règles → tout casse
 ```
 
-**Solution** : encoder les règles en checks mécaniques (voir [[architectural-boundary-enforcement]]), pas en accumulation textuelle.
+**Solution** : encoder les règles en checks mécaniques (voir [architectural-boundary-enforcement](architectural-boundary-enforcement.md)), pas en accumulation textuelle.
 
 ### Le never-bury-middle principle
 
-Pour ce qui reste dans l'entry file : les choses **critiques** vont **en haut ou en bas**, jamais au milieu. Le [[lost-in-the-middle-effect|lost-in-the-middle]] est un effet documenté du modèle.
+Pour ce qui reste dans l'entry file : les choses **critiques** vont **en haut ou en bas**, jamais au milieu. Le [lost-in-the-middle](lost-in-the-middle-effect.md) est un effet documenté du modèle.
 
 Si une règle est trop importante pour être en bas et trop longue pour être en haut → la sortir dans un topic doc, pas la laisser au milieu.
 
@@ -137,13 +137,13 @@ Sans expiry, les règles s'accumulent. Audit régulier : règle encore valable ?
 2. **Progressive disclosure** : reveal on demand, pas tout d'un coup.
 3. **Source + applicability + expiry** sur chaque règle.
 4. **Hard constraints au top**. Soft guidelines dans topic docs.
-5. Encoder en [[architectural-boundary-enforcement|checks mécaniques]] plutôt qu'accumuler du texte.
+5. Encoder en [checks mécaniques](architectural-boundary-enforcement.md) plutôt qu'accumuler du texte.
 
 ## Related pages
 
-- [[lost-in-the-middle-effect]]
-- [[instruction-design-patterns]]
-- [[architectural-boundary-enforcement]]
-- [[repository-as-system-of-record]]
-- [[template-claude-md]]
-- [[the-harness-engineering-curriculum-summary]]
+- [lost-in-the-middle-effect](lost-in-the-middle-effect.md)
+- [instruction-design-patterns](instruction-design-patterns.md)
+- [architectural-boundary-enforcement](architectural-boundary-enforcement.md)
+- [repository-as-system-of-record](repository-as-system-of-record.md)
+- [template-claude-md](template-claude-md.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

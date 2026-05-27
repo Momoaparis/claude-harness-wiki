@@ -12,7 +12,7 @@
 
 ### Rôle dans la harness
 
-C'est l'implémentation concrète du [[progress-file-pattern]]. Vit dans le repo, committé à chaque session. Référencé depuis [[template-claude-md|CLAUDE.md]].
+C'est l'implémentation concrète du [progress-file-pattern](progress-file-pattern.md). Vit dans le repo, committé à chaque session. Référencé depuis [CLAUDE.md](template-claude-md.md).
 
 ### Template verbatim (anglais)
 
@@ -133,7 +133,7 @@ Total : ~3 minutes.
 4. git commit -m "chore(progress): close session N — [topic]"
 ```
 
-### Articulation avec [[template-session-handoff-md]]
+### Articulation avec [template-session-handoff-md](template-session-handoff-md.md)
 
 | Document | Granularité | Quand utiliser |
 |----------|-------------|----------------|
@@ -198,9 +198,9 @@ Total : ~3 minutes.
 
 ## Related pages
 
-- [[progress-file-pattern]]
-- [[template-claude-md]]
-- [[template-session-handoff-md]]
-- [[template-clean-state-checklist]]
-- [[decision-log-pattern]]
-- [[the-harness-engineering-curriculum-summary]]
+- [progress-file-pattern](progress-file-pattern.md)
+- [template-claude-md](template-claude-md.md)
+- [template-session-handoff-md](template-session-handoff-md.md)
+- [template-clean-state-checklist](template-clean-state-checklist.md)
+- [decision-log-pattern](decision-log-pattern.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

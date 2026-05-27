@@ -26,12 +26,12 @@ Un **AI Design Agent** produit une chaîne complète d'assets exploitables :
 
 | Étape | Output | Réutilisabilité |
 |-------|--------|----------------|
-| [[lovart-brand-kit|Brand Kit]] | Schéma de marque structuré | Projet entier |
+| [Brand Kit](lovart-brand-kit.md) | Schéma de marque structuré | Projet entier |
 | Poster / visuel | Image générée cohérente avec le Brand Kit | — |
-| [[ai-font-generator|Font Generator]] | Police custom stockée dans My Fonts | Tous projets |
-| [[prompt-as-asset|Create Skill]] | Workflow sérialisé dans Skill Book | Tous projets |
+| [Font Generator](ai-font-generator.md) | Police custom stockée dans My Fonts | Tous projets |
+| [Create Skill](prompt-as-asset.md) | Workflow sérialisé dans Skill Book | Tous projets |
 | Export PSD | Fichier Photoshop avec couches éditables | Designer |
-| [[seedance-video-gen|Vidéo Seedance]] | Clip animé 5 sec | Application |
+| [Vidéo Seedance](seedance-video-gen.md) | Clip animé 5 sec | Application |
 
 ### Le PSD comme marqueur clé
 
@@ -53,16 +53,16 @@ PSD — 1276x1200 px, RGB 8-bit
 
 L'AI Design Agent déplace la contribution humaine : de "tout faire" à "valider et affiner". La valeur économique se retrouve dans la réduction du temps de production, pas dans l'élimination du designer.
 
-### Lien avec [[claude-code-chrome-flag|`--chrome` MCP]]
+### Lien avec [`--chrome` MCP](claude-code-chrome-flag.md)
 
-[[claude-opus-47]] pilote Lovart via Chrome MCP : c'est l'agent qui orchestre le pipeline. Sans ce pilotage autonome, chaque étape nécessiterait une intervention humaine dans l'interface web.
+[claude-opus-47](claude-opus-47.md) pilote Lovart via Chrome MCP : c'est l'agent qui orchestre le pipeline. Sans ce pilotage autonome, chaque étape nécessiterait une intervention humaine dans l'interface web.
 
 ## Related pages
 
-- [[lovart-brand-kit]]
-- [[ai-font-generator]]
-- [[prompt-as-asset]]
-- [[seedance-video-gen]]
-- [[claude-code-chrome-flag]]
-- [[claude-opus-47]]
-- [[claude-opus-47-lovart-brand-design-summary]]
+- [lovart-brand-kit](lovart-brand-kit.md)
+- [ai-font-generator](ai-font-generator.md)
+- [prompt-as-asset](prompt-as-asset.md)
+- [seedance-video-gen](seedance-video-gen.md)
+- [claude-code-chrome-flag](claude-code-chrome-flag.md)
+- [claude-opus-47](claude-opus-47.md)
+- [claude-opus-47-lovart-brand-design-summary](claude-opus-47-lovart-brand-design-summary.md)

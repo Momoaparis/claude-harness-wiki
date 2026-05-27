@@ -47,7 +47,7 @@ pass^k: TOUS les k essais réussissent
 
 ### Lien avec le choix de modèle
 
-Un modèle à 90% pass@1 a un pass^5 = 59%. Pour les workflows critiques, le pass^k pousse à utiliser des modèles plus fiables ou à ajouter des vérifications (voir [[grader-types]]).
+Un modèle à 90% pass@1 a un pass^5 = 59%. Pour les workflows critiques, le pass^k pousse à utiliser des modèles plus fiables ou à ajouter des vérifications (voir [grader-types](grader-types.md)).
 
 ### Stratégie hybride
 
@@ -55,7 +55,7 @@ On peut viser un fort pass@k en production (avec retry automatique) tout en mesu
 
 ## Related pages
 
-- [[grader-types]]
-- [[checkpoint-vs-continuous-evals]]
-- [[eval-roadmap]]
-- [[the-longform-guide-summary]]
+- [grader-types](grader-types.md)
+- [checkpoint-vs-continuous-evals](checkpoint-vs-continuous-evals.md)
+- [eval-roadmap](eval-roadmap.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

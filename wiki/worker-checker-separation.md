@@ -1,6 +1,6 @@
 # Worker-checker separation
 
-**Summary** : Le même modèle qui écrit du code ne doit pas valider son propre travail. Séparer le rôle "worker" (génère le code) du rôle "checker" (évalue) — même avec le même modèle Claude/Opus — réduit drastiquement le [[confidence-calibration-bias|biais d'auto-évaluation]].
+**Summary** : Le même modèle qui écrit du code ne doit pas valider son propre travail. Séparer le rôle "worker" (génère le code) du rôle "checker" (évalue) — même avec le même modèle Claude/Opus — réduit drastiquement le [biais d'auto-évaluation](confidence-calibration-bias.md).
 
 **Sources** : `raw/ingested/lecture-09-preventing-agents-from-declaring-victory-too-early.md`
 
@@ -84,15 +84,15 @@ Workflow :
 3. Evaluator retourne une liste d'issues
 4. Worker corrige ou justifie
 
-Voir [[subagent-architecture]] et [[sub-agent-context-problem]] pour les bonnes pratiques de dispatch.
+Voir [subagent-architecture](subagent-architecture.md) et [sub-agent-context-problem](sub-agent-context-problem.md) pour les bonnes pratiques de dispatch.
 
 #### Setup multi-agent (Anthropic)
 
-Voir [[planner-generator-evaluator-3-agent-architecture]] pour le full pattern à 3 rôles (planner + generator + evaluator).
+Voir [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md) pour le full pattern à 3 rôles (planner + generator + evaluator).
 
 ### La rubric
 
-L'evaluator utilise une grille structurée pour scorer. Voir [[template-evaluator-rubric]] :
+L'evaluator utilise une grille structurée pour scorer. Voir [template-evaluator-rubric](template-evaluator-rubric.md) :
 
 | Dimension | Score 0-2 |
 |-----------|-----------|
@@ -152,15 +152,15 @@ Pour avoir une séparation effective :
 
 #### Option 2 : hook Stop
 
-À la fin de session, un hook Stop run un evaluator sub-agent automatiquement. Voir [[claude-code-hooks]].
+À la fin de session, un hook Stop run un evaluator sub-agent automatiquement. Voir [claude-code-hooks](claude-code-hooks.md).
 
 #### Option 3 : /code-review command
 
-Custom slash command qui dispatch un evaluator. Voir [[claude-code-commands]].
+Custom slash command qui dispatch un evaluator. Voir [claude-code-commands](claude-code-commands.md).
 
 ### Lien avec confidence calibration bias
 
-Worker-checker separation est la **solution pratique** au [[confidence-calibration-bias|biais documenté de Guo 2017]]. C'est l'opérationnalisation du principe "ne jamais faire confiance à l'auto-évaluation".
+Worker-checker separation est la **solution pratique** au [biais documenté de Guo 2017](confidence-calibration-bias.md). C'est l'opérationnalisation du principe "ne jamais faire confiance à l'auto-évaluation".
 
 ### À retenir
 
@@ -172,10 +172,10 @@ Worker-checker separation est la **solution pratique** au [[confidence-calibrati
 
 ## Related pages
 
-- [[confidence-calibration-bias]]
-- [[planner-generator-evaluator-3-agent-architecture]]
-- [[three-layer-termination-validation]]
-- [[template-evaluator-rubric]]
-- [[subagent-architecture]]
-- [[sub-agent-context-problem]]
-- [[the-harness-engineering-curriculum-summary]]
+- [confidence-calibration-bias](confidence-calibration-bias.md)
+- [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)
+- [three-layer-termination-validation](three-layer-termination-validation.md)
+- [template-evaluator-rubric](template-evaluator-rubric.md)
+- [subagent-architecture](subagent-architecture.md)
+- [sub-agent-context-problem](sub-agent-context-problem.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

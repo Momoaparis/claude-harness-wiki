@@ -30,7 +30,7 @@ Dans `~/.claude/settings.json` :
 | `model` | opus | **sonnet** | ~60 % de réduction de coût ; couvre 80-90 % des tâches de coding |
 | `MAX_THINKING_TOKENS` | 31 999 | **10 000** | ~70 % de réduction du thinking caché par requête |
 | `CLAUDE_AUTOCOMPACT_PCT_OVERRIDE` | 95 | **50** | Compacte plus tôt → meilleure qualité en session longue |
-| `CLAUDE_CODE_SUBAGENT_MODEL` | (inherits) | **haiku** | Subagents en Haiku — voir [[subagent-architecture]] |
+| `CLAUDE_CODE_SUBAGENT_MODEL` | (inherits) | **haiku** | Subagents en Haiku — voir [subagent-architecture](subagent-architecture.md) |
 | `ECC_CONTEXT_MONITOR_COST_WARNINGS` | on | **off** (subs) | Coupe les warnings API-rate inutiles si tu es en subscription |
 
 ## Quand basculer en Opus
@@ -39,7 +39,7 @@ Dans `~/.claude/settings.json` :
 /model opus
 ```
 
-Réservé aux moments qui le justifient : architecture profonde, debug épineux, raisonnement complexe. Cf. [[model-selection-claude]].
+Réservé aux moments qui le justifient : architecture profonde, debug épineux, raisonnement complexe. Cf. [model-selection-claude](model-selection-claude.md).
 
 ## Daily workflow commands
 
@@ -48,7 +48,7 @@ Réservé aux moments qui le justifient : architecture profonde, debug épineux,
 | `/model sonnet` | Default pour la majorité des tâches |
 | `/model opus` | Architecture, debug profond |
 | `/clear` | Entre tâches sans rapport (gratuit, instantané) |
-| `/compact` | Aux breakpoints logiques — cf. [[strategic-compact]] |
+| `/compact` | Aux breakpoints logiques — cf. [strategic-compact](strategic-compact.md) |
 | `/cost` | Monitor le spending en session |
 
 ## Plafond MCP / tools
@@ -64,21 +64,21 @@ Règles ECC :
 - `/mcp` pour disabler les MCPs Claude Code (persisté dans `~/.claude.json`).
 - `ECC_DISABLED_MCPS` n'est qu'un filtre install/sync ECC — pas un toggle runtime.
 
-Cf. [[mcp-vs-cli-skills]] pour la stratégie de remplacement.
+Cf. [mcp-vs-cli-skills](mcp-vs-cli-skills.md) pour la stratégie de remplacement.
 
 ## Agent Teams — alerte coût
 
-Agent Teams spawn plusieurs context windows. Chaque teammate consomme des tokens indépendamment. À réserver aux tâches où la parallélisation a une valeur claire (multi-module, reviews parallèles). Pour les tâches séquentielles simples, les subagents sont plus économes — voir [[subagent-architecture]].
+Agent Teams spawn plusieurs context windows. Chaque teammate consomme des tokens indépendamment. À réserver aux tâches où la parallélisation a une valeur claire (multi-module, reviews parallèles). Pour les tâches séquentielles simples, les subagents sont plus économes — voir [subagent-architecture](subagent-architecture.md).
 
 ## Lien avec strategic compact
 
-Le skill `strategic-compact` (bundlé dans ECC) suggère `/compact` aux breakpoints logiques plutôt que d'attendre l'auto-compact à 95 % du contexte. Cf. [[strategic-compact]] pour le détail.
+Le skill `strategic-compact` (bundlé dans ECC) suggère `/compact` aux breakpoints logiques plutôt que d'attendre l'auto-compact à 95 % du contexte. Cf. [strategic-compact](strategic-compact.md) pour le détail.
 
 ## Related pages
 
-- [[model-selection-claude]]
-- [[strategic-compact]]
-- [[subagent-architecture]]
-- [[mcp-vs-cli-skills]]
-- [[modular-codebase-tokens]]
-- [[ecc-overview]]
+- [model-selection-claude](model-selection-claude.md)
+- [strategic-compact](strategic-compact.md)
+- [subagent-architecture](subagent-architecture.md)
+- [mcp-vs-cli-skills](mcp-vs-cli-skills.md)
+- [modular-codebase-tokens](modular-codebase-tokens.md)
+- [ecc-overview](ecc-overview.md)

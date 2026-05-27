@@ -59,7 +59,7 @@ Conséquence : pas seulement "moins bien", mais **systématiquement raté**. Si 
 
 Le moyen le plus simple : maintenir l'entry file à 50-200 lignes. À cette taille, il n'y a presque pas de "milieu" — tout est lu.
 
-Voir [[modular-instruction-architecture]].
+Voir [modular-instruction-architecture](modular-instruction-architecture.md).
 
 #### 2. Sortir le contenu long en topic docs
 
@@ -88,11 +88,11 @@ Répétition top + bottom = double recall.
 
 Plutôt que de risquer que l'agent ignore une règle textuelle, encoder en **check exécutable** (lint, pre-commit, CI). L'agent ne peut pas violer une règle qui fail la build.
 
-Voir [[architectural-boundary-enforcement]].
+Voir [architectural-boundary-enforcement](architectural-boundary-enforcement.md).
 
 ### Lien avec le context budget
 
-Le lost-in-the-middle se combine avec le [[modular-instruction-architecture|context budget eaten]] :
+Le lost-in-the-middle se combine avec le [context budget eaten](modular-instruction-architecture.md) :
 
 - Long entry file → context bouffé + règles au milieu ignorées
 - Court entry file + topic docs → context préservé + chaque doc tient en zones haute-recall
@@ -119,7 +119,7 @@ Si le comportement change → le lost-in-the-middle te touche.
 
 ## Related pages
 
-- [[modular-instruction-architecture]]
-- [[instruction-design-patterns]]
-- [[architectural-boundary-enforcement]]
-- [[the-harness-engineering-curriculum-summary]]
+- [modular-instruction-architecture](modular-instruction-architecture.md)
+- [instruction-design-patterns](instruction-design-patterns.md)
+- [architectural-boundary-enforcement](architectural-boundary-enforcement.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

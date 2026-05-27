@@ -23,9 +23,9 @@ Source : ClawHub (registre public de skills) au moment de l'étude.
 Un skill ressemble à un fichier markdown inoffensif. Mais une fois installé :
 
 - Il est chargé en contexte automatiquement par certaines configs.
-- Il peut contenir des instructions invisibles ([[prompt-injection-sanitization|Unicode caché]], commentaires HTML).
+- Il peut contenir des instructions invisibles ([Unicode caché](prompt-injection-sanitization.md), commentaires HTML).
 - Il peut référencer des liens externes qui changeront plus tard.
-- Il peut déclencher des hooks via les patterns que [[agentshield]] détecte.
+- Il peut déclencher des hooks via les patterns que [agentshield](agentshield.md) détecte.
 
 C'est la même classe de problème que les npm packages malveillants — mais sans la maturité d'outils de scan que l'écosystème npm a fini par développer.
 
@@ -37,22 +37,22 @@ Avant d'installer un skill :
 
 1. Lire le contenu (vraiment, pas en diagonale).
 2. Vérifier l'auteur, le repo source, la date de dernière modification.
-3. Scanner avec [[agentshield]] ou `snyk agent-scan`.
+3. Scanner avec [agentshield](agentshield.md) ou `snyk agent-scan`.
 4. Si possible, l'inliner dans le projet plutôt que de pointer vers un repo distant.
-5. Préférer les skills d'écosystèmes maintenus ([[ecc-overview|ECC]]) aux skills isolés.
+5. Préférer les skills d'écosystèmes maintenus ([ECC](ecc-overview.md)) aux skills isolés.
 
 ## Lien avec les autres surfaces
 
 Une fois un skill malveillant chargé, il devient un vecteur pour les autres failles :
 
-- [[prompt-injection-sanitization]] — si le skill contient du payload caché.
-- [[claude-code-cves-2026]] — si le skill installe des hooks ou des MCP servers via la config.
-- [[agent-memory-hygiene]] — si le skill modifie la mémoire persistée.
+- [prompt-injection-sanitization](prompt-injection-sanitization.md) — si le skill contient du payload caché.
+- [claude-code-cves-2026](claude-code-cves-2026.md) — si le skill installe des hooks ou des MCP servers via la config.
+- [agent-memory-hygiene](agent-memory-hygiene.md) — si le skill modifie la mémoire persistée.
 
 ## Related pages
 
-- [[agentshield]]
-- [[prompt-injection-sanitization]]
-- [[claude-code-cves-2026]]
-- [[ecc-overview]]
-- [[the-agentic-security-summary]]
+- [agentshield](agentshield.md)
+- [prompt-injection-sanitization](prompt-injection-sanitization.md)
+- [claude-code-cves-2026](claude-code-cves-2026.md)
+- [ecc-overview](ecc-overview.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

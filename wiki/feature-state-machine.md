@@ -135,14 +135,14 @@ Logger les transitions = traçabilité complète. Quand quelqu'un demande "depui
 
 ### Lien avec WIP=1
 
-[[wip-limit-discipline|WIP=1]] dit : "un seul `active` à la fois". La state machine **enforce** cette règle :
+[WIP=1](wip-limit-discipline.md) dit : "un seul `active` à la fois". La state machine **enforce** cette règle :
 
 - Scheduler refuse de transitionner `not_started → active` si une autre tâche est déjà `active`
 - Sauf si la précédente est `blocked`
 
 ### Lien avec verified completion rate
 
-[[verified-completion-rate-metric|VCR]] = ratio `passing` / `activated`. La state machine donne le **dénominateur** (toutes les tâches qui ont été `active` au moins une fois) et le **numérateur** (celles qui ont atteint `passing`).
+[VCR](verified-completion-rate-metric.md) = ratio `passing` / `activated`. La state machine donne le **dénominateur** (toutes les tâches qui ont été `active` au moins une fois) et le **numérateur** (celles qui ont atteint `passing`).
 
 ### Les transitions interdites
 
@@ -169,9 +169,9 @@ Logger les transitions = traçabilité complète. Quand quelqu'un demande "depui
 
 ## Related pages
 
-- [[feature-list-as-primitive]]
-- [[harness-pipeline-scheduler-verifier-handoff]]
-- [[wip-limit-discipline]]
-- [[verified-completion-rate-metric]]
-- [[completion-evidence-executable]]
-- [[the-harness-engineering-curriculum-summary]]
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [harness-pipeline-scheduler-verifier-handoff](harness-pipeline-scheduler-verifier-handoff.md)
+- [wip-limit-discipline](wip-limit-discipline.md)
+- [verified-completion-rate-metric](verified-completion-rate-metric.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

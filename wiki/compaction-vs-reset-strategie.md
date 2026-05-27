@@ -16,7 +16,7 @@
 
 Demander à l'agent (ou au système) de **résumer** la conversation pour libérer du contexte tout en restant dans la même session.
 
-Voir [[strategic-compact]] pour le pattern `/compact` de Claude Code.
+Voir [strategic-compact](strategic-compact.md) pour le pattern `/compact` de Claude Code.
 
 **Avantages** :
 - Continuité de session : l'agent garde sa "psychologie" (style, contexte implicite)
@@ -30,12 +30,12 @@ Voir [[strategic-compact]] pour le pattern `/compact` de Claude Code.
 
 #### Reset
 
-Terminer la session actuelle après avoir produit les artefacts ([[progress-file-pattern]], [[decision-log-pattern]]), puis démarrer une nouvelle session.
+Terminer la session actuelle après avoir produit les artefacts ([progress-file-pattern](progress-file-pattern.md), [decision-log-pattern](decision-log-pattern.md)), puis démarrer une nouvelle session.
 
 **Avantages** :
 - Contexte propre, pas de bias accumulé
 - Forcer l'écriture des artefacts (utile à long terme)
-- Pas de risque de "rushed finish" lié à la [[context-anxiety-modeles|context anxiety]]
+- Pas de risque de "rushed finish" lié à la [context anxiety](context-anxiety-modeles.md)
 
 **Inconvénients** :
 - Rebuild cost (3-15 min selon qualité des artefacts)
@@ -62,7 +62,7 @@ Reset à un mauvais moment = perte. Un bon stopping point :
 3. `PROGRESS.md` mis à jour
 4. `Next best step` clair
 
-Voir [[session-clean-handoff|clean state checklist]] pour les 5 conditions.
+Voir [clean state checklist](session-clean-handoff.md) pour les 5 conditions.
 
 ### Compaction : ce qui se perd typiquement
 
@@ -93,12 +93,12 @@ Le commit est crucial : il transforme l'état conversationnel en état git **dur
 
 ### Pattern "stop and reset"
 
-Quand l'agent commence à montrer des signes de [[context-anxiety-modeles|context anxiety]] :
+Quand l'agent commence à montrer des signes de [context anxiety](context-anxiety-modeles.md) :
 
 ```
 [symptoms: rushed answers, skipping tests, "I'll finish later"]
   ↓
-  1. Force checklist [[template-clean-state-checklist|clean state]]
+  1. Force checklist [clean state](template-clean-state-checklist.md)
   2. Update PROGRESS.md + DECISIONS.md
   3. Commit
   4. End session
@@ -109,11 +109,11 @@ Quand l'agent commence à montrer des signes de [[context-anxiety-modeles|contex
 
 Claude Code propose :
 
-- `/compact` — compaction manuelle (voir [[strategic-compact]])
+- `/compact` — compaction manuelle (voir [strategic-compact](strategic-compact.md))
 - `/clear` — reset partiel (clear conversation but keep CLAUDE.md context)
 - Nouvelle session (terminal restart) — reset complet
 
-[[memory-persistence-hooks|Les hooks]] peuvent automatiser : PreCompact pour sauvegarder l'état, SessionStart pour relire les artefacts.
+[Les hooks](memory-persistence-hooks.md) peuvent automatiser : PreCompact pour sauvegarder l'état, SessionStart pour relire les artefacts.
 
 ### Antipatterns
 
@@ -143,11 +143,11 @@ Quelques signaux à surveiller :
 
 ## Related pages
 
-- [[cross-session-context-loss]]
-- [[context-anxiety-modeles]]
-- [[progress-file-pattern]]
-- [[decision-log-pattern]]
-- [[session-clean-handoff]]
-- [[strategic-compact]]
-- [[memory-persistence-hooks]]
-- [[the-harness-engineering-curriculum-summary]]
+- [cross-session-context-loss](cross-session-context-loss.md)
+- [context-anxiety-modeles](context-anxiety-modeles.md)
+- [progress-file-pattern](progress-file-pattern.md)
+- [decision-log-pattern](decision-log-pattern.md)
+- [session-clean-handoff](session-clean-handoff.md)
+- [strategic-compact](strategic-compact.md)
+- [memory-persistence-hooks](memory-persistence-hooks.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

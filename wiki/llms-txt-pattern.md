@@ -57,10 +57,10 @@ Au démarrage d'un projet, **vérifier la présence d'un `llms.txt`** sur tous l
 
 ### Lien avec le kickoff
 
-S'intègre naturellement dans le [[two-instance-kickoff]] : l'instance "deep research" collecte les `llms.txt` disponibles et les met dans le projet.
+S'intègre naturellement dans le [two-instance-kickoff](two-instance-kickoff.md) : l'instance "deep research" collecte les `llms.txt` disponibles et les met dans le projet.
 
 ## Related pages
 
-- [[two-instance-kickoff]]
-- [[mcp-vs-cli-skills]]
-- [[the-longform-guide-summary]]
+- [two-instance-kickoff](two-instance-kickoff.md)
+- [mcp-vs-cli-skills](mcp-vs-cli-skills.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

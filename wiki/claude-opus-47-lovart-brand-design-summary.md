@@ -12,17 +12,17 @@
 
 Auteur : J0hn (compte WeChat "AGI Hunt"), 17 avril 2026. Projet : créer une identité visuelle pour "国宝回家" (National Treasure Homecoming), une initiative publique de numérisation de pièces culturelles chinoises perdues à l'étranger.
 
-Contrainte : l'auteur est développeur, pas designer. Après 7 tentatives infructueuses avec d'autres outils, il teste [[claude-opus-47]] couplé à Lovart.
+Contrainte : l'auteur est développeur, pas designer. Après 7 tentatives infructueuses avec d'autres outils, il teste [claude-opus-47](claude-opus-47.md) couplé à Lovart.
 
 ## Workflow
 
 ### Setup
 
-Claude Code avec le flag `--chrome` connecte [[claude-opus-47]] au Chrome local (déjà authentifié sur Lovart) via MCP. L'auteur fournit un dossier de contexte projet et donne une instruction générale. Il va boire du thé.
+Claude Code avec le flag `--chrome` connecte [claude-opus-47](claude-opus-47.md) au Chrome local (déjà authentifié sur Lovart) via MCP. L'auteur fournit un dossier de contexte projet et donne une instruction générale. Il va boire du thé.
 
 ### Étape 1 — Brand Kit
 
-[[lovart-brand-kit]] parse un PDF de 47 Mo (IP手册 de *Black Myth: Wukong*) et en extrait :
+[lovart-brand-kit](lovart-brand-kit.md) parse un PDF de 47 Mo (IP手册 de *Black Myth: Wukong*) et en extrait :
 - Design philosophy : "Oriental Epic, UE5 réalisme + calligraphie + symboles bouddhistes/taoïstes"
 - Couleurs nommées : `Brand Deep Black`, `Calligraphy White`, `Stamp Red`
 - Assets : logos, visuels personnages, images d'ambiance
@@ -35,19 +35,19 @@ Opus 4.7 rédige le prompt Lovart sans intervention humaine. Résultat : poster 
 
 ### Étape 3 — Font Generator
 
-[[ai-font-generator]] génère la police **Bronze Calligraphy** (~2min30) : serif épais à texture pinceau, inspiré des inscriptions sur bronzes rituels. La police est sauvegardée dans "My Fonts" et réutilisable sur tous les projets.
+[ai-font-generator](ai-font-generator.md) génère la police **Bronze Calligraphy** (~2min30) : serif épais à texture pinceau, inspiré des inscriptions sur bronzes rituels. La police est sauvegardée dans "My Fonts" et réutilisable sur tous les projets.
 
 ### Étape 4 — Create Skill
 
-Lovart propose de convertir la conversation en [[prompt-as-asset|Skill]] réutilisable. Nommé automatiquement : **Game IP Charity Campaign Design**. Stocké dans Skill Book pour usages futurs.
+Lovart propose de convertir la conversation en [Skill](prompt-as-asset.md) réutilisable. Nommé automatiquement : **Game IP Charity Campaign Design**. Stocké dans Skill Book pour usages futurs.
 
 ### Étape 5 — Export PSD
 
-[[ai-design-agent|Export PSD]] produit un fichier Photoshop avec couches éditables et nommage sémantique (ex: "国宝回家公益海报", "Text: LOVART"), pas un PNG aplati.
+[Export PSD](ai-design-agent.md) produit un fichier Photoshop avec couches éditables et nommage sémantique (ex: "国宝回家公益海报", "Text: LOVART"), pas un PNG aplati.
 
 ### Étape 6 — Vidéo Seedance 2.0
 
-[[seedance-video-gen]] génère un plan de 5 secondes. Première version jugée insuffisante par Opus 4.7 lui-même ([[self-verification-mechanism]]) — trop "temple dramatique", pas assez sobre. Deuxième version : ding en bronze sur fond lavis d'encre, lumière dorée, pétales tombant. Approuvée.
+[seedance-video-gen](seedance-video-gen.md) génère un plan de 5 secondes. Première version jugée insuffisante par Opus 4.7 lui-même ([self-verification-mechanism](self-verification-mechanism.md)) — trop "temple dramatique", pas assez sobre. Deuxième version : ding en bronze sur fond lavis d'encre, lumière dorée, pétales tombant. Approuvée.
 
 ## Bilan
 
@@ -61,11 +61,11 @@ Lovart propose de convertir la conversation en [[prompt-as-asset|Skill]] réutil
 
 ## Related pages
 
-- [[claude-opus-47]]
-- [[claude-code-chrome-flag]]
-- [[lovart-brand-kit]]
-- [[ai-font-generator]]
-- [[prompt-as-asset]]
-- [[ai-design-agent]]
-- [[self-verification-mechanism]]
-- [[seedance-video-gen]]
+- [claude-opus-47](claude-opus-47.md)
+- [claude-code-chrome-flag](claude-code-chrome-flag.md)
+- [lovart-brand-kit](lovart-brand-kit.md)
+- [ai-font-generator](ai-font-generator.md)
+- [prompt-as-asset](prompt-as-asset.md)
+- [ai-design-agent](ai-design-agent.md)
+- [self-verification-mechanism](self-verification-mechanism.md)
+- [seedance-video-gen](seedance-video-gen.md)

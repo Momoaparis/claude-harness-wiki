@@ -51,11 +51,11 @@ Voir le Tmux Cheatsheet pour les commandes : https://tmuxcheatsheet.com/
 
 ### Lien avec parallélisation
 
-Ce pattern combine bien avec [[git-worktrees-parallel-claude]] : un worktree par instance Claude, chaque instance utilise tmux pour ses processus longs.
+Ce pattern combine bien avec [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md) : un worktree par instance Claude, chaque instance utilise tmux pour ses processus longs.
 
 ## Related pages
 
-- [[modular-codebase-tokens]]
-- [[mgrep-vs-grep]]
-- [[git-worktrees-parallel-claude]]
-- [[the-longform-guide-summary]]
+- [modular-codebase-tokens](modular-codebase-tokens.md)
+- [mgrep-vs-grep](mgrep-vs-grep.md)
+- [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

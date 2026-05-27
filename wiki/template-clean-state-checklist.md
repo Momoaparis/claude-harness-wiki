@@ -1,6 +1,6 @@
 # Template — clean-state-checklist.md
 
-**Summary** : Checklist 6-points à exécuter en fin de session pour garantir un repo "redémarrable" sans intervention manuelle. Encode les 5 conditions de [[session-clean-handoff]] + 1 vérification supplémentaire d'absence de WIP non-documenté.
+**Summary** : Checklist 6-points à exécuter en fin de session pour garantir un repo "redémarrable" sans intervention manuelle. Encode les 5 conditions de [session-clean-handoff](session-clean-handoff.md) + 1 vérification supplémentaire d'absence de WIP non-documenté.
 
 **Sources** : `raw/ingested/template-clean-state-checklist.txt` (https://walkinglabs.github.io/learn-harness-engineering/en/resources/templates/clean-state-checklist)
 
@@ -12,7 +12,7 @@
 
 ### Rôle
 
-Document à parcourir **à chaque clock-out**. Si une case ne peut pas être cochée → la session n'est pas finie. Voir [[session-clean-handoff]] pour la théorie.
+Document à parcourir **à chaque clock-out**. Si une case ne peut pas être cochée → la session n'est pas finie. Voir [session-clean-handoff](session-clean-handoff.md) pour la théorie.
 
 ### Template verbatim (anglais)
 
@@ -114,11 +114,11 @@ Test ultime : cloner sur autre machine et démarrer. Si ça casse → la harness
 
 #### 3. Progress recorded
 
-Voir [[template-claude-progress-md]] pour les champs obligatoires.
+Voir [template-claude-progress-md](template-claude-progress-md.md) pour les champs obligatoires.
 
 #### 4. Feature state coherent
 
-Voir [[template-feature-list-json]] pour le schema. La cohérence inclut : WIP=1, evidence sur passing, notes sur blocked.
+Voir [template-feature-list-json](template-feature-list-json.md) pour le schema. La cohérence inclut : WIP=1, evidence sur passing, notes sur blocked.
 
 #### 5. No silent WIP
 
@@ -184,7 +184,7 @@ Hook :
 }
 ```
 
-Voir [[claude-code-hooks]].
+Voir [claude-code-hooks](claude-code-hooks.md).
 
 ### Antipatterns
 
@@ -192,7 +192,7 @@ Voir [[claude-code-hooks]].
 - ❌ Checklist sur 30+ points → personne ne la suit
 - ❌ Pas de mécanique d'enforcement → checklist optionnelle = checklist ignorée
 - ❌ Cases cochées sans vraiment vérifier → confiance erronée
-- ❌ Cases ignorées "juste cette fois" → norme glissante (voir [[harness-entropy-management]])
+- ❌ Cases ignorées "juste cette fois" → norme glissante (voir [harness-entropy-management](harness-entropy-management.md))
 
 ### Cas réel : 12 semaines (Lecture 12)
 
@@ -213,10 +213,10 @@ Voir [[claude-code-hooks]].
 
 ## Related pages
 
-- [[session-clean-handoff]]
-- [[template-claude-md]]
-- [[template-claude-progress-md]]
-- [[template-feature-list-json]]
-- [[harness-entropy-management]]
-- [[claude-code-hooks]]
-- [[the-harness-engineering-curriculum-summary]]
+- [session-clean-handoff](session-clean-handoff.md)
+- [template-claude-md](template-claude-md.md)
+- [template-claude-progress-md](template-claude-progress-md.md)
+- [template-feature-list-json](template-feature-list-json.md)
+- [harness-entropy-management](harness-entropy-management.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

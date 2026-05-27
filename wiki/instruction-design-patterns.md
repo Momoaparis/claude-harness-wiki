@@ -44,7 +44,7 @@ Chaque règle doit avoir trois métadonnées :
 | **Applicability** | Quand elle s'applique | "Tous les endpoints qui acceptent du JSON utilisateur" |
 | **Expiry** | À quoi elle disparaît | "Quand on migrera vers Zod en v3" |
 
-Sans expiry, les règles s'accumulent indéfiniment. C'est l'origine du [[harness-rot-et-dette-technique|harness rot]].
+Sans expiry, les règles s'accumulent indéfiniment. C'est l'origine du [harness rot](harness-rot-et-dette-technique.md).
 
 Format pratique :
 
@@ -68,7 +68,7 @@ Mauvais : énumérer ce que l'agent doit faire.
 - ...
 ```
 
-Bon : encoder l'invariant comme **check mécanique** (voir [[architectural-boundary-enforcement]]).
+Bon : encoder l'invariant comme **check mécanique** (voir [architectural-boundary-enforcement](architectural-boundary-enforcement.md)).
 
 ```bash
 # Check: pas d'import direct de fs dans renderer
@@ -82,9 +82,9 @@ grep -r "require('fs')" src/renderer/ && exit 1
 Dans les instructions, séparer ce qui s'adresse à l'agent qui **fait** du travail de ce qui s'adresse au **checker**.
 
 - Worker instructions → `AGENTS.md` (ou topic docs)
-- Checker rubric → `evaluator-rubric.md` (voir [[template-evaluator-rubric]])
+- Checker rubric → `evaluator-rubric.md` (voir [template-evaluator-rubric](template-evaluator-rubric.md))
 
-Voir [[worker-checker-separation]].
+Voir [worker-checker-separation](worker-checker-separation.md).
 
 ### Comment auditer les instructions existantes
 
@@ -103,7 +103,7 @@ même type d'échec re-prod → "ajoute une autre règle" →
 600 lignes plus tard → l'agent ignore tout
 ```
 
-Voir [[modular-instruction-architecture]] et [[lost-in-the-middle-effect]] pour les conséquences.
+Voir [modular-instruction-architecture](modular-instruction-architecture.md) et [lost-in-the-middle-effect](lost-in-the-middle-effect.md) pour les conséquences.
 
 **Solution** : à chaque ajout de règle, demander :
 1. Est-ce un cas isolé ou un pattern ?
@@ -116,13 +116,13 @@ Voir [[modular-instruction-architecture]] et [[lost-in-the-middle-effect]] pour 
 2. **Source + applicability + expiry** sur chaque règle.
 3. **Constrain via mécanique**, pas via énumération.
 4. **Auditer périodiquement**. Supprimer ce qui est expiré.
-5. Une règle de plus = un risque de [[lost-in-the-middle-effect|lost-in-the-middle]] de plus.
+5. Une règle de plus = un risque de [lost-in-the-middle](lost-in-the-middle-effect.md) de plus.
 
 ## Related pages
 
-- [[modular-instruction-architecture]]
-- [[lost-in-the-middle-effect]]
-- [[architectural-boundary-enforcement]]
-- [[worker-checker-separation]]
-- [[harness-rot-et-dette-technique]]
-- [[the-harness-engineering-curriculum-summary]]
+- [modular-instruction-architecture](modular-instruction-architecture.md)
+- [lost-in-the-middle-effect](lost-in-the-middle-effect.md)
+- [architectural-boundary-enforcement](architectural-boundary-enforcement.md)
+- [worker-checker-separation](worker-checker-separation.md)
+- [harness-rot-et-dette-technique](harness-rot-et-dette-technique.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

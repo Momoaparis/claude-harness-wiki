@@ -42,11 +42,11 @@ L'auteur insiste : **commencer par une seule instance** et n'ajouter des instanc
 
 ### Lien avec git worktrees
 
-Le cascade fonctionne mieux avec [[git-worktrees-parallel-claude]] : chaque tab Claude vit dans son propre worktree, ce qui rend les changements isolés et la cascade vraiment unidirectionnelle.
+Le cascade fonctionne mieux avec [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md) : chaque tab Claude vit dans son propre worktree, ce qui rend les changements isolés et la cascade vraiment unidirectionnelle.
 
 ## Related pages
 
-- [[git-worktrees-parallel-claude]]
-- [[two-instance-kickoff]]
-- [[claude-code-commands]]
-- [[the-longform-guide-summary]]
+- [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)
+- [two-instance-kickoff](two-instance-kickoff.md)
+- [claude-code-commands](claude-code-commands.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

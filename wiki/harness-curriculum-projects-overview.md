@@ -38,7 +38,7 @@ Tu lances un agent (Claude Code / Codex) sur le `starter/` et tu mesures combien
 
 **Takeaway** : harness artifacts **améliorent tangiblement** les outcomes même sur un projet petit.
 
-**Concepts couverts** : [[five-subsystem-harness-architecture]], [[template-claude-md]], [[feature-list-as-primitive]].
+**Concepts couverts** : [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md), [template-claude-md](template-claude-md.md), [feature-list-as-primitive](feature-list-as-primitive.md).
 
 **Estimation** : 1-2 heures.
 
@@ -57,11 +57,11 @@ Tu lances un agent (Claude Code / Codex) sur le `starter/` et tu mesures combien
 - `PRODUCT.md`
 - `session-handoff.md`
 
-**Critère de succès** : une **fresh session** peut reprendre depuis le repo seul ([[fresh-session-readability-test|fresh session test]]).
+**Critère de succès** : une **fresh session** peut reprendre depuis le repo seul ([fresh session test](fresh-session-readability-test.md)).
 
-**Takeaway** : le repo peut être [[repository-as-system-of-record|single source of truth]].
+**Takeaway** : le repo peut être [single source of truth](repository-as-system-of-record.md).
 
-**Concepts couverts** : [[repository-as-system-of-record]], [[fresh-session-readability-test]], [[template-session-handoff-md]].
+**Concepts couverts** : [repository-as-system-of-record](repository-as-system-of-record.md), [fresh-session-readability-test](fresh-session-readability-test.md), [template-session-handoff-md](template-session-handoff-md.md).
 
 **Estimation** : 2-3 heures.
 
@@ -76,15 +76,15 @@ Tu lances un agent (Claude Code / Codex) sur le `starter/` et tu mesures combien
 **Tâche concrète** : 4 features (document chunking, metadata extraction, indexing status UI, grounded Q&A with citations).
 
 **Artefacts clés ajoutés** :
-- `clean-state-checklist.md` (voir [[template-clean-state-checklist]])
+- `clean-state-checklist.md` (voir [template-clean-state-checklist](template-clean-state-checklist.md))
 - Verification gates dans `feature_list.json`
 - Scope control explicite
 
-**Critère de succès** : "one feature at a time, no marking pass without verification evidence" ([[wip-limit-discipline]] + [[completion-evidence-executable]]).
+**Critère de succès** : "one feature at a time, no marking pass without verification evidence" ([wip-limit-discipline](wip-limit-discipline.md) + [completion-evidence-executable](completion-evidence-executable.md)).
 
 **Takeaway** : la continuité multi-session demande des **gates structurels**, pas juste de la discipline.
 
-**Concepts couverts** : [[cross-session-context-loss]], [[wip-limit-discipline]], [[completion-evidence-executable]].
+**Concepts couverts** : [cross-session-context-loss](cross-session-context-loss.md), [wip-limit-discipline](wip-limit-discipline.md), [completion-evidence-executable](completion-evidence-executable.md).
 
 **Estimation** : 3-4 heures.
 
@@ -107,7 +107,7 @@ Tu lances un agent (Claude Code / Codex) sur le `starter/` et tu mesures combien
 
 **Takeaway** : logs + guardrails permettent à l'agent de **self-correct** beaucoup plus vite que l'exploration brute.
 
-**Concepts couverts** : [[observability-runtime-vs-process]], [[architectural-boundary-enforcement]], [[agent-observability]].
+**Concepts couverts** : [observability-runtime-vs-process](observability-runtime-vs-process.md), [architectural-boundary-enforcement](architectural-boundary-enforcement.md), [agent-observability](agent-observability.md).
 
 **Estimation** : 2-3 heures.
 
@@ -131,7 +131,7 @@ Tu lances un agent (Claude Code / Codex) sur le `starter/` et tu mesures combien
 
 **Takeaway** : role separation = **+3x** sur la qualité. La feature constante (Q&A) isole role separation comme **seule variable**.
 
-**Concepts couverts** : [[planner-generator-evaluator-3-agent-architecture]], [[worker-checker-separation]], [[confidence-calibration-bias]].
+**Concepts couverts** : [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md), [worker-checker-separation](worker-checker-separation.md), [confidence-calibration-bias](confidence-calibration-bias.md).
 
 **Estimation** : 2-3 heures.
 
@@ -163,11 +163,11 @@ Tu lances un agent (Claude Code / Codex) sur le `starter/` et tu mesures combien
 6. Identifier critical vs nice-to-have
 ```
 
-Voir [[ablation-study-methodology]].
+Voir [ablation-study-methodology](ablation-study-methodology.md).
 
 **Takeaway** : tu sais maintenant **lequel** de tes composants harness importe vraiment dans **ton** contexte.
 
-**Concepts couverts** : tous les précédents + [[ablation-study-methodology]].
+**Concepts couverts** : tous les précédents + [ablation-study-methodology](ablation-study-methodology.md).
 
 **Estimation** : 4-6 heures.
 
@@ -199,7 +199,7 @@ Voir [[ablation-study-methodology]].
 - Temps total par projet
 - Taux de features complétées
 - Nombre d'iterations Generator ↔ Evaluator
-- VCR final (voir [[verified-completion-rate-metric]])
+- VCR final (voir [verified-completion-rate-metric](verified-completion-rate-metric.md))
 
 #### Itération
 
@@ -222,10 +222,10 @@ Cette progression est **transférable** à n'importe quel projet : commencer par
 
 ### Concepts transverses
 
-- [[five-subsystem-harness-architecture]] couvert sur les 6 projets
-- [[feature-list-as-primitive]] dès P01
-- [[worker-checker-separation]] introduit en P05
-- [[ablation-study-methodology]] introduit en P06
+- [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md) couvert sur les 6 projets
+- [feature-list-as-primitive](feature-list-as-primitive.md) dès P01
+- [worker-checker-separation](worker-checker-separation.md) introduit en P05
+- [ablation-study-methodology](ablation-study-methodology.md) introduit en P06
 
 ### À retenir
 
@@ -237,7 +237,7 @@ Cette progression est **transférable** à n'importe quel projet : commencer par
 
 ## Related pages
 
-- [[ablation-study-methodology]]
-- [[five-subsystem-harness-architecture]]
-- [[planner-generator-evaluator-3-agent-architecture]]
-- [[the-harness-engineering-curriculum-summary]]
+- [ablation-study-methodology](ablation-study-methodology.md)
+- [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)
+- [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

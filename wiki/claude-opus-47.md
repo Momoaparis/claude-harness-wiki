@@ -21,7 +21,7 @@ La perception visuelle bondit de ~45 points : le modèle peut lire, analyser et 
 
 ### Mécanisme de self-verification
 
-Voir [[self-verification-mechanism]]. Après chaque tâche longue, Opus 4.7 se relit et réévalue le résultat avant de rendre la main. S'il juge la sortie insuffisante, il relance une nouvelle tentative sans attendre l'utilisateur.
+Voir [self-verification-mechanism](self-verification-mechanism.md). Après chaque tâche longue, Opus 4.7 se relit et réévalue le résultat avant de rendre la main. S'il juge la sortie insuffisante, il relance une nouvelle tentative sans attendre l'utilisateur.
 
 Exemple documenté : génération de vidéo Seedance → première version jugée "trop dramatique, pas assez sobre" → deuxième version produite autonomement → validée.
 
@@ -36,7 +36,7 @@ Implications :
 
 ### Utilisation via Chrome MCP
 
-Voir [[claude-code-chrome-flag]]. Opus 4.7 peut piloter un navigateur Chrome local via MCP pour interagir avec des interfaces web (ex: Lovart, Figma) sans que l'utilisateur manipule l'interface.
+Voir [claude-code-chrome-flag](claude-code-chrome-flag.md). Opus 4.7 peut piloter un navigateur Chrome local via MCP pour interagir avec des interfaces web (ex: Lovart, Figma) sans que l'utilisateur manipule l'interface.
 
 Améliorations Computer Use vs 4.6 :
 - Les tentatives précédentes (Opus 4.6 + browser extension, Computer Use, browser MCP) étaient systématiquement insuffisantes
@@ -44,15 +44,15 @@ Améliorations Computer Use vs 4.6 :
 
 ### Positionnement dans la hiérarchie
 
-Voir [[model-selection-claude]].
+Voir [model-selection-claude](model-selection-claude.md).
 - **Haiku** : tâches répétitives, worker agents
 - **Sonnet** : défaut coding (90% des cas)
 - **Opus 4.7** : tâches visuelles, long-running agents, décisions architecturales
 
 ## Related pages
 
-- [[self-verification-mechanism]]
-- [[claude-code-chrome-flag]]
-- [[model-selection-claude]]
-- [[ai-design-agent]]
-- [[claude-opus-47-lovart-brand-design-summary]]
+- [self-verification-mechanism](self-verification-mechanism.md)
+- [claude-code-chrome-flag](claude-code-chrome-flag.md)
+- [model-selection-claude](model-selection-claude.md)
+- [ai-design-agent](ai-design-agent.md)
+- [claude-opus-47-lovart-brand-design-summary](claude-opus-47-lovart-brand-design-summary.md)

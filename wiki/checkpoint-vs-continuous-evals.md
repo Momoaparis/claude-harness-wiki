@@ -66,11 +66,11 @@ Le critère de décision est la **nature du travail** :
 
 - Hooks `PostToolUse` : vérifications après chaque action (penche vers continuous)
 - Skills de validation : utilisés aux checkpoints
-- Codemap continuous : sert de source de vérité externe (voir [[modular-codebase-tokens]])
+- Codemap continuous : sert de source de vérité externe (voir [modular-codebase-tokens](modular-codebase-tokens.md))
 
 ## Related pages
 
-- [[grader-types]]
-- [[pass-at-k-metric]]
-- [[eval-roadmap]]
-- [[the-longform-guide-summary]]
+- [grader-types](grader-types.md)
+- [pass-at-k-metric](pass-at-k-metric.md)
+- [eval-roadmap](eval-roadmap.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

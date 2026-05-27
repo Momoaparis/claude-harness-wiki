@@ -31,7 +31,7 @@
 
 ### Commandes utilitaires
 
-Ces commandes complètent celles documentées dans [[claude-code-commands]] :
+Ces commandes complètent celles documentées dans [claude-code-commands](claude-code-commands.md) :
 
 #### `/rewind`
 
@@ -88,7 +88,7 @@ git worktree add ../feature-branch feature-branch
 # Lancer une instance Claude Code distincte dans chaque worktree
 ```
 
-**Voir** : [[git-worktrees-parallel-claude]], [[cascade-method]]
+**Voir** : [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md), [cascade-method](cascade-method.md)
 
 ### GitHub Actions — review automatique de PR
 
@@ -104,9 +104,9 @@ Le flag `--dangerously-skip-permissions` fait l'opposé : supprime toutes les re
 
 ## Related pages
 
-- [[claude-code-commands]]
-- [[claude-code-hooks]]
-- [[claude-code-plugins]]
-- [[git-worktrees-parallel-claude]]
-- [[cascade-method]]
-- [[the-shorthand-guide-summary]]
+- [claude-code-commands](claude-code-commands.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [claude-code-plugins](claude-code-plugins.md)
+- [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)
+- [cascade-method](cascade-method.md)
+- [the-shorthand-guide-summary](the-shorthand-guide-summary.md)

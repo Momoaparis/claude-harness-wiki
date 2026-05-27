@@ -90,7 +90,7 @@ Eval : score sur scope + exclusions respect → calibré
 - **Toujours** pour les features non-triviales (>1 session)
 - **Toujours** pour les tâches sensibles (sécurité, payment, data)
 - Idéalement pour **chaque** atomic task de la feature list
-- Souvent généré par un planner agent (voir [[planner-generator-evaluator-3-agent-architecture]])
+- Souvent généré par un planner agent (voir [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md))
 
 ### Sprint contract vs feature list
 
@@ -144,7 +144,7 @@ Le verifier peut alors run automatiquement les verification commands.
 | Artefact | Rôle |
 |----------|------|
 | **Sprint contract** | Spec d'entrée — "voici ce qu'on demande" |
-| **[[template-evaluator-rubric|Evaluator rubric]]** | Grille de sortie — "voici comment on score" |
+| **[Evaluator rubric](template-evaluator-rubric.md)** | Grille de sortie — "voici comment on score" |
 
 Les deux s'articulent : la rubric **score** la conformité au contract.
 
@@ -171,13 +171,13 @@ Les deux peuvent coexister : user story pour comprendre le **pourquoi**, sprint 
 2. Créé **avant** le code, pas après.
 3. **Exclusions explicites** = anti-scope-creep.
 4. Format YAML ou JSON pour usage machine.
-5. Articulé avec [[template-evaluator-rubric|evaluator rubric]] pour la boucle complète.
+5. Articulé avec [evaluator rubric](template-evaluator-rubric.md) pour la boucle complète.
 
 ## Related pages
 
-- [[observability-runtime-vs-process]]
-- [[template-evaluator-rubric]]
-- [[planner-generator-evaluator-3-agent-architecture]]
-- [[feature-list-as-primitive]]
-- [[atomic-task-decomposition]]
-- [[the-harness-engineering-curriculum-summary]]
+- [observability-runtime-vs-process](observability-runtime-vs-process.md)
+- [template-evaluator-rubric](template-evaluator-rubric.md)
+- [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [atomic-task-decomposition](atomic-task-decomposition.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

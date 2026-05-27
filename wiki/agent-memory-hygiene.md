@@ -23,7 +23,7 @@ Documenté sur 31 entreprises, 14 industries.
 
 ## Lien direct avec Claude Code
 
-Claude Code charge la mémoire au démarrage de session (`CLAUDE.md`, fichiers de projet, mémoire globale, etc.). C'est aussi vrai pour [[memory-persistence-hooks|le triplet PreCompact/SessionStart/Stop]] côté pattern, et pour [[session-storage-pattern|les fichiers .tmp persistés]].
+Claude Code charge la mémoire au démarrage de session (`CLAUDE.md`, fichiers de projet, mémoire globale, etc.). C'est aussi vrai pour [le triplet PreCompact/SessionStart/Stop](memory-persistence-hooks.md) côté pattern, et pour [les fichiers .tmp persistés](session-storage-pattern.md).
 
 Toute persistance est un canal de poisoning potentiel.
 
@@ -40,14 +40,14 @@ Un workflow qui traite des docs externes toute la journée **avec mémoire long-
 
 ## Lien avec les autres défenses
 
-- [[prompt-injection-sanitization]] : si tu nettoies l'input à l'entrée, le payload n'arrive pas en mémoire.
-- [[lethal-trifecta]] : la mémoire long-lived **est** une forme de "private data" — sa simple existence aggrave le trifecta.
-- [[continuous-learning-v2]] : système instinct-based, à concevoir avec ces contraintes.
+- [prompt-injection-sanitization](prompt-injection-sanitization.md) : si tu nettoies l'input à l'entrée, le payload n'arrive pas en mémoire.
+- [lethal-trifecta](lethal-trifecta.md) : la mémoire long-lived **est** une forme de "private data" — sa simple existence aggrave le trifecta.
+- [continuous-learning-v2](continuous-learning-v2.md) : système instinct-based, à concevoir avec ces contraintes.
 
 ## Related pages
 
-- [[prompt-injection-sanitization]]
-- [[lethal-trifecta]]
-- [[memory-persistence-hooks]]
-- [[session-storage-pattern]]
-- [[the-agentic-security-summary]]
+- [prompt-injection-sanitization](prompt-injection-sanitization.md)
+- [lethal-trifecta](lethal-trifecta.md)
+- [memory-persistence-hooks](memory-persistence-hooks.md)
+- [session-storage-pattern](session-storage-pattern.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

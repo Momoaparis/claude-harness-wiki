@@ -12,7 +12,7 @@
 
 **Hook pre-trust execution.** Du code contenu dans le projet pouvait s'exécuter **avant** que l'utilisateur ne valide le trust dialog. Le trigger : ouvrir le repo dans Claude Code suffisait.
 
-Vecteur : un repo poisoné contenait des [[claude-code-hooks|hooks]] qui se déclenchent sur événements (`SessionStart`, etc.) — ces hooks sont chargés au démarrage, avant que la fenêtre d'approbation utilisateur ne s'affiche.
+Vecteur : un repo poisoné contenait des [hooks](claude-code-hooks.md) qui se déclenchent sur événements (`SessionStart`, etc.) — ces hooks sont chargés au démarrage, avant que la fenêtre d'approbation utilisateur ne s'affiche.
 
 Versions affectées : antérieures à `1.0.111` (NVD).
 
@@ -37,9 +37,9 @@ Toute donnée portée par le repo (hooks, MCP config, env vars, settings) doit �
 ## Mesures correctives
 
 - Mettre à jour Claude Code (`1.0.111+` puis `2.0.65+`).
-- Ne **jamais** cloner un repo inconnu sans [[agent-sandboxing|sandbox]].
-- Auditer les configs des repos cloned via [[agentshield]] ou `agent-scan`.
-- Voir aussi [[ecc-hooks-autoloading]] : les hooks de plugins sont chargés automatiquement à partir de Claude Code v2.1+, ce qui élargit encore la surface.
+- Ne **jamais** cloner un repo inconnu sans [sandbox](agent-sandboxing.md).
+- Auditer les configs des repos cloned via [agentshield](agentshield.md) ou `agent-scan`.
+- Voir aussi [ecc-hooks-autoloading](ecc-hooks-autoloading.md) : les hooks de plugins sont chargés automatiquement à partir de Claude Code v2.1+, ce qui élargit encore la surface.
 
 ## CVE-2026-25253 (OpenClaw — hors scope Claude Code)
 
@@ -47,7 +47,7 @@ Toute donnée portée par le repo (hooks, MCP config, env vars, settings) doit �
 
 Ce CVE ne concerne pas Claude Code directement — il illustre que la classe de vulnérabilité (config-as-code pré-trust) dépasse un seul outil et affecte tout l'écosystème des harnesses d'agents.
 
-Source : [[the-agentic-security-summary]]
+Source : [the-agentic-security-summary](the-agentic-security-summary.md)
 
 ## Lecture obligatoire
 
@@ -56,8 +56,8 @@ Source : [[the-agentic-security-summary]]
 
 ## Related pages
 
-- [[agent-sandboxing]]
-- [[ecc-hooks-autoloading]]
-- [[agentshield]]
-- [[claude-code-hooks]]
-- [[the-agentic-security-summary]]
+- [agent-sandboxing](agent-sandboxing.md)
+- [ecc-hooks-autoloading](ecc-hooks-autoloading.md)
+- [agentshield](agentshield.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

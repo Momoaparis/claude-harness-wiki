@@ -12,7 +12,7 @@
 
 > Everything an LLM reads is executable context.
 
-Conséquence : tout input externe doit être inspecté avant de toucher un agent privilégié. C'est l'application pratique du [[lethal-trifecta|lethal trifecta]] côté « untrusted content ».
+Conséquence : tout input externe doit être inspecté avant de toucher un agent privilégié. C'est l'application pratique du [lethal trifecta](lethal-trifecta.md) côté « untrusted content ».
 
 ## Unicode invisible et payloads cachés
 
@@ -41,7 +41,7 @@ Pipeline recommandée :
 3. **Ne pas feed des liens externes** directement à un agent privilégié.
 4. **Scinder extraction et action** : un agent parse en environnement restreint, un autre agit sur le résumé déjà nettoyé.
 
-Cette scission est la même architecture défensive que celle décrite dans [[lethal-trifecta]].
+Cette scission est la même architecture défensive que celle décrite dans [lethal-trifecta](lethal-trifecta.md).
 
 ## Liens et docs externes dans les skills
 
@@ -64,14 +64,14 @@ Pas bulletproof, mais ça relève la barre.
 
 ## Lien avec les autres défenses
 
-- La sanitization seule n'est pas suffisante — il faut combiner avec [[agent-sandboxing|isolation]] et [[least-agency|approval boundaries]].
-- Les patterns de payloads se mémorisent dans le temps — voir [[agent-memory-hygiene]].
-- Les skills tiers sont eux-mêmes des artefacts de supply chain — voir [[toxicskills-study]].
+- La sanitization seule n'est pas suffisante — il faut combiner avec [isolation](agent-sandboxing.md) et [approval boundaries](least-agency.md).
+- Les patterns de payloads se mémorisent dans le temps — voir [agent-memory-hygiene](agent-memory-hygiene.md).
+- Les skills tiers sont eux-mêmes des artefacts de supply chain — voir [toxicskills-study](toxicskills-study.md).
 
 ## Related pages
 
-- [[lethal-trifecta]]
-- [[agent-memory-hygiene]]
-- [[toxicskills-study]]
-- [[least-agency]]
-- [[the-agentic-security-summary]]
+- [lethal-trifecta](lethal-trifecta.md)
+- [agent-memory-hygiene](agent-memory-hygiene.md)
+- [toxicskills-study](toxicskills-study.md)
+- [least-agency](least-agency.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

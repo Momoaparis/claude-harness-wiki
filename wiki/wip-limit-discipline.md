@@ -100,7 +100,7 @@ Un seul `active` à la fois. La harness peut **bloquer** une transition `not_sta
 
 #### 3. Via hooks (optionnel)
 
-Un PostToolUse hook qui scan le `feature_list.json` et bloque l'écriture si plus d'une tâche est active. Voir [[claude-code-hooks]].
+Un PostToolUse hook qui scan le `feature_list.json` et bloque l'écriture si plus d'une tâche est active. Voir [claude-code-hooks](claude-code-hooks.md).
 
 ### "Do less but finish" principle
 
@@ -113,7 +113,7 @@ Concrètement : 1 feature complètement testée, déployée, documentée bat 5 f
 WIP=1 ne suffit pas. Il faut aussi définir clairement quand une tâche transitionne vers `passing` :
 
 - Pas "le code est écrit"
-- Mais "la commande de vérification retourne 0" (voir [[completion-evidence-executable]])
+- Mais "la commande de vérification retourne 0" (voir [completion-evidence-executable](completion-evidence-executable.md))
 
 Sinon l'agent peut tout marquer `passing` lui-même et redémarrer une autre tâche → on perd le bénéfice.
 
@@ -121,7 +121,7 @@ Sinon l'agent peut tout marquer `passing` lui-même et redémarrer une autre tâ
 
 Cas rares où WIP > 1 est justifié :
 
-1. **Vraie parallélisation par worktrees** : 2 agents en 2 worktrees, isolés (voir [[git-worktrees-parallel-claude]])
+1. **Vraie parallélisation par worktrees** : 2 agents en 2 worktrees, isolés (voir [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md))
 2. **Tâche en blocage externe** (attend un review) : OK de démarrer une autre, marquer la première `blocked`
 3. **Long compile / long test** : OK de prototyper une autre pendant le run
 
@@ -154,9 +154,9 @@ WIP=1 = anti-scope-creep mécanique.
 
 ## Related pages
 
-- [[completion-evidence-executable]]
-- [[verified-completion-rate-metric]]
-- [[atomic-task-decomposition]]
-- [[feature-state-machine]]
-- [[feature-list-as-primitive]]
-- [[the-harness-engineering-curriculum-summary]]
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [verified-completion-rate-metric](verified-completion-rate-metric.md)
+- [atomic-task-decomposition](atomic-task-decomposition.md)
+- [feature-state-machine](feature-state-machine.md)
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

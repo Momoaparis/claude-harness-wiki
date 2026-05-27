@@ -12,7 +12,7 @@
 
 ECC n'est pas un produit, c'est un **bundle de patterns d'optimisation** pour les harnesses d'agents — packagé sous forme de plugin Claude Code, mais portable vers Codex, OpenCode, Cursor.
 
-Il opérationnalise les concepts décrits dans [[the-longform-guide-summary|Longform Guide]] et [[the-shorthand-guide-summary|Shorthand Guide]] (même auteur) en composants installables.
+Il opérationnalise les concepts décrits dans [Longform Guide](the-longform-guide-summary.md) et [Shorthand Guide](the-shorthand-guide-summary.md) (même auteur) en composants installables.
 
 ## Les 4 surfaces de l'écosystème
 
@@ -33,21 +33,21 @@ model: opus
 ---
 ```
 
-Voir aussi [[subagent-architecture]], [[sub-agent-context-problem]].
+Voir aussi [subagent-architecture](subagent-architecture.md), [sub-agent-context-problem](sub-agent-context-problem.md).
 
 ### 3. Hooks
 
-Réagissent aux événements de tool. Cf. [[claude-code-hooks]] et le détail spécifique au plugin : [[ecc-hooks-autoloading]].
+Réagissent aux événements de tool. Cf. [claude-code-hooks](claude-code-hooks.md) et le détail spécifique au plugin : [ecc-hooks-autoloading](ecc-hooks-autoloading.md).
 
 ### 4. Rules
 
-Guidelines toujours appliquées, organisées en `common/` (universel) + `typescript/`, `python/`, `golang/`, `swift/`, `php/`, `arkts/` (langage-spécifique). Voir [[ecc-token-optimization]] pour l'impact sur le coût.
+Guidelines toujours appliquées, organisées en `common/` (universel) + `typescript/`, `python/`, `golang/`, `swift/`, `php/`, `arkts/` (langage-spécifique). Voir [ecc-token-optimization](ecc-token-optimization.md) pour l'impact sur le coût.
 
 ## Ecosystem tools
 
 - **Skill Creator** (`/skill-create`) — génère des SKILL.md depuis l'historique git du repo. Option locale ou via GitHub App.
-- **[[agentshield]]** — scanner de sécurité (hooks, MCP, permissions, secrets).
-- **[[continuous-learning-v2]]** — système instinct-based : `/instinct-status`, `/evolve`, etc.
+- **[agentshield](agentshield.md)** — scanner de sécurité (hooks, MCP, permissions, secrets).
+- **[continuous-learning-v2](continuous-learning-v2.md)** — système instinct-based : `/instinct-status`, `/evolve`, etc.
 
 ## Quick reference « which agent ? »
 
@@ -64,16 +64,16 @@ Guidelines toujours appliquées, organisées en `common/` (universel) + `typescr
 
 ## Lien avec le wiki existant
 
-- [[the-shorthand-guide-summary]] et [[the-longform-guide-summary]] donnent les fondations conceptuelles.
-- [[the-agentic-security-summary]] cadre les risques que ECC ([[agentshield]]) cherche à mitiger.
-- [[ecc-token-optimization]] détaille les settings recommandés.
+- [the-shorthand-guide-summary](the-shorthand-guide-summary.md) et [the-longform-guide-summary](the-longform-guide-summary.md) donnent les fondations conceptuelles.
+- [the-agentic-security-summary](the-agentic-security-summary.md) cadre les risques que ECC ([agentshield](agentshield.md)) cherche à mitiger.
+- [ecc-token-optimization](ecc-token-optimization.md) détaille les settings recommandés.
 
 ## Related pages
 
-- [[ecc-token-optimization]]
-- [[ecc-hooks-autoloading]]
-- [[continuous-learning-v2]]
-- [[agentshield]]
-- [[the-shorthand-guide-summary]]
-- [[the-longform-guide-summary]]
-- [[the-agentic-security-summary]]
+- [ecc-token-optimization](ecc-token-optimization.md)
+- [ecc-hooks-autoloading](ecc-hooks-autoloading.md)
+- [continuous-learning-v2](continuous-learning-v2.md)
+- [agentshield](agentshield.md)
+- [the-shorthand-guide-summary](the-shorthand-guide-summary.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

@@ -15,7 +15,7 @@
 - **Auteur** : Affaan Mustafa (@affaanmustafa)
 - **Publication** : 16 septembre 2025
 - **URL** : https://x.com/affaanmustafa/status/2012378465664745795
-- **Article frère** : [[the-longform-guide-summary]] — suite avancée (jan 2026), assume ce setup de base acquis
+- **Article frère** : [the-longform-guide-summary](the-longform-guide-summary.md) — suite avancée (jan 2026), assume ce setup de base acquis
 
 ### Positionnement
 
@@ -24,12 +24,12 @@ Ce guide couvre la **configuration initiale** pour utiliser Claude Code efficace
 ### Les 7 thèmes du guide
 
 1. **Skills & Commands** — workflows réutilisables via slash commands
-2. **Hooks** — automations déclenchées par événements (voir [[claude-code-hooks]])
-3. **Subagents** — délégation de tâches à portée limitée (voir [[subagent-architecture]])
+2. **Hooks** — automations déclenchées par événements (voir [claude-code-hooks](claude-code-hooks.md))
+3. **Subagents** — délégation de tâches à portée limitée (voir [subagent-architecture](subagent-architecture.md))
 4. **Rules & Memory** — CLAUDE.md et dossier `.rules/` pour les conventions permanentes
-5. **MCPs** — connecteurs vers services externes (voir [[mcp-vs-cli-skills]])
-6. **Plugins** — outils packagés installables via marketplace (voir [[claude-code-plugins]])
-7. **Tips** — raccourcis, parallélisation, éditeurs (voir [[claude-code-keyboard-shortcuts]])
+5. **MCPs** — connecteurs vers services externes (voir [mcp-vs-cli-skills](mcp-vs-cli-skills.md))
+6. **Plugins** — outils packagés installables via marketplace (voir [claude-code-plugins](claude-code-plugins.md))
+7. **Tips** — raccourcis, parallélisation, éditeurs (voir [claude-code-keyboard-shortcuts](claude-code-keyboard-shortcuts.md))
 
 ### Setup de référence de l'auteur
 
@@ -39,9 +39,9 @@ Ce guide couvre la **configuration initiale** pour utiliser Claude Code efficace
 - `typescript-lsp` / `pyright-lsp` — intelligence LSP
 - `hookify` — création de hooks conversationnellement
 - `context7` — documentation en temps réel
-- `mgrep@Mixedbread-Grep` — recherche sémantique (voir [[mgrep-vs-grep]])
+- `mgrep@Mixedbread-Grep` — recherche sémantique (voir [mgrep-vs-grep](mgrep-vs-grep.md))
 
-**MCPs configurés** : 14 au total, ~5-6 actifs par projet — voir [[claude-code-plugins]] pour la gestion du context window.
+**MCPs configurés** : 14 au total, ~5-6 actifs par projet — voir [claude-code-plugins](claude-code-plugins.md) pour la gestion du context window.
 
 **Hooks clés** :
 - `PreToolUse` : reminder tmux pour commandes longues, blocage fichiers `.md` non essentiels
@@ -54,18 +54,18 @@ Ce guide couvre la **configuration initiale** pour utiliser Claude Code efficace
 
 1. Ne pas sur-compliquer — traiter la configuration comme un fine-tuning, pas une architecture
 2. Le context window est précieux — désactiver MCPs et plugins inutilisés
-3. Exécution parallèle — `/fork` + git worktrees (voir [[git-worktrees-parallel-claude]])
+3. Exécution parallèle — `/fork` + git worktrees (voir [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md))
 4. Automatiser le répétitif — hooks pour formatting, linting, reminders
 5. Scoper les subagents — outils limités = exécution focused
 
 ## Related pages
 
-- [[the-longform-guide-summary]]
-- [[claude-code-hooks]]
-- [[claude-code-commands]]
-- [[claude-code-plugins]]
-- [[claude-code-keyboard-shortcuts]]
-- [[subagent-architecture]]
-- [[mcp-vs-cli-skills]]
-- [[git-worktrees-parallel-claude]]
-- [[mgrep-vs-grep]]
+- [the-longform-guide-summary](the-longform-guide-summary.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [claude-code-commands](claude-code-commands.md)
+- [claude-code-plugins](claude-code-plugins.md)
+- [claude-code-keyboard-shortcuts](claude-code-keyboard-shortcuts.md)
+- [subagent-architecture](subagent-architecture.md)
+- [mcp-vs-cli-skills](mcp-vs-cli-skills.md)
+- [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)
+- [mgrep-vs-grep](mgrep-vs-grep.md)

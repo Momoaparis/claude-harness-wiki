@@ -22,7 +22,7 @@
 - itérer jusqu'à satisfaction
 - optimiser la description pour le triggering
 
-C'est l'application directe du principe [[prompt-as-asset]] : capturer un workflow efficace comme skill réutilisable.
+C'est l'application directe du principe [prompt-as-asset](prompt-as-asset.md) : capturer un workflow efficace comme skill réutilisable.
 
 ### Processus de création
 
@@ -46,13 +46,13 @@ Frontmatter obligatoire :
 
 Corps : instructions en mode impératif, exemples, formats de sortie.
 
-→ Voir [[skill-anatomy]] pour la structure complète.
+→ Voir [skill-anatomy](skill-anatomy.md) pour la structure complète.
 
 #### 4. Test
 
 2-3 prompts réalistes (ce qu'un vrai utilisateur écrirait). Sauvegarder dans `evals/evals.json`. Lancer en parallèle : run "avec skill" + run "sans skill" (baseline).
 
-→ Voir [[skill-eval-workflow]] pour le détail.
+→ Voir [skill-eval-workflow](skill-eval-workflow.md) pour le détail.
 
 #### 5. Évaluation
 
@@ -66,7 +66,7 @@ Améliorer le skill en généralisant depuis le feedback (ne pas overfitter sur 
 
 #### 7. Optimisation du triggering
 
-→ Voir [[skill-description-optimization]].
+→ Voir [skill-description-optimization](skill-description-optimization.md).
 
 ### Principes d'amélioration
 
@@ -85,11 +85,11 @@ Améliorer le skill en généralisant depuis le feedback (ne pas overfitter sur 
 
 ## Related pages
 
-- [[harness-creator-et-skill-creator-summary]]
-- [[skill-anatomy]]
-- [[skill-creation-workflow]]
-- [[skill-eval-workflow]]
-- [[skill-description-optimization]]
-- [[prompt-as-asset]]
-- [[eval-roadmap]]
-- [[grader-types]]
+- [harness-creator-et-skill-creator-summary](harness-creator-et-skill-creator-summary.md)
+- [skill-anatomy](skill-anatomy.md)
+- [skill-creation-workflow](skill-creation-workflow.md)
+- [skill-eval-workflow](skill-eval-workflow.md)
+- [skill-description-optimization](skill-description-optimization.md)
+- [prompt-as-asset](prompt-as-asset.md)
+- [eval-roadmap](eval-roadmap.md)
+- [grader-types](grader-types.md)

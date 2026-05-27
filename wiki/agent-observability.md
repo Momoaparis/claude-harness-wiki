@@ -42,11 +42,11 @@ JSON structuré, suffisant pour démarrer :
 
 Pour les setups multi-agents ou les loops continus, brancher sur OpenTelemetry (ou équivalent). L'objectif n'est pas le vendor — c'est d'avoir une **baseline de session** sur laquelle les anomalies ressortent.
 
-Cf. patterns plus généraux dans [[continuous-learning-skill]] et [[continuous-learning-v2]] : les bons logs nourrissent aussi la boucle d'apprentissage de l'agent.
+Cf. patterns plus généraux dans [continuous-learning-skill](continuous-learning-skill.md) et [continuous-learning-v2](continuous-learning-v2.md) : les bons logs nourrissent aussi la boucle d'apprentissage de l'agent.
 
 ## Le lien avec least agency
 
-L'observabilité est l'autre moitié de [[least-agency]] : tu ne peux pas exiger des approvals si tu ne vois pas ce qui se passe entre deux approvals. Et tu ne peux pas activer un [[agent-kill-switches|kill switch]] sur la base d'un comportement anormal si tu n'as pas de signal pour détecter l'anomalie.
+L'observabilité est l'autre moitié de [least-agency](least-agency.md) : tu ne peux pas exiger des approvals si tu ne vois pas ce qui se passe entre deux approvals. Et tu ne peux pas activer un [kill switch](agent-kill-switches.md) sur la base d'un comportement anormal si tu n'as pas de signal pour détecter l'anomalie.
 
 ## Anti-pattern noté
 
@@ -54,7 +54,7 @@ L'observabilité est l'autre moitié de [[least-agency]] : tu ne peux pas exiger
 
 ## Related pages
 
-- [[least-agency]]
-- [[agent-kill-switches]]
-- [[continuous-learning-v2]]
-- [[the-agentic-security-summary]]
+- [least-agency](least-agency.md)
+- [agent-kill-switches](agent-kill-switches.md)
+- [continuous-learning-v2](continuous-learning-v2.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

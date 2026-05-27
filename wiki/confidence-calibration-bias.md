@@ -69,7 +69,7 @@ L'evaluator avec une rubric structurée :
 - A pour mission de produire un score, pas de plaire
 - Calibre mieux parce qu'il n'a pas écrit le code
 
-Voir [[worker-checker-separation]] et [[planner-generator-evaluator-3-agent-architecture]].
+Voir [worker-checker-separation](worker-checker-separation.md) et [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md).
 
 ### Données Anthropic (Lecture 09)
 
@@ -103,17 +103,17 @@ Bannir les formules du progress log :
 
 #### 3. Evaluator rubric
 
-Voir [[template-evaluator-rubric]] : grille de scoring sur 6 dimensions, opérée par un agent ou humain **différent** du worker.
+Voir [template-evaluator-rubric](template-evaluator-rubric.md) : grille de scoring sur 6 dimensions, opérée par un agent ou humain **différent** du worker.
 
 ### Lien avec self-verification d'Opus 4.7
 
-[[self-verification-mechanism|Self-verification d'Opus 4.7]] = l'agent relit son propre code et corrige. Ce n'est **pas** de l'auto-évaluation de complétion — c'est une boucle de raffinement interne. Le signal final "done" reste externalisé.
+[Self-verification d'Opus 4.7](self-verification-mechanism.md) = l'agent relit son propre code et corrige. Ce n'est **pas** de l'auto-évaluation de complétion — c'est une boucle de raffinement interne. Le signal final "done" reste externalisé.
 
 ### Le cas particulier des LLMs récents
 
 Les modèles 4.x sont **meilleurs calibrés** que les modèles 3.x (selon données internes Anthropic), mais le biais persiste. Surtout sur :
 
-- Tâches en bout de session ([[context-anxiety-modeles|context anxiety]])
+- Tâches en bout de session ([context anxiety](context-anxiety-modeles.md))
 - Tâches complexes multi-étapes
 - Tâches où l'agent a investi beaucoup d'effort (sunk cost)
 
@@ -140,9 +140,9 @@ Ces signaux → re-vérifier externe systématiquement.
 
 ## Related pages
 
-- [[worker-checker-separation]]
-- [[three-layer-termination-validation]]
-- [[completion-evidence-executable]]
-- [[planner-generator-evaluator-3-agent-architecture]]
-- [[self-verification-mechanism]]
-- [[the-harness-engineering-curriculum-summary]]
+- [worker-checker-separation](worker-checker-separation.md)
+- [three-layer-termination-validation](three-layer-termination-validation.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [planner-generator-evaluator-3-agent-architecture](planner-generator-evaluator-3-agent-architecture.md)
+- [self-verification-mechanism](self-verification-mechanism.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

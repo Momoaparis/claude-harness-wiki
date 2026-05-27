@@ -1,6 +1,6 @@
 # Atomic task decomposition
 
-**Summary** : Décomposer un besoin large en unités atomiques (≥5 par feature majeure). Chaque unité = 1 comportement vérifiable + 1 commande exécutable + dépendances explicites. Sans ça, [[wip-limit-discipline|WIP=1]] échoue parce que les "tâches" sont trop grosses pour être finies en une session.
+**Summary** : Décomposer un besoin large en unités atomiques (≥5 par feature majeure). Chaque unité = 1 comportement vérifiable + 1 commande exécutable + dépendances explicites. Sans ça, [WIP=1](wip-limit-discipline.md) échoue parce que les "tâches" sont trop grosses pour être finies en une session.
 
 **Sources** : `raw/ingested/lecture-07-draw-clear-task-boundaries-for-agents.md`
 
@@ -60,7 +60,7 @@ Pas de "and" dans le titre :
 
 #### 2. Executable verification
 
-Voir [[completion-evidence-executable]]. La commande doit être runnable et binaire.
+Voir [completion-evidence-executable](completion-evidence-executable.md). La commande doit être runnable et binaire.
 
 #### 3. Explicit dependencies
 
@@ -130,7 +130,7 @@ Méthode pratique (Lecture 07) :
 
 ### Lien avec feature lists
 
-L'atomic task decomposition produit le contenu de `task-breakdown.md` ou `feature_list.json` (voir [[feature-list-as-primitive]], [[template-feature-list-json]]).
+L'atomic task decomposition produit le contenu de `task-breakdown.md` ou `feature_list.json` (voir [feature-list-as-primitive](feature-list-as-primitive.md), [template-feature-list-json](template-feature-list-json.md)).
 
 ### Cas réel : 8-feature API (Lecture 07)
 
@@ -169,9 +169,9 @@ Sans atomicity, l'agent autonome dérive.
 
 ## Related pages
 
-- [[wip-limit-discipline]]
-- [[completion-evidence-executable]]
-- [[task-breakdown-structure]]
-- [[feature-list-as-primitive]]
-- [[verified-completion-rate-metric]]
-- [[the-harness-engineering-curriculum-summary]]
+- [wip-limit-discipline](wip-limit-discipline.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [task-breakdown-structure](task-breakdown-structure.md)
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [verified-completion-rate-metric](verified-completion-rate-metric.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

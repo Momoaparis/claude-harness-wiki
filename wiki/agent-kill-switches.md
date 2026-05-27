@@ -49,13 +49,13 @@ C'est pourquoi les kill switches doivent vivre **hors du processus** de l'agent 
 
 ## Lien avec le reste
 
-- [[agent-observability]] fournit le signal — heartbeat, logs anormaux, tentative réseau bloquée.
-- [[least-agency]] pose la politique — quand auto-approuver vs requérir humain.
-- [[agent-sandboxing]] limite ce que l'agent peut faire **pendant** le délai entre la dérive et l'arrêt.
+- [agent-observability](agent-observability.md) fournit le signal — heartbeat, logs anormaux, tentative réseau bloquée.
+- [least-agency](least-agency.md) pose la politique — quand auto-approuver vs requérir humain.
+- [agent-sandboxing](agent-sandboxing.md) limite ce que l'agent peut faire **pendant** le délai entre la dérive et l'arrêt.
 
 ## Related pages
 
-- [[agent-observability]]
-- [[least-agency]]
-- [[agent-sandboxing]]
-- [[the-agentic-security-summary]]
+- [agent-observability](agent-observability.md)
+- [least-agency](least-agency.md)
+- [agent-sandboxing](agent-sandboxing.md)
+- [the-agentic-security-summary](the-agentic-security-summary.md)

@@ -45,14 +45,14 @@ Manquer 5 = l'agent recommence le travail déjà fait.
 
 ### Procédure concrète
 
-1. **Setup** : crée une session Claude Code dans un répertoire de travail isolé (worktree par exemple — voir [[git-worktrees-parallel-claude]])
+1. **Setup** : crée une session Claude Code dans un répertoire de travail isolé (worktree par exemple — voir [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md))
 2. **Prompt minimal** : "Read the repo and tell me how to add a new feature called X"
 3. **Observer** :
    - L'agent lit-il les bons fichiers ?
    - Pose-t-il des questions ? Lesquelles ?
    - Quelles décisions invente-t-il (drift) ?
 4. **Cartographier les gaps** : pour chaque question non-répondue, identifier le fichier manquant
-5. **Combler** : ajouter le fichier au bon endroit (knowledge next to code, voir [[repository-as-system-of-record]])
+5. **Combler** : ajouter le fichier au bon endroit (knowledge next to code, voir [repository-as-system-of-record](repository-as-system-of-record.md))
 6. **Re-tester**
 
 ### Cas réel (cours)
@@ -62,18 +62,18 @@ Manquer 5 = l'agent recommence le travail déjà fait.
 Sans `claude-progress.md` : 20 minutes de diagnostic au démarrage.  
 Avec : 3 minutes pour atteindre l'état exécutable.
 
-Voir [[rebuild-cost-metric|rebuild cost]].
+Voir [rebuild cost](rebuild-cost-metric.md).
 
 ### Antipatterns détectés par le test
 
 - Agent demande "what's the tech stack?" → `AGENTS.md` ne le dit pas
 - Agent fait `npm install` puis échec → `package.json` deps manquantes, pas de `.nvmrc`
 - Agent invente une convention de naming → pas de `CONTRIBUTING.md` ni de section conventions
-- Agent ne sait pas si une feature est faite ou pas → pas de `feature_list.json` (voir [[feature-list-as-primitive]])
+- Agent ne sait pas si une feature est faite ou pas → pas de `feature_list.json` (voir [feature-list-as-primitive](feature-list-as-primitive.md))
 
 ### Lien avec l'initialisation
 
-[[initialization-phase-separation|La phase d'init]] (Lecture 06) doit produire un repo qui passe le fresh session test. C'est son critère de sortie.
+[La phase d'init](initialization-phase-separation.md) (Lecture 06) doit produire un repo qui passe le fresh session test. C'est son critère de sortie.
 
 ### Quand re-tester
 
@@ -83,7 +83,7 @@ Voir [[rebuild-cost-metric|rebuild cost]].
 
 ### Différence avec l'ablation testing
 
-[[ablation-study-methodology|L'ablation testing]] mesure la valeur **marginale** d'un composant de harness (remove + mesurer drop). Le fresh session test mesure la **complétude** de la carte (peut-on naviguer sans guide humain ?).
+[L'ablation testing](ablation-study-methodology.md) mesure la valeur **marginale** d'un composant de harness (remove + mesurer drop). Le fresh session test mesure la **complétude** de la carte (peut-on naviguer sans guide humain ?).
 
 Les deux sont complémentaires :
 - Ablation = "ce composant sert-il à quelque chose ?"
@@ -95,12 +95,12 @@ Les deux sont complémentaires :
 2. Test = démarrer une session sans contexte et observer ce qui manque.
 3. Échec = drift de l'agent ou questions à l'humain.
 4. Re-tester après chaque évolution majeure.
-5. Complémentaire de [[ablation-study-methodology|l'ablation]].
+5. Complémentaire de [l'ablation](ablation-study-methodology.md).
 
 ## Related pages
 
-- [[repository-as-system-of-record]]
-- [[ablation-study-methodology]]
-- [[initialization-phase-separation]]
-- [[rebuild-cost-metric]]
-- [[the-harness-engineering-curriculum-summary]]
+- [repository-as-system-of-record](repository-as-system-of-record.md)
+- [ablation-study-methodology](ablation-study-methodology.md)
+- [initialization-phase-separation](initialization-phase-separation.md)
+- [rebuild-cost-metric](rebuild-cost-metric.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

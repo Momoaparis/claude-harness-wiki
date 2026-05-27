@@ -31,8 +31,8 @@
 **Mission** : transformer un besoin haut-niveau en plan exécutable.
 
 **Outputs** :
-- Feature list ([[feature-list-as-primitive]]) avec atomic tasks
-- Sprint contracts ([[sprint-contract-pattern]]) pour chaque feature
+- Feature list ([feature-list-as-primitive](feature-list-as-primitive.md)) avec atomic tasks
+- Sprint contracts ([sprint-contract-pattern](sprint-contract-pattern.md)) pour chaque feature
 - Decision log entries pour les choix d'architecture
 - Estimation : sessions / coûts
 
@@ -72,10 +72,10 @@ You are a generator. For sprint contract X:
 
 ### Evaluator
 
-**Mission** : vérifier que le travail du generator passe les 3 couches de validation (voir [[three-layer-termination-validation]]).
+**Mission** : vérifier que le travail du generator passe les 3 couches de validation (voir [three-layer-termination-validation](three-layer-termination-validation.md)).
 
 **Outputs** :
-- Rubric scoring 6 dimensions (voir [[template-evaluator-rubric]])
+- Rubric scoring 6 dimensions (voir [template-evaluator-rubric](template-evaluator-rubric.md))
 - Liste d'issues si défauts trouvés
 - Verdict : Accept / Revise / Block
 - Recommandation pour generator si Revise
@@ -127,7 +127,7 @@ L'evaluator n'a pas écrit le code → pas d'attachement. Détecte les défauts 
 - Generator = fait
 - Evaluator = critique
 
-Chaque agent a **un seul** objectif d'optimisation. Pas de multi-objectif (voir [[initialization-phase-separation]] pour le principe).
+Chaque agent a **un seul** objectif d'optimisation. Pas de multi-objectif (voir [initialization-phase-separation](initialization-phase-separation.md) pour le principe).
 
 #### 3. Calibration mutuelle
 
@@ -169,7 +169,7 @@ model: opus
 
 Workflow : dispatch planner → dispatch generator → dispatch evaluator → si Revise, retour generator.
 
-Voir [[subagent-architecture]] et [[sub-agent-context-problem]] pour les bonnes pratiques de dispatch.
+Voir [subagent-architecture](subagent-architecture.md) et [sub-agent-context-problem](sub-agent-context-problem.md) pour les bonnes pratiques de dispatch.
 
 #### Setup orchestrateur (avancé)
 
@@ -219,7 +219,7 @@ Règle empirique : utiliser 3-agent pour tâche >2h ou critique. Mono-agent pour
 
 ### Lien avec worker-checker separation
 
-Cette architecture est l'opérationnalisation à 3 niveaux du [[worker-checker-separation]]. Le planner ajoute une **3ème séparation** : celui qui planifie n'est pas non plus celui qui code, donc la spec n'est pas biaisée par l'écriture.
+Cette architecture est l'opérationnalisation à 3 niveaux du [worker-checker-separation](worker-checker-separation.md). Le planner ajoute une **3ème séparation** : celui qui planifie n'est pas non plus celui qui code, donc la spec n'est pas biaisée par l'écriture.
 
 ### Antipatterns
 
@@ -239,11 +239,11 @@ Cette architecture est l'opérationnalisation à 3 niveaux du [[worker-checker-s
 
 ## Related pages
 
-- [[worker-checker-separation]]
-- [[sprint-contract-pattern]]
-- [[observability-runtime-vs-process]]
-- [[template-evaluator-rubric]]
-- [[subagent-architecture]]
-- [[sub-agent-context-problem]]
-- [[harness-curriculum-projects-overview]]
-- [[the-harness-engineering-curriculum-summary]]
+- [worker-checker-separation](worker-checker-separation.md)
+- [sprint-contract-pattern](sprint-contract-pattern.md)
+- [observability-runtime-vs-process](observability-runtime-vs-process.md)
+- [template-evaluator-rubric](template-evaluator-rubric.md)
+- [subagent-architecture](subagent-architecture.md)
+- [sub-agent-context-problem](sub-agent-context-problem.md)
+- [harness-curriculum-projects-overview](harness-curriculum-projects-overview.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

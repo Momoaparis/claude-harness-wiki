@@ -16,7 +16,7 @@
 |---------------|-------------------|-------------------|
 | **A**tomicity | 1 commit = 1 opération logique complète | Pas de demi-commit, pas de "WIP unsaved" |
 | **C**onsistency | Vérification après chaque opération | `make test` doit passer ; sinon rollback |
-| **I**solation | Concurrence = branches/fichiers séparés | [[git-worktrees-parallel-claude|Git worktrees]], branches dédiées |
+| **I**solation | Concurrence = branches/fichiers séparés | [Git worktrees](git-worktrees-parallel-claude.md), branches dédiées |
 | **D**urability | Git = persistent ; session memory = temporaire | Tout state critique vit dans le repo, pas dans la conversation |
 
 ### Atomicity
@@ -35,7 +35,7 @@ Pattern correct :
 commit abc123: "feat(auth): add password validation with tests passing"
 ```
 
-Si on ne peut pas commit atomiquement → la tâche est trop grosse ([[atomic-task-decomposition|atomic task decomposition]]).
+Si on ne peut pas commit atomiquement → la tâche est trop grosse ([atomic task decomposition](atomic-task-decomposition.md)).
 
 ### Consistency
 
@@ -46,25 +46,25 @@ Après chaque opération atomique, l'état doit être **cohérent** :
 - Linter clean
 - `feature_list.json` reflète la réalité
 
-C'est exactement le sens du [[session-clean-handoff|clean state]] de la Lecture 12. Les 5 conditions = vérification de consistency.
+C'est exactement le sens du [clean state](session-clean-handoff.md) de la Lecture 12. Les 5 conditions = vérification de consistency.
 
 ### Isolation
 
 Plusieurs agents en parallèle ne doivent **pas se marcher dessus**. Mécanismes :
 
-- **Git worktrees** ([[git-worktrees-parallel-claude]]) : un dossier de travail par agent
+- **Git worktrees** ([git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)) : un dossier de travail par agent
 - **Branches dédiées** : un agent = une branche
 - **Fichiers séparés** : si possible, partitionner le travail par fichier/module
 
-Voir aussi [[cascade-method]] pour l'organisation pratique de tabs parallèles.
+Voir aussi [cascade-method](cascade-method.md) pour l'organisation pratique de tabs parallèles.
 
 ### Durability
 
 Le state qui doit survivre à la fin de session **doit être dans le repo** (commit), pas dans la conversation. La conversation est volatile.
 
 Conséquence pratique :
-- Décisions importantes → `DECISIONS.md` (voir [[decision-log-pattern]])
-- État courant → `PROGRESS.md` ou `claude-progress.md` (voir [[progress-file-pattern]])
+- Décisions importantes → `DECISIONS.md` (voir [decision-log-pattern](decision-log-pattern.md))
+- État courant → `PROGRESS.md` ou `claude-progress.md` (voir [progress-file-pattern](progress-file-pattern.md))
 - Hypothèses ou contraintes découvertes → fichier dédié dans `docs/`
 
 ### Le risque du demi-commit
@@ -101,7 +101,7 @@ Le cours emprunte aux DBs parce que :
 
 - Pre-commit hook qui run tests
 - CI bloquante sur main
-- [[template-clean-state-checklist|Clean state checklist]] en fin de session
+- [Clean state checklist](template-clean-state-checklist.md) en fin de session
 
 #### Pour Isolation
 
@@ -121,14 +121,14 @@ Le cours emprunte aux DBs parce que :
 2. **Demi-commit = poison**. La session suivante ne peut pas trier.
 3. Tout state critique dans le **repo**, jamais dans la conversation.
 4. Tests + lint + build verts = consistency check minimal.
-5. Parallèle → [[git-worktrees-parallel-claude|worktrees]] obligatoires.
+5. Parallèle → [worktrees](git-worktrees-parallel-claude.md) obligatoires.
 
 ## Related pages
 
-- [[repository-as-system-of-record]]
-- [[progress-file-pattern]]
-- [[decision-log-pattern]]
-- [[session-clean-handoff]]
-- [[git-worktrees-parallel-claude]]
-- [[atomic-task-decomposition]]
-- [[the-harness-engineering-curriculum-summary]]
+- [repository-as-system-of-record](repository-as-system-of-record.md)
+- [progress-file-pattern](progress-file-pattern.md)
+- [decision-log-pattern](decision-log-pattern.md)
+- [session-clean-handoff](session-clean-handoff.md)
+- [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md)
+- [atomic-task-decomposition](atomic-task-decomposition.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

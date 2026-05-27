@@ -19,13 +19,13 @@ L'idée : passer **3 minutes** à bien formuler un prompt qui fait économiser d
 
 ### Pourquoi c'est un "direct buff"
 
-Le metaprompting figure dans le **Tier 1** de l'[[agent-abstraction-tierlist]] — facile à adopter, gain immédiat, peu de risque.
+Le metaprompting figure dans le **Tier 1** de l'[agent-abstraction-tierlist](agent-abstraction-tierlist.md) — facile à adopter, gain immédiat, peu de risque.
 
 Bénéfices mesurables :
 - **Stabilité** : moins de variance dans les résultats
 - **Sanity-check** : formuler le prompt force à clarifier ses propres hypothèses
 - **Tokens économisés** : moins de re-prompts = moins de tokens gaspillés
-- **Premier essai correct** : pass@1 amélioré (voir [[pass-at-k-metric]])
+- **Premier essai correct** : pass@1 amélioré (voir [pass-at-k-metric](pass-at-k-metric.md))
 
 ### Anatomie d'un bon prompt (metaprompting)
 
@@ -48,9 +48,9 @@ Un prompt bien construit explicite :
 
 ### Lien avec le sub-agent context problem
 
-Le metaprompting résout en partie le [[sub-agent-context-problem]] : en explicitant l'objectif et les contraintes dans le prompt initial, le sub-agent reçoit le contexte qu'il n'a pas implicitement.
+Le metaprompting résout en partie le [sub-agent-context-problem](sub-agent-context-problem.md) : en explicitant l'objectif et les contraintes dans le prompt initial, le sub-agent reçoit le contexte qu'il n'a pas implicitement.
 
-C'est aussi un **prérequis** pour [[iterative-retrieval-pattern]] — sans un bon prompt initial, l'orchestrateur ne peut pas évaluer si le retour du sub-agent est satisfaisant.
+C'est aussi un **prérequis** pour [iterative-retrieval-pattern](iterative-retrieval-pattern.md) — sans un bon prompt initial, l'orchestrateur ne peut pas évaluer si le retour du sub-agent est satisfaisant.
 
 ### Quand sur-investir dans le metaprompting
 
@@ -61,19 +61,19 @@ Plus la tâche est :
 
 → Plus l'investissement en metaprompting paie.
 
-À l'inverse, pour des tâches répétitives et bien cadrées, un prompt court suffit (et un modèle Haiku, voir [[model-selection-claude]]).
+À l'inverse, pour des tâches répétitives et bien cadrées, un prompt court suffit (et un modèle Haiku, voir [model-selection-claude](model-selection-claude.md)).
 
 ### Pratiques associées
 
 - **Plan Mode** : utilise un prompt initial structuré
 - **Asking the user more at the beginning** : autre Tier 1 buff complémentaire
-- **CLAUDE.md / system-prompt injection** : metaprompting "permanent" pour un projet (voir [[dynamic-system-prompt-injection]])
+- **CLAUDE.md / system-prompt injection** : metaprompting "permanent" pour un projet (voir [dynamic-system-prompt-injection](dynamic-system-prompt-injection.md))
 
 ## Related pages
 
-- [[agent-abstraction-tierlist]]
-- [[sub-agent-context-problem]]
-- [[iterative-retrieval-pattern]]
-- [[pass-at-k-metric]]
-- [[dynamic-system-prompt-injection]]
-- [[the-longform-guide-summary]]
+- [agent-abstraction-tierlist](agent-abstraction-tierlist.md)
+- [sub-agent-context-problem](sub-agent-context-problem.md)
+- [iterative-retrieval-pattern](iterative-retrieval-pattern.md)
+- [pass-at-k-metric](pass-at-k-metric.md)
+- [dynamic-system-prompt-injection](dynamic-system-prompt-injection.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

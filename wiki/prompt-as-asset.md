@@ -44,7 +44,7 @@ Exemple documenté : **Game IP Charity Campaign Design**
 
 ### Comparaison avec les Skills Claude Code
 
-Ce pattern est identique à la notion de [[continuous-learning-v2|skills]] dans les systèmes d'agents :
+Ce pattern est identique à la notion de [skills](continuous-learning-v2.md) dans les systèmes d'agents :
 - Claude Code : skills = fichiers `.md` dans `.claude/skills/` décrivant un workflow
 - Lovart : skills = conversations sérialisées dans un Skill Book
 
@@ -56,14 +56,14 @@ La logique sous-jacente est la même : **capitaliser le chemin de réussite, pas
 
 Quand un utilisateur reprend un projet similaire, invoquer le Skill pré-remplit le contexte au lieu de le reconstruire — économie directe en tokens et en temps cognitif.
 
-### Lien avec [[metaprompting]]
+### Lien avec [metaprompting](metaprompting.md)
 
-[[metaprompting]] consiste à investir dans la qualité du prompt initial pour maximiser la qualité de la tâche. Le prompt-as-asset est la suite logique : une fois le "bon prompt" trouvé, le persister plutôt que de le reconstruire à chaque fois.
+[metaprompting](metaprompting.md) consiste à investir dans la qualité du prompt initial pour maximiser la qualité de la tâche. Le prompt-as-asset est la suite logique : une fois le "bon prompt" trouvé, le persister plutôt que de le reconstruire à chaque fois.
 
 ## Related pages
 
-- [[metaprompting]]
-- [[continuous-learning-v2]]
-- [[lovart-brand-kit]]
-- [[ai-design-agent]]
-- [[claude-opus-47-lovart-brand-design-summary]]
+- [metaprompting](metaprompting.md)
+- [continuous-learning-v2](continuous-learning-v2.md)
+- [lovart-brand-kit](lovart-brand-kit.md)
+- [ai-design-agent](ai-design-agent.md)
+- [claude-opus-47-lovart-brand-design-summary](claude-opus-47-lovart-brand-design-summary.md)

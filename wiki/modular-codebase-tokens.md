@@ -59,10 +59,10 @@ root/
 
 - **Identifier le dead code** régulièrement via skills automatisés
 - **Skim manuel périodique** : repérer ce qui paraît répétitif, le feed à Claude avec un skill de refactor
-- Combiner avec [[mgrep-vs-grep]] pour optimiser encore les recherches
+- Combiner avec [mgrep-vs-grep](mgrep-vs-grep.md) pour optimiser encore les recherches
 
 ## Related pages
 
-- [[mgrep-vs-grep]]
-- [[subagent-architecture]]
-- [[the-longform-guide-summary]]
+- [mgrep-vs-grep](mgrep-vs-grep.md)
+- [subagent-architecture](subagent-architecture.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

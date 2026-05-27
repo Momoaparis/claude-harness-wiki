@@ -150,7 +150,7 @@ Solution : multiplier les benchmarks ou choisir un benchmark représentatif.
 
 #### 4. Dépendance au modèle
 
-Anthropic cite : `sprint-splitter` indispensable pour Sonnet 4.5, **inutile** pour Opus 4.6 (voir [[harness-entropy-management]]).
+Anthropic cite : `sprint-splitter` indispensable pour Sonnet 4.5, **inutile** pour Opus 4.6 (voir [harness-entropy-management](harness-entropy-management.md)).
 
 Conséquence : **re-ablate** après chaque upgrade modèle majeur.
 
@@ -168,7 +168,7 @@ Conséquence : **re-ablate** après chaque upgrade modèle majeur.
 
 #### Setup minimal
 
-- Git branches/worktrees pour isoler les configs (voir [[git-worktrees-parallel-claude]])
+- Git branches/worktrees pour isoler les configs (voir [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md))
 - Script de benchmark (run les tasks, calcule le score)
 - Spreadsheet pour collecter les données
 
@@ -180,7 +180,7 @@ Conséquence : **re-ablate** après chaque upgrade modèle majeur.
 
 ### Lien avec fresh session test
 
-[[fresh-session-readability-test]] est **complémentaire** :
+[fresh-session-readability-test](fresh-session-readability-test.md) est **complémentaire** :
 
 | Test | Mesure |
 |------|--------|
@@ -227,9 +227,9 @@ Conclusion : feature_list + progress + rubric sont core. Le reste peut être sim
 
 ## Related pages
 
-- [[fresh-session-readability-test]]
-- [[harness-curriculum-projects-overview]]
-- [[harness-entropy-management]]
-- [[five-subsystem-harness-architecture]]
-- [[verified-completion-rate-metric]]
-- [[the-harness-engineering-curriculum-summary]]
+- [fresh-session-readability-test](fresh-session-readability-test.md)
+- [harness-curriculum-projects-overview](harness-curriculum-projects-overview.md)
+- [harness-entropy-management](harness-entropy-management.md)
+- [five-subsystem-harness-architecture](five-subsystem-harness-architecture.md)
+- [verified-completion-rate-metric](verified-completion-rate-metric.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

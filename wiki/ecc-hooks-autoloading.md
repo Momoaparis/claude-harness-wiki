@@ -57,10 +57,10 @@ Le répertoire de config Claude Code sur Windows est `%USERPROFILE%\.claude`, pa
 
 ## Lien sécurité
 
-Cet auto-loading est précisément ce qui rend les [[claude-code-cves-2026|CVEs de février 2026]] graves : les hooks d'un repo poisoné sont chargés **avant** la fenêtre de trust. Conclusion :
+Cet auto-loading est précisément ce qui rend les [CVEs de février 2026](claude-code-cves-2026.md) graves : les hooks d'un repo poisoné sont chargés **avant** la fenêtre de trust. Conclusion :
 
-- Ne jamais cloner un repo inconnu sans [[agent-sandboxing|sandbox]].
-- Auditer les `hooks/hooks.json` des plugins avant install via [[agentshield]].
+- Ne jamais cloner un repo inconnu sans [sandbox](agent-sandboxing.md).
+- Auditer les `hooks/hooks.json` des plugins avant install via [agentshield](agentshield.md).
 
 ## Configuration MCP — note adjacente
 
@@ -76,8 +76,8 @@ C'est un filtre install/sync, **pas** un toggle Claude Code runtime.
 
 ## Related pages
 
-- [[claude-code-hooks]]
-- [[claude-code-cves-2026]]
-- [[agentshield]]
-- [[ecc-overview]]
-- [[claude-code-plugins]]
+- [claude-code-hooks](claude-code-hooks.md)
+- [claude-code-cves-2026](claude-code-cves-2026.md)
+- [agentshield](agentshield.md)
+- [ecc-overview](ecc-overview.md)
+- [claude-code-plugins](claude-code-plugins.md)

@@ -59,7 +59,7 @@ Si on a temporairement skippé un test → c'est un **blocker à logger**, pas u
 - `feature_list.json` à jour (transitions d'état)
 - `Next best step` clair pour la prochaine session
 
-Voir [[progress-file-pattern]].
+Voir [progress-file-pattern](progress-file-pattern.md).
 
 #### 4. No stale artifacts
 
@@ -93,7 +93,7 @@ Une session :
 - **Rollback (rien committé)** ✅
 - ❌ "demi-commit" — code écrit, tests cassés, progress pas updaté → **dangereux**
 
-Voir [[acid-principles-agent-state]] pour le full ACID mapping.
+Voir [acid-principles-agent-state](acid-principles-agent-state.md) pour le full ACID mapping.
 
 ### Cas réel : 12 semaines (Lecture 12)
 
@@ -118,7 +118,7 @@ Le projet devient impraticable.
 
 ### Le template clean state checklist
 
-Voir [[template-clean-state-checklist]] pour le format complet à copier-coller. Format minimal :
+Voir [template-clean-state-checklist](template-clean-state-checklist.md) pour le format complet à copier-coller. Format minimal :
 
 ```markdown
 ## Session Exit Checklist
@@ -191,11 +191,11 @@ Encoder la checklist en hook Stop pour qu'elle soit **forcée** :
 }
 ```
 
-Voir [[claude-code-hooks]].
+Voir [claude-code-hooks](claude-code-hooks.md).
 
 ### Lien avec context anxiety
 
-Quand l'agent sent la fin de contexte arriver ([[context-anxiety-modeles]]), il peut sauter la clôture propre. Solution : déclencher la checklist **à 70%** du contexte, pas à 95%. Garder de la marge.
+Quand l'agent sent la fin de contexte arriver ([context-anxiety-modeles](context-anxiety-modeles.md)), il peut sauter la clôture propre. Solution : déclencher la checklist **à 70%** du contexte, pas à 95%. Garder de la marge.
 
 ### High-throughput merge philosophy (cas particulier)
 
@@ -223,10 +223,10 @@ OpenAI cite : 3.5 PRs/jour, short-lived, fast merge. Coût fix < coût attendre 
 
 ## Related pages
 
-- [[template-clean-state-checklist]]
-- [[harness-entropy-management]]
-- [[progress-file-pattern]]
-- [[acid-principles-agent-state]]
-- [[context-anxiety-modeles]]
-- [[claude-code-hooks]]
-- [[the-harness-engineering-curriculum-summary]]
+- [template-clean-state-checklist](template-clean-state-checklist.md)
+- [harness-entropy-management](harness-entropy-management.md)
+- [progress-file-pattern](progress-file-pattern.md)
+- [acid-principles-agent-state](acid-principles-agent-state.md)
+- [context-anxiety-modeles](context-anxiety-modeles.md)
+- [claude-code-hooks](claude-code-hooks.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

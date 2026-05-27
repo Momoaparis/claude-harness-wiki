@@ -61,11 +61,11 @@ Gain potentiel mais nécessite expérience.
 
 ### Lien avec parallel work
 
-La Tier 2 inclut le multi-agent parallèle — voir [[git-worktrees-parallel-claude]] et [[cascade-method]] pour les patterns pratiques quand on s'y aventure.
+La Tier 2 inclut le multi-agent parallèle — voir [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md) et [cascade-method](cascade-method.md) pour les patterns pratiques quand on s'y aventure.
 
 ## Related pages
 
-- [[subagent-architecture]]
-- [[sub-agent-context-problem]]
-- [[iterative-retrieval-pattern]]
-- [[the-longform-guide-summary]]
+- [subagent-architecture](subagent-architecture.md)
+- [sub-agent-context-problem](sub-agent-context-problem.md)
+- [iterative-retrieval-pattern](iterative-retrieval-pattern.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

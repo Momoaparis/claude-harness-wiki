@@ -49,7 +49,7 @@ Pour un workflow Claude Code :
 
 ### Lien avec continuous learning
 
-Ce processus alimente [[continuous-learning-skill]] : les échecs deviennent des skills, les skills deviennent des évals.
+Ce processus alimente [continuous-learning-skill](continuous-learning-skill.md) : les échecs deviennent des skills, les skills deviennent des évals.
 
 ### Avertissement saturation
 
@@ -57,8 +57,8 @@ Un eval set à 100% ne prouve pas que le système est parfait — il prouve que 
 
 ## Related pages
 
-- [[grader-types]]
-- [[pass-at-k-metric]]
-- [[checkpoint-vs-continuous-evals]]
-- [[continuous-learning-skill]]
-- [[the-longform-guide-summary]]
+- [grader-types](grader-types.md)
+- [pass-at-k-metric](pass-at-k-metric.md)
+- [checkpoint-vs-continuous-evals](checkpoint-vs-continuous-evals.md)
+- [continuous-learning-skill](continuous-learning-skill.md)
+- [the-longform-guide-summary](the-longform-guide-summary.md)

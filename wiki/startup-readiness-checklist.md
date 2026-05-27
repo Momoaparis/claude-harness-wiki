@@ -101,7 +101,7 @@ echo "✅ Ready to work."
 
 Idéal pour les agents : une seule commande à lancer en clock-in.
 
-Voir aussi `claude-progress.md` lié à `init.sh` dans les [[harness-curriculum-projects-overview|projets du curriculum]].
+Voir aussi `claude-progress.md` lié à `init.sh` dans les [projets du curriculum](harness-curriculum-projects-overview.md).
 
 ### Le piège "ça marche sur ma machine"
 
@@ -151,7 +151,7 @@ Critère : si quelqu'un change le `Makefile` ou ajoute une dependency, **il met 
 
 ### Lien avec le clean state
 
-[[template-clean-state-checklist|Clean state checklist]] (fin de session) est différent :
+[Clean state checklist](template-clean-state-checklist.md) (fin de session) est différent :
 
 | Document | Quand | Quoi |
 |----------|-------|------|
@@ -165,7 +165,7 @@ Les deux se complètent.
 - ❌ Pas de checklist du tout → chaque session redécouvre
 - ❌ Checklist obsolète → l'agent suit, échoue, perd la confiance
 - ❌ "Run `npm install && npm start`" comme seule instruction → manque les détails (env vars, services externes)
-- ❌ Checklist trop longue (>50 lignes) → noyée, [[lost-in-the-middle-effect]]
+- ❌ Checklist trop longue (>50 lignes) → noyée, [lost-in-the-middle-effect](lost-in-the-middle-effect.md)
 
 ### À retenir
 
@@ -177,8 +177,8 @@ Les deux se complètent.
 
 ## Related pages
 
-- [[initialization-phase-separation]]
-- [[task-breakdown-structure]]
-- [[template-clean-state-checklist]]
-- [[fresh-session-readability-test]]
-- [[the-harness-engineering-curriculum-summary]]
+- [initialization-phase-separation](initialization-phase-separation.md)
+- [task-breakdown-structure](task-breakdown-structure.md)
+- [template-clean-state-checklist](template-clean-state-checklist.md)
+- [fresh-session-readability-test](fresh-session-readability-test.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)

@@ -20,7 +20,7 @@ Seedance 2.0 est un modèle vidéo accessible directement dans le canvas Lovart.
 2. Lovart traduit automatiquement en anglais si le prompt est en chinois
 3. Génération (~5 min, parfois plus en cas de charge serveur)
 4. Visionner le résultat directement dans le canvas
-5. Si insatisfaisant : [[self-verification-mechanism|Opus 4.7 peut relancer]] avec un prompt affiné
+5. Si insatisfaisant : [Opus 4.7 peut relancer](self-verification-mechanism.md) avec un prompt affiné
 
 ### Exemple de prompt (version finale retenue)
 
@@ -53,7 +53,7 @@ Qualité estimée : suffisante pour prototype/MVP, pas encore pour livrable fina
 
 ## Related pages
 
-- [[ai-design-agent]]
-- [[self-verification-mechanism]]
-- [[lovart-brand-kit]]
-- [[claude-opus-47-lovart-brand-design-summary]]
+- [ai-design-agent](ai-design-agent.md)
+- [self-verification-mechanism](self-verification-mechanism.md)
+- [lovart-brand-kit](lovart-brand-kit.md)
+- [claude-opus-47-lovart-brand-design-summary](claude-opus-47-lovart-brand-design-summary.md)

@@ -78,7 +78,7 @@ curl -X POST .../api/login -d '...' | jq -e '.token != null'
 | **Dependencies** | Quelles tâches doivent être passing avant |
 | **Status** | not_started / active / blocked / passing |
 
-Voir aussi [[feature-state-machine]] pour la machine d'état complète.
+Voir aussi [feature-state-machine](feature-state-machine.md) pour la machine d'état complète.
 
 ### Le critère "verification command exécutable"
 
@@ -90,7 +90,7 @@ Exécutable :
 - `curl POST .../login | jq -e '.token != null'` → returns 0 ou non-zero
 - `pytest tests/test_validation.py::test_password_strict` → pass/fail
 
-Voir [[completion-evidence-executable]].
+Voir [completion-evidence-executable](completion-evidence-executable.md).
 
 ### Le critère "atomic"
 
@@ -109,7 +109,7 @@ Task 001c: Token refresh endpoint
 Task 001d: Password reset flow
 ```
 
-Voir [[atomic-task-decomposition]].
+Voir [atomic-task-decomposition](atomic-task-decomposition.md).
 
 ### Le critère "ordonné"
 
@@ -125,7 +125,7 @@ Task 003 (refresh) — depends on 002
 
 Pas de cycle, pas d'ambiguïté sur l'ordre.
 
-Voir [[harness-pipeline-scheduler-verifier-handoff]].
+Voir [harness-pipeline-scheduler-verifier-handoff](harness-pipeline-scheduler-verifier-handoff.md).
 
 ### Le format JSON (machine-lisible)
 
@@ -154,7 +154,7 @@ Pour un usage maximal par la harness, dupliquer en `feature_list.json` :
 }
 ```
 
-Voir [[template-feature-list-json]].
+Voir [template-feature-list-json](template-feature-list-json.md).
 
 L'agent peut alors :
 - Lire le JSON pour savoir la prochaine tâche
@@ -163,7 +163,7 @@ L'agent peut alors :
 
 ### WIP limite
 
-[[wip-limit-discipline|WIP=1]] : une seule tâche `active` à la fois. Le task breakdown contient des dizaines de tâches, mais une seule est en cours.
+[WIP=1](wip-limit-discipline.md) : une seule tâche `active` à la fois. Le task breakdown contient des dizaines de tâches, mais une seule est en cours.
 
 ### Granularité — combien de tâches ?
 
@@ -195,7 +195,7 @@ Projets avec task breakdown structuré vs free-form ("juste une todo list") : +4
 
 `task-breakdown.md` (humain-lisible) et `feature_list.json` (machine-lisible) capturent la même info dans deux formats. Idéalement les deux sont synchronisés (script de génération de l'un vers l'autre).
 
-Voir [[feature-list-as-primitive]].
+Voir [feature-list-as-primitive](feature-list-as-primitive.md).
 
 ### À retenir
 
@@ -207,10 +207,10 @@ Voir [[feature-list-as-primitive]].
 
 ## Related pages
 
-- [[feature-list-as-primitive]]
-- [[atomic-task-decomposition]]
-- [[completion-evidence-executable]]
-- [[wip-limit-discipline]]
-- [[template-feature-list-json]]
-- [[initialization-phase-separation]]
-- [[the-harness-engineering-curriculum-summary]]
+- [feature-list-as-primitive](feature-list-as-primitive.md)
+- [atomic-task-decomposition](atomic-task-decomposition.md)
+- [completion-evidence-executable](completion-evidence-executable.md)
+- [wip-limit-discipline](wip-limit-discipline.md)
+- [template-feature-list-json](template-feature-list-json.md)
+- [initialization-phase-separation](initialization-phase-separation.md)
+- [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md)
