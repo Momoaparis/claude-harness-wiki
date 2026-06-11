@@ -4,7 +4,7 @@
 
 **Sources** : `raw/ingested/the-longform-guide-to-everything-claude-code.md`, `raw/ingested/affaan-m-ecc-readme-part*.md`, `raw/ingested/claude-opus-47-lovart-brand-design.md`
 
-**Last updated** : 2026-05-23
+**Last updated** : 2026-06-11
 
 ---
 
@@ -14,7 +14,7 @@
 
 | Modèle | Quand l'utiliser |
 |--------|------------------|
-| **Sonnet** | Défaut pour ~90% des tâches de coding |
+| **Sonnet** | Défaut pour 80-90% des tâches de coding |
 | **Opus** | Première tentative a échoué, tâche sur 5+ fichiers, décisions architecturales, code sécurité-critique |
 | **Haiku** | Tâche répétitive, instructions très claires, rôle de "worker" dans un setup multi-agent |
 

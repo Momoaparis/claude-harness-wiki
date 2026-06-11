@@ -71,6 +71,7 @@ Fichiers bruts du repo `walkinglabs/learn-harness-engineering`, stockés tels qu
 
 ### 🔌 Plugins, MCPs & skills
 
+- [model-context-protocol](model-context-protocol.md) — Définition de MCP : tools/schémas externes, coût en tokens, lazy loading, surface d'attaque
 - [claude-code-plugins](claude-code-plugins.md) — Plugins marketplace (LSP, hookify, mgrep), gestion du context window, auto-loading hooks v2.1+
 - [mcp-vs-cli-skills](mcp-vs-cli-skills.md) — Remplacer MCPs par CLI + skills pour optimiser tokens
 - [llms-txt-pattern](llms-txt-pattern.md) — Pattern `/llms.txt` pour docs LLM-optimisées

@@ -1,10 +1,10 @@
 # MCP vs CLI + Skills
 
-**Summary** : Pattern d'optimisation du contexte consistant à remplacer certains MCPs par des skills/commandes qui wrappent les CLI natives correspondantes.
+**Summary** : Pattern d'optimisation du contexte consistant à remplacer certains MCPs (voir [model-context-protocol](model-context-protocol.md)) par des skills/commandes qui wrappent les CLI natives correspondantes.
 
 **Sources** : The Longform Guide to Everything Claude Code.md
 
-**Last updated** : 2026-05-22
+**Last updated** : 2026-06-11
 
 ---
 
