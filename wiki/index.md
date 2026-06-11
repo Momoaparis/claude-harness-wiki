@@ -13,7 +13,7 @@
 - [the-shorthand-guide-summary](the-shorthand-guide-summary.md) — Guide shorthand d'Affaan Mustafa sur Claude Code (sep 2025) — setup de base
 - [the-longform-guide-summary](the-longform-guide-summary.md) — Guide longform d'Affaan Mustafa sur Claude Code (jan 2026) — techniques avancées
 - [the-agentic-security-summary](the-agentic-security-summary.md) — Guide shorthand d'Affaan Mustafa sur la sécurité des agents (fév 2026) — CVEs Claude Code + standards opsec 2026
-- [ecc-overview](ecc-overview.md) — Écosystème ECC (Affaan Mustafa) : skills, agents, hooks, rules + tooling (AgentShield, instincts)
+- [ecc-overview](ecc-overview.md) — Écosystème ECC (Affaan Mustafa) v2.0.0 « agent harness OS » : skills, agents, hooks, rules + control-pane, orch-*, tooling (AgentShield, instincts)
 - [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md) — Cours Learn Harness Engineering : 12 lectures + 6 projets + 7 templates pour construire des harnesses Claude Code/Codex robustes
 - [harness-creator-et-skill-creator-summary](harness-creator-et-skill-creator-summary.md) — harness-creator (walkinglabs) + skill-creator (Anthropic) : outils complémentaires pour scaffolding de harness et création de skills
 - [superpowers-framework-summary](superpowers-framework-summary.md) — Superpowers (obra) : méthodologie de dev agentique via skills composables auto-déclenchés, multi-harness
@@ -126,7 +126,9 @@ Fichiers bruts du repo `walkinglabs/learn-harness-engineering`, stockés tels qu
 
 ### 🧩 Écosystème ECC
 
-- [ecc-overview](ecc-overview.md) — Bundle de patterns d'optimisation pour harnesses (Claude Code, Codex, OpenCode, Cursor)
+- [ecc-overview](ecc-overview.md) — Bundle de patterns d'optimisation pour harnesses (Claude Code, Codex, OpenCode, Cursor) — v2.0.0 « agent harness OS »
+- [ecc-control-pane-substrate](ecc-control-pane-substrate.md) — Couche de contrôle harness-neutre v2.0.0 : session adapters `ecc.session.v1`, prototype Rust `ecc2/`, status snapshots
+- [ecc-orchestrator-family](ecc-orchestrator-family.md) — Famille `orch-*` : orchestration dynamique d'équipes de workflow + optimization pack
 - [ecc-hooks-autoloading](ecc-hooks-autoloading.md) — Convention v2.1+ : `hooks/hooks.json` auto-loadé
 
 ### 🏗️ Harness Engineering — Fondamentaux

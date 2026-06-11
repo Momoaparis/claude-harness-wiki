@@ -1,10 +1,10 @@
 # ECC — Everything Claude Code
 
-**Summary** : Système d'optimisation des performances du harness Claude Code (et autres : Codex, OpenCode, Cursor) par Affaan Mustafa. Bundle de skills, instincts, mémoire, sécurité, et développement research-first. Repo : `github.com/affaan-m/ECC`.
+**Summary** : Système d'optimisation des performances du harness Claude Code (et autres : Codex, OpenCode, Cursor, Gemini, Zed) par Affaan Mustafa. Depuis **v2.0.0 (juin 2026)**, repositionné comme « agent harness operating system » cross-harness : ~261-262 skills, 64 agents, 84 commandes legacy. Repo : `github.com/affaan-m/ECC`.
 
-**Sources** : `raw/ingested/affaan-m-ecc-readme-part*.md`
+**Sources** : `raw/ingested/affaan-m-ecc-readme-part*.md`, `raw/ingested/affaan-m-ecc-2-0-0-release-notes.md`, `raw/ingested/affaan-m-ecc-2-0-0-rc1-notes.md`
 
-**Last updated** : 2026-05-23
+**Last updated** : 2026-06-11
 
 ---
 
@@ -43,6 +43,22 @@ Réagissent aux événements de tool. Cf. [claude-code-hooks](claude-code-hooks.
 
 Guidelines toujours appliquées, organisées en `common/` (universel) + `typescript/`, `python/`, `golang/`, `swift/`, `php/`, `arkts/` (langage-spécifique). Voir [ecc-token-optimization](ecc-token-optimization.md) pour l'impact sur le coût.
 
+## Nouveautés v2.0.0
+
+La graduation stable de la ligne 2.0 fait d'ECC un **OS cross-harness** : Claude Code reste first-class, mais Codex, OpenCode, Cursor, Gemini, Zed et les workflows terminal-only partagent les mêmes skills, rules, hooks, conventions MCP et release gates (source: affaan-m-ecc-2-0-0-release-notes.md). Composants neufs notables :
+
+- **Control-pane substrate** — adapters de session harness-neutres (`ecc.session.v1`). Détail : [ecc-control-pane-substrate](ecc-control-pane-substrate.md).
+- **Famille d'orchestrateurs `orch-*`** — orchestration dynamique d'équipes de workflow. Détail : [ecc-orchestrator-family](ecc-orchestrator-family.md).
+- **MCP inventory** (`ecc.mcp.v1`) — vue normalisée des configs MCP cross-harness, détection de drift, redaction de secrets. Complète [mcp-vs-cli-skills](mcp-vs-cli-skills.md).
+- **Worktree-lifecycle service** — prédiction déterministe de conflits + garbage collection sûr des worktrees parallèles. Relié à [git-worktrees-parallel-claude](git-worktrees-parallel-claude.md) et [harness-entropy-management](harness-entropy-management.md).
+- **Optimization pack** — `parallel-execution-optimizer`, `benchmark-optimization-loop`, `data-throughput-accelerator`, `latency-critical-systems`, `recursive-decision-ledger` (source: affaan-m-ecc-2-0-0-release-notes.md).
+- **Dashboard GUI** Tkinter + **alpha Rust `ecc2/`** (control-plane) + **operator status snapshots** (`ecc status --markdown --write status.md`) (source: affaan-m-ecc-2-0-0-rc1-notes.md).
+
+### À savoir pour l'install
+
+- **Node 21+** : un bug (#2184) rendait les plugin hooks silencieusement no-op — mettre à jour si concerné (source: affaan-m-ecc-2-0-0-release-notes.md).
+- **Defaults plus légers** : `rules/zh` sorti de l'install default toujours-chargée ; surface OpenCode réduite avec hooks-runtime gated (source: affaan-m-ecc-2-0-0-release-notes.md).
+
 ## Ecosystem tools
 
 - **Skill Creator** (`/skill-create`) — génère des SKILL.md depuis l'historique git du repo. Option locale ou via GitHub App.
@@ -70,6 +86,8 @@ Guidelines toujours appliquées, organisées en `common/` (universel) + `typescr
 
 ## Related pages
 
+- [ecc-control-pane-substrate](ecc-control-pane-substrate.md)
+- [ecc-orchestrator-family](ecc-orchestrator-family.md)
 - [ecc-token-optimization](ecc-token-optimization.md)
 - [ecc-hooks-autoloading](ecc-hooks-autoloading.md)
 - [continuous-learning-v2](continuous-learning-v2.md)
