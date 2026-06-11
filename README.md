@@ -49,7 +49,7 @@ llm-wiki/
 
 ## 📊 Knowledge Graph
 
-This is not a flat list of files. Every concept links to others via `[[wiki-links]]`:
+This is not a flat list of files. Every concept links to others via standard Markdown links (`[concept](concept.md)`):
 
 ```
 harness-definition
@@ -94,6 +94,7 @@ The AI reads → understands → acts. You don't need to read anything.
 | 🧪 Evaluation | 8+ | `grader-types`, `pass-at-k-metric`, `checkpoint-vs-continuous-evals` |
 | 💰 Token Optimization | 6+ | `ecc-token-optimization`, `modular-codebase-tokens`, `mgrep-vs-grep` |
 | 🤖 Agent Architecture | 12+ | `subagent-architecture`, `planner-generator-evaluator-3-agent-architecture`, `agent-identity-separation` |
+| 🧰 Agentic Frameworks | 6+ | `superpowers-framework-summary`, `superpowers-workflow-pipeline`, `subagent-driven-development`, `ecc-overview`, `ecc-control-pane-substrate`, `ecc-orchestrator-family` |
 
 ---
 
@@ -113,7 +114,8 @@ This knowledge base was built from the following open-source resources:
 - **Affaan Mustafa** — *The Shorthand Guide to Everything Claude Code* (Sep 2025)
 - **Affaan Mustafa** — *The Longform Guide to Everything Claude Code* (Jan 2026)
 - **Affaan Mustafa** — *The Shorthand Guide to Everything Agentic Security* (Feb 2026)
-- **Affaan Mustafa** — *ECC Ecosystem Documentation* (ecosystem, hooks, skills, agents)
+- **Affaan Mustafa** — *ECC Ecosystem Documentation* (ecosystem, hooks, skills, agents) — incl. *ECC v2.0.0 release notes* (the agent harness operating system, Jun 2026)
+- **obra (Jesse Vincent)** — *[Superpowers](https://github.com/obra/superpowers)* — agentic skills framework & software development methodology
 - **Learn Harness Engineering** — *12 Lectures + 6 Projects + 7 Templates* ([walkinglabs](https://github.com/walkinglabs/learn-harness-engineering))
 - **Lovart** — AI design pipeline documentation (brand kit, video generation)
 

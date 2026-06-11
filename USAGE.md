@@ -17,7 +17,7 @@
 
 ## 🟣 Opening with Obsidian (recommended)
 
-[Obsidian](https://obsidian.md) is a free markdown editor that understands `[[wiki-links]]` and can display the knowledge graph visually.
+[Obsidian](https://obsidian.md) is a free markdown editor that renders the knowledge graph visually from the pages' internal Markdown links.
 
 ### Setup (2 minutes)
 
@@ -49,7 +49,7 @@
 
 | Action | Shortcut |
 |---|---|
-| Open a linked page | Click the `[[link]]` |
+| Open a linked page | Click any internal link |
 | Back | Alt + ← |
 | Open graph view | Ctrl + G |
 | Quick search | Ctrl + O |
@@ -65,7 +65,7 @@ Any markdown file can be read in Chrome directly:
 3. Click the **three dots** (⋮) in the top right corner
 4. Click **Translate to English** (or your language)
 
-> **Note:** `[[wiki-links]]` won't be clickable in the browser. For navigation, use Obsidian or any markdown editor.
+> **Note:** when viewing a raw `.md` file dropped into the browser, internal links aren't rendered as clickable. For clickable navigation, use Obsidian, any markdown editor, or GitHub's rendered view.
 
 ---
 
@@ -205,7 +205,7 @@ When you find a useful article, video, or document, you can add it to the wiki u
    - Extract key concepts, definitions, entities, and relationships
    - **Propose a structuring plan — and wait for your approval**
    - Create 5–15 wiki pages from a single document (this is normal)
-   - Link all new pages to existing concepts via `[[wiki-links]]`
+   - Link all new pages to existing concepts via standard Markdown links (`[concept](concept.md)`)
    - Update `wiki/index.md`
    - Archive the source to `raw/ingested/`
 
@@ -226,7 +226,7 @@ Over time, pages can become orphaned or inconsistent. Claude can audit the wiki:
 ```
 Audit the wiki and find:
 - orphaned pages (no links pointing to them)
-- broken [[wiki-links]]
+- broken internal links
 - concepts mentioned without a dedicated page
 - pages that don't follow the standard format
 ```
