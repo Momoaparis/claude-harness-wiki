@@ -38,7 +38,7 @@ CLAUDE.md           # this file — instructions for Claude
 
 - **Never** modify `raw/`
 - Every addition enriches `wiki/`
-- Every concept must be connected via `[[wiki-links]]`
+- Every concept must be connected via standard Markdown internal links `[concept](concept.md)`
 - The system is **incremental** — add, never globally replace
 - The wiki is a **graph**, not a flat list of files
 - Before any significant write, **propose a plan and wait for user approval**
@@ -61,7 +61,7 @@ When the user drops a file into `raw/inbox/` and requests ingestion:
 
 4. Create a summary page for the source document in `wiki/`
 5. Create a dedicated page for each important concept
-6. Link all pages via `[[wiki-links]]`
+6. Link all pages via standard Markdown internal links `[concept](concept.md)`
 7. Update `wiki/index.md`
 8. Append an entry to `wiki/log.md`
 
@@ -145,19 +145,19 @@ Every wiki page must follow this structure:
 ## Content
 
 Clear, structured explanation oriented toward AI learning.
-Use `[[concept]]` links throughout the text.
+Use `[concept](concept.md)` internal Markdown links throughout the text.
 
 ## Related pages
 
-- [[concept-1]]
-- [[concept-2]]
+- [concept-1](concept-1.md)
+- [concept-2](concept-2.md)
 ```
 
 ## Knowledge graph rules
 
 - **One page = one atomic concept** (no catch-all pages)
 - Every concept must be reusable elsewhere in the wiki
-- `[[wiki-links]]` are **mandatory** for:
+- `[concept](concept.md)` internal links are **mandatory** for:
   - technical concepts
   - AI models
   - algorithms
