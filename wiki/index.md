@@ -16,6 +16,7 @@
 - [ecc-overview](ecc-overview.md) — Écosystème ECC (Affaan Mustafa) : skills, agents, hooks, rules + tooling (AgentShield, instincts)
 - [the-harness-engineering-curriculum-summary](the-harness-engineering-curriculum-summary.md) — Cours Learn Harness Engineering : 12 lectures + 6 projets + 7 templates pour construire des harnesses Claude Code/Codex robustes
 - [harness-creator-et-skill-creator-summary](harness-creator-et-skill-creator-summary.md) — harness-creator (walkinglabs) + skill-creator (Anthropic) : outils complémentaires pour scaffolding de harness et création de skills
+- [superpowers-framework-summary](superpowers-framework-summary.md) — Superpowers (obra) : méthodologie de dev agentique via skills composables auto-déclenchés, multi-harness
 
 ## Pages par thème
 
@@ -61,6 +62,12 @@ Fichiers bruts du repo `walkinglabs/learn-harness-engineering`, stockés tels qu
 - [skill-creation-workflow](skill-creation-workflow.md) — Cycle draft → test parallèle (with/without skill) → évaluation → amélioration
 - [skill-eval-workflow](skill-eval-workflow.md) — Eval runner, grader, benchmark viewer, feedback loop pour valider un skill
 - [skill-description-optimization](skill-description-optimization.md) — Mécanisme de triggering, design des eval queries, boucle d'optimisation automatisée
+
+### 🧰 Frameworks & méthodologies agentiques
+
+- [superpowers-framework-summary](superpowers-framework-summary.md) — Superpowers (obra) : skills composables auto-déclenchés + méthodologie de dev, portable multi-harness
+- [superpowers-workflow-pipeline](superpowers-workflow-pipeline.md) — Pipeline en 7 étapes : brainstorming → worktrees → plans → subagents → TDD → code review → finishing-branch
+- [subagent-driven-development](subagent-driven-development.md) — Sous-agent frais par tâche + revue 2 étapes (conformité spec → qualité code)
 
 ### 🔌 Plugins, MCPs & skills
 
